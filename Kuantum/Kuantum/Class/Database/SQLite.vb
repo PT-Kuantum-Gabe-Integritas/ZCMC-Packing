@@ -1,7 +1,10 @@
 ﻿Imports System.Data.SQLite
 Imports System.IO
+Imports Kuantum
 
 Public Class SQLite
+
+    Implements ISQLite
 
     Public Enum DBTYPE
         CONFIG
@@ -23,9 +26,6 @@ Public Class SQLite
         End Get
     End Property
 
-    Public Function GetDate(_date As Date) As String
-        Return String.Format("{0:0000}-{1:00}-{2:00}", _date.Year, _date.Month, _date.Day)
-    End Function
 
     Public Property BasePath As String
         Get
@@ -33,6 +33,15 @@ Public Class SQLite
         End Get
         Set(value As String)
             _path = value
+        End Set
+    End Property
+
+    Private Property ISQLite_isConnected As String Implements ISQLite.isConnected
+        Get
+            Throw New NotImplementedException()
+        End Get
+        Set(value As String)
+            Throw New NotImplementedException()
         End Set
     End Property
 
@@ -142,7 +151,7 @@ Public Class SQLite
         End If
     End Sub
 
-
-
-
+    Public Function GetDate(_date As Date) As String Implements ISQLite.GetDate
+        Return String.Format("{0:0000}-{1:00}-{2:00}", _date.Year, _date.Month, _date.Day)
+    End Function
 End Class
