@@ -36,14 +36,6 @@ Public Class SQLite
         End Set
     End Property
 
-    Private Property ISQLite_isConnected As String Implements ISQLite.isConnected
-        Get
-            Throw New NotImplementedException()
-        End Get
-        Set(value As String)
-            Throw New NotImplementedException()
-        End Set
-    End Property
 
     Public Sub New(Path As String)
         _path = Path
@@ -151,7 +143,7 @@ Public Class SQLite
         End If
     End Sub
 
-    Public Function GetDate(_date As Date) As String Implements ISQLite.GetDate
+    Public Function GetDate(_date As Date) As String
         Return String.Format("{0:0000}-{1:00}-{2:00}", _date.Year, _date.Month, _date.Day)
     End Function
 End Class
