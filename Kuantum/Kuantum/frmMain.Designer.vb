@@ -70,7 +70,7 @@ Partial Class frmMain
         Me.Panel5.Controls.Add(Me.PictureBox2)
         Me.Panel5.Controls.Add(Me.Label3)
         Me.Panel5.Controls.Add(Me.Label2)
-        Me.Panel5.Location = New System.Drawing.Point(1155, 39)
+        Me.Panel5.Location = New System.Drawing.Point(1155, 40)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(167, 53)
         Me.Panel5.TabIndex = 0
