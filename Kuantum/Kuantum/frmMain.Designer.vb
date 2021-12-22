@@ -25,13 +25,13 @@ Partial Class frmMain
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lbMenu = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.pnlForm = New System.Windows.Forms.Panel()
-        Me.miniToolStrip = New System.Windows.Forms.StatusStrip()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.btnTDash = New System.Windows.Forms.ToolStripButton()
         Me.btnTRun = New System.Windows.Forms.ToolStripButton()
@@ -40,13 +40,12 @@ Partial Class frmMain
         Me.btnTReff = New System.Windows.Forms.ToolStripButton()
         Me.btnTLog = New System.Windows.Forms.ToolStripButton()
         Me.btnTAbout = New System.Windows.Forms.ToolStripButton()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2.SuspendLayout()
         Me.Panel5.SuspendLayout()
-        Me.ToolStrip1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel2
@@ -61,7 +60,7 @@ Partial Class frmMain
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1262, 99)
+        Me.Panel2.Size = New System.Drawing.Size(1325, 99)
         Me.Panel2.TabIndex = 1
         '
         'Panel5
@@ -71,10 +70,21 @@ Partial Class frmMain
         Me.Panel5.Controls.Add(Me.PictureBox2)
         Me.Panel5.Controls.Add(Me.Label3)
         Me.Panel5.Controls.Add(Me.Label2)
-        Me.Panel5.Location = New System.Drawing.Point(1092, 39)
+        Me.Panel5.Location = New System.Drawing.Point(1155, 39)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(167, 53)
         Me.Panel5.TabIndex = 0
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.Kuantum.My.Resources.Resources.user__2_
+        Me.PictureBox2.Location = New System.Drawing.Point(11, 8)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(35, 35)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 2
+        Me.PictureBox2.TabStop = False
         '
         'Label3
         '
@@ -100,16 +110,27 @@ Partial Class frmMain
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Welcome!"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(272, 97)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 2
+        Me.PictureBox1.TabStop = False
+        '
         'lbMenu
         '
         Me.lbMenu.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbMenu.Font = New System.Drawing.Font("Nirmala UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbMenu.ForeColor = System.Drawing.Color.White
-        Me.lbMenu.Location = New System.Drawing.Point(287, 11)
+        Me.lbMenu.Location = New System.Drawing.Point(276, 4)
         Me.lbMenu.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbMenu.Name = "lbMenu"
-        Me.lbMenu.Size = New System.Drawing.Size(779, 37)
+        Me.lbMenu.Size = New System.Drawing.Size(197, 37)
         Me.lbMenu.TabIndex = 2
         Me.lbMenu.Text = "Dashboard"
         Me.lbMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -121,7 +142,7 @@ Partial Class frmMain
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Button2.Location = New System.Drawing.Point(1195, 4)
+        Me.Button2.Location = New System.Drawing.Point(1258, 4)
         Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(30, 30)
@@ -136,7 +157,7 @@ Partial Class frmMain
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Button1.Location = New System.Drawing.Point(1229, 4)
+        Me.Button1.Location = New System.Drawing.Point(1292, 4)
         Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(30, 30)
@@ -144,42 +165,22 @@ Partial Class frmMain
         Me.Button1.Text = "X"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'pnlForm
-        '
-        Me.pnlForm.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.pnlForm.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlForm.Location = New System.Drawing.Point(0, 99)
-        Me.pnlForm.Margin = New System.Windows.Forms.Padding(2)
-        Me.pnlForm.Name = "pnlForm"
-        Me.pnlForm.Size = New System.Drawing.Size(1262, 449)
-        Me.pnlForm.TabIndex = 3
-        '
-        'miniToolStrip
-        '
-        Me.miniToolStrip.AutoSize = False
-        Me.miniToolStrip.Dock = System.Windows.Forms.DockStyle.None
-        Me.miniToolStrip.Location = New System.Drawing.Point(1, 1)
-        Me.miniToolStrip.Name = "miniToolStrip"
-        Me.miniToolStrip.Size = New System.Drawing.Size(1262, 22)
-        Me.miniToolStrip.TabIndex = 8
-        '
         'ToolStrip1
         '
         Me.ToolStrip1.AutoSize = False
         Me.ToolStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
         Me.ToolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.ToolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnTDash, Me.btnTRun, Me.btnTConfig, Me.btnTManual, Me.btnTReff, Me.btnTLog, Me.btnTAbout})
-        Me.ToolStrip1.Location = New System.Drawing.Point(0, 478)
+        Me.ToolStrip1.Location = New System.Drawing.Point(0, 508)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.ToolStrip1.Size = New System.Drawing.Size(1262, 70)
+        Me.ToolStrip1.Size = New System.Drawing.Size(1325, 81)
         Me.ToolStrip1.TabIndex = 4
         Me.ToolStrip1.Text = "ToolStrip1"
         '
         'btnTDash
         '
         Me.btnTDash.AutoSize = False
-        Me.btnTDash.BackgroundImage = Global.Kuantum.My.Resources.Resources.Line1
         Me.btnTDash.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btnTDash.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.btnTDash.ForeColor = System.Drawing.Color.White
@@ -196,7 +197,6 @@ Partial Class frmMain
         'btnTRun
         '
         Me.btnTRun.AutoSize = False
-        Me.btnTRun.BackgroundImage = CType(resources.GetObject("btnTRun.BackgroundImage"), System.Drawing.Image)
         Me.btnTRun.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btnTRun.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.btnTRun.ForeColor = System.Drawing.Color.White
@@ -213,7 +213,6 @@ Partial Class frmMain
         'btnTConfig
         '
         Me.btnTConfig.AutoSize = False
-        Me.btnTConfig.BackgroundImage = CType(resources.GetObject("btnTConfig.BackgroundImage"), System.Drawing.Image)
         Me.btnTConfig.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btnTConfig.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.btnTConfig.ForeColor = System.Drawing.Color.White
@@ -223,13 +222,13 @@ Partial Class frmMain
         Me.btnTConfig.Margin = New System.Windows.Forms.Padding(0, 1, 5, 2)
         Me.btnTConfig.Name = "btnTConfig"
         Me.btnTConfig.Size = New System.Drawing.Size(160, 65)
+        Me.btnTConfig.Tag = "Configuration"
         Me.btnTConfig.Text = "Config"
         Me.btnTConfig.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
         '
         'btnTManual
         '
         Me.btnTManual.AutoSize = False
-        Me.btnTManual.BackgroundImage = CType(resources.GetObject("btnTManual.BackgroundImage"), System.Drawing.Image)
         Me.btnTManual.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btnTManual.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.btnTManual.ForeColor = System.Drawing.Color.White
@@ -239,13 +238,13 @@ Partial Class frmMain
         Me.btnTManual.Margin = New System.Windows.Forms.Padding(0, 1, 5, 2)
         Me.btnTManual.Name = "btnTManual"
         Me.btnTManual.Size = New System.Drawing.Size(160, 65)
+        Me.btnTManual.Tag = "Manual Test"
         Me.btnTManual.Text = "Manual"
         Me.btnTManual.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
         '
         'btnTReff
         '
         Me.btnTReff.AutoSize = False
-        Me.btnTReff.BackgroundImage = CType(resources.GetObject("btnTReff.BackgroundImage"), System.Drawing.Image)
         Me.btnTReff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btnTReff.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.btnTReff.ForeColor = System.Drawing.Color.White
@@ -255,13 +254,13 @@ Partial Class frmMain
         Me.btnTReff.Margin = New System.Windows.Forms.Padding(0, 1, 5, 2)
         Me.btnTReff.Name = "btnTReff"
         Me.btnTReff.Size = New System.Drawing.Size(160, 65)
+        Me.btnTReff.Tag = "Data Reference"
         Me.btnTReff.Text = "Reference"
         Me.btnTReff.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
         '
         'btnTLog
         '
         Me.btnTLog.AutoSize = False
-        Me.btnTLog.BackgroundImage = CType(resources.GetObject("btnTLog.BackgroundImage"), System.Drawing.Image)
         Me.btnTLog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btnTLog.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.btnTLog.ForeColor = System.Drawing.Color.White
@@ -271,13 +270,13 @@ Partial Class frmMain
         Me.btnTLog.Margin = New System.Windows.Forms.Padding(0, 1, 5, 2)
         Me.btnTLog.Name = "btnTLog"
         Me.btnTLog.Size = New System.Drawing.Size(160, 65)
+        Me.btnTLog.Tag = "Data Log"
         Me.btnTLog.Text = "Log"
         Me.btnTLog.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
         '
         'btnTAbout
         '
         Me.btnTAbout.AutoSize = False
-        Me.btnTAbout.BackgroundImage = CType(resources.GetObject("btnTAbout.BackgroundImage"), System.Drawing.Image)
         Me.btnTAbout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btnTAbout.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.btnTAbout.ForeColor = System.Drawing.Color.White
@@ -290,36 +289,23 @@ Partial Class frmMain
         Me.btnTAbout.Text = "About"
         Me.btnTAbout.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
         '
-        'PictureBox2
+        'Panel1
         '
-        Me.PictureBox2.Image = Global.Kuantum.My.Resources.Resources.user__2_
-        Me.PictureBox2.Location = New System.Drawing.Point(11, 8)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(35, 35)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 2
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(11, 11)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(272, 81)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 2
-        Me.PictureBox1.TabStop = False
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel1.Location = New System.Drawing.Point(0, 99)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1325, 409)
+        Me.Panel1.TabIndex = 5
         '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1262, 548)
+        Me.ClientSize = New System.Drawing.Size(1325, 589)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.ToolStrip1)
-        Me.Controls.Add(Me.pnlForm)
         Me.Controls.Add(Me.Panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(2)
@@ -330,20 +316,18 @@ Partial Class frmMain
         Me.Panel2.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
-        Me.ToolStrip1.ResumeLayout(False)
-        Me.ToolStrip1.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ToolStrip1.ResumeLayout(False)
+        Me.ToolStrip1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents pnlForm As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents lbMenu As Label
-    Friend WithEvents miniToolStrip As StatusStrip
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents PictureBox2 As PictureBox
@@ -356,4 +340,5 @@ Partial Class frmMain
     Friend WithEvents btnTReff As ToolStripButton
     Friend WithEvents btnTLog As ToolStripButton
     Friend WithEvents btnTAbout As ToolStripButton
+    Friend WithEvents Panel1 As Panel
 End Class
