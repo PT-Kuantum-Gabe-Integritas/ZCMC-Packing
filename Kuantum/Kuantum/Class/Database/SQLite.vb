@@ -1,7 +1,10 @@
 ﻿Imports System.Data.SQLite
 Imports System.IO
+Imports Kuantum
 
 Public Class SQLite
+
+    Implements ISQLite
 
     Public Enum DBTYPE
         CONFIG
@@ -23,9 +26,6 @@ Public Class SQLite
         End Get
     End Property
 
-    Public Function GetDate(_date As Date) As String
-        Return String.Format("{0:0000}-{1:00}-{2:00}", _date.Year, _date.Month, _date.Day)
-    End Function
 
     Public Property BasePath As String
         Get
@@ -35,6 +35,7 @@ Public Class SQLite
             _path = value
         End Set
     End Property
+
 
     Public Sub New(Path As String)
         _path = Path
@@ -59,29 +60,13 @@ Public Class SQLite
         End If
     End Sub
 
-    Public Function Open(FileName As String, Type As DBTYPE) As Boolean
-        _isConnected = False
-        Try
-            Dim folderPath As String = Path.Combine(_path, GetFolderBase(Type))
-            FolderExist(folderPath)
-            _connectionString = "Data Source =" & IO.Path.Combine(folderPath, FileName + ".db") & ";Version=3;"
-            _con = New SQLiteConnection(_connectionString)
-            _cmd = New SQLiteCommand()
-            _con.ParseViaFramework = True
-            _con.Open()
-            _isConnected = True
-        Catch ex As Exception
-            _isConnected = False
-        End Try
-        Return _isConnected
-    End Function
-
-    Public Sub Close()
+    Public Sub Close() Implements ISQLite.Close
         Try
             If _isConnected Then
                 _cmd.Dispose()
                 _dr.Close()
                 _con.Close()
+
             End If
         Catch ex As Exception
 
@@ -137,12 +122,29 @@ Public Class SQLite
     Public Sub DBInsert(param As String, table As String, values As String)
         If _isConnected Then
             Dim query As String = ""
-            query = String.Format("INSERT INTO {0} (1) VALUES (2)", table, param, values)
+            query = String.Format("INSERT INTO {0} {1} VALUES {2}", table, param, values)
             ExecNonQuery(query)
         End If
     End Sub
 
+    Public Function GetDate(_date As Date) As String
+        Return String.Format("{0:0000}-{1:00}-{2:00}", _date.Year, _date.Month, _date.Day)
+    End Function
 
-
-
+    Public Function Open(FileName As String, Type As Data.DbType) As Boolean Implements ISQLite.Open
+        _isConnected = False
+        Try
+            Dim folderPath As String = Path.Combine(_path, GetFolderBase(Type))
+            FolderExist(folderPath)
+            _connectionString = "Data Source =" & IO.Path.Combine(folderPath, FileName + ".db") & ";Version=3;"
+            _con = New SQLiteConnection(_connectionString)
+            _cmd = New SQLiteCommand()
+            _con.ParseViaFramework = True
+            _con.Open()
+            _isConnected = True
+        Catch ex As Exception
+            _isConnected = False
+        End Try
+        Return _isConnected
+    End Function
 End Class
