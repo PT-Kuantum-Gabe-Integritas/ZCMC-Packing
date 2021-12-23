@@ -120,7 +120,7 @@ Public Class SQLite
         End If
     End Sub
 
-    Public Sub DBInsert(param As String, table As String, values As String)
+    Public Sub DBInsert(param As String, table As String, values As String) Implements ISQLite.DBInsert
         If _isConnected Then
             Dim query As String = ""
             query = String.Format("INSERT INTO {0} {1} VALUES {2}", table, param, values)
