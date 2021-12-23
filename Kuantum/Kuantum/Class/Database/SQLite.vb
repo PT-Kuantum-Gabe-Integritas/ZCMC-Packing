@@ -10,6 +10,7 @@ Public Class SQLite
         CONFIG
         LOG
         RESULT
+
     End Enum
 
     Private _con As SQLiteConnection
