@@ -102,6 +102,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\Database\frmTDatabase.Designer.vb">
+      <DependentUpon>frmTDatabase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Database\frmTDatabase.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Class\Database\ISQLite.vb" />
     <Compile Include="Class\Database\SQLite.vb" />
     <Compile Include="Forms\frmSplash.Designer.vb">
@@ -135,6 +141,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Class\Database\frmTDatabase.resx">
+      <DependentUpon>frmTDatabase.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmSplash.resx">
       <DependentUpon>frmSplash.vb</DependentUpon>
     </EmbeddedResource>
