@@ -74,7 +74,7 @@ Public Class SQLite
         End Try
     End Sub
 
-    Public Sub ExecNonQuery(cmd As String)
+    Public Sub ExecNonQuery(cmd As String) Implements ISQLite.ExecNonQuery
         If _isConnected Then
             _cmd = _con.CreateCommand()
             _cmd.CommandText = cmd
@@ -83,7 +83,7 @@ Public Class SQLite
         End If
     End Sub
 
-    Public Function ExecQuery(cmd As String) As DataTable
+    Public Function ExecQuery(cmd As String) As DataTable Implements ISQLite.ExecQuery
         Dim dt As DataTable = New DataTable()
         If _isConnected Then
             _cmd = _con.CreateCommand()
@@ -95,7 +95,7 @@ Public Class SQLite
         Return dt
     End Function
 
-    Public Function DBSelect(param As String, table As String, where As String) As DataTable
+    Public Function DBSelect(param As String, table As String, where As String) As DataTable Implements ISQLite.DBSelect
         Dim dt As DataTable = New DataTable()
         If _isConnected Then
             Dim query As String = ""
@@ -112,7 +112,7 @@ Public Class SQLite
         Return dt
     End Function
 
-    Public Sub DBUpdate(param As String, table As String, where As String)
+    Public Sub DBUpdate(param As String, table As String, where As String) Implements ISQLite.DBUpdate
         If _isConnected Then
             Dim query As String = ""
             query = String.Format("UPDATE {0} SET {1} WHERE {2}", table, param, where)
