@@ -125,6 +125,7 @@ Public Class SQLite
             query = String.Format("INSERT INTO {0} {1} VALUES {2}", table, param, values)
             ExecNonQuery(query)
         End If
+
     End Sub
 
     Public Function GetDate(_date As Date) As String
