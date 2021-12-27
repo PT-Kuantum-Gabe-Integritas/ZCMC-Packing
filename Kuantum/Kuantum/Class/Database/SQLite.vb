@@ -7,6 +7,7 @@ Public Class SQLite
     Implements IDatabase
 
     Public Enum DBTYPE
+        USER
         CONFIG
         LOG
         RESULT
@@ -50,6 +51,8 @@ Public Class SQLite
                 Return "Log"
             Case DBTYPE.RESULT
                 Return "Result"
+            Case DBTYPE.USER
+                Return "User"
             Case Else
                 Return "Log"
         End Select
@@ -138,12 +141,14 @@ Public Class SQLite
         Try
             Dim folderPath As String = Path.Combine(_path, GetFolderBase(Type))
             FolderExist(folderPath)
+
             _connectionString = "Data Source =" & IO.Path.Combine(folderPath, FileName + ".db") & ";Version=3;"
             _con = New SQLiteConnection(_connectionString)
             _cmd = New SQLiteCommand()
             _con.ParseViaFramework = True
             _con.Open()
             _isConnected = True
+            MessageBox.Show("done Connect to User Database")
         Catch ex As Exception
             _isConnected = False
         End Try

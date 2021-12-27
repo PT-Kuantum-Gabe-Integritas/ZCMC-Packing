@@ -110,6 +110,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\Database\Access.vb" />
+    <Compile Include="Class\Database\Database_Test.Designer.vb">
+      <DependentUpon>Database_Test.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Database\Database_Test.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Class\Database\IDatabase.vb" />
     <Compile Include="Class\Database\SQLite.vb" />
     <Compile Include="Forms\frmSplash.Designer.vb">
@@ -143,6 +149,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Class\Database\Database_Test.resx">
+      <DependentUpon>Database_Test.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmSplash.resx">
       <DependentUpon>frmSplash.vb</DependentUpon>
     </EmbeddedResource>

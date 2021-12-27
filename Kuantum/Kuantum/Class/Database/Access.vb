@@ -12,21 +12,30 @@ Public Class Access
     Private _path As String
     Private _isConnected As Boolean
 
+    Public Sub New(Path As String)
+        _path = Path
+    End Sub
+
     Public Enum DBTYPE
         CONFIG
         LOG
         RESULT
+        DATABASE
 
     End Enum
 
-    Public Function GetFolderBase(type As DbType) As String
+    Public Function GetFolderBase(type As DBTYPE) As String
         Select Case type
-            Case DbType.CONFIG
+            Case DBTYPE.CONFIG
                 Return "Config"
-            Case DbType.LOG
+            Case DBTYPE.LOG
                 Return "Log"
-            Case DbType.RESULT
+            Case DBTYPE.RESULT
                 Return "Result"
+            Case DBTYPE.DATABASE
+                Return "Database"
+
+
             Case Else
                 Return "Log"
         End Select
@@ -129,7 +138,7 @@ Public Class Access
         Try
             Dim folderPath As String = Path.Combine(_path, GetFolderBase(Type))
             FolderExist(folderPath)
-            _connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & IO.Path.Combine(folderPath, FileName + ".mdb") & ";Jet OLEDB:Database;"
+            _connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & IO.Path.Combine(folderPath, FileName + ".mdb") & ";"
             _con = New OleDbConnection(_connectionString)
             _cmd = New OleDbCommand()
             _con.Open()
