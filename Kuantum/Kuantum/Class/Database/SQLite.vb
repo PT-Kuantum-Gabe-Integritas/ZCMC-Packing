@@ -4,7 +4,7 @@ Imports Kuantum
 
 Public Class SQLite
 
-    Implements ISQLite
+    Implements IDatabase
 
     Public Enum DBTYPE
         CONFIG
@@ -21,14 +21,14 @@ Public Class SQLite
     Private _path As String
     Private _isConnected As Boolean
 
-    Public ReadOnly Property isConnected As String
+    Public ReadOnly Property isConnected As String Implements IDatabase.isConnected
         Get
             Return _isConnected
         End Get
     End Property
 
 
-    Public Property BasePath As String
+    Public Property BasePath As String Implements IDatabase.BasePath
         Get
             Return _path
         End Get
@@ -55,13 +55,13 @@ Public Class SQLite
         End Select
     End Function
 
-    Public Sub FolderExist(path As String)
+    Public Sub FolderExist(path As String) Implements IDatabase.FolderExist
         If Not Directory.Exists(path) Then
             Directory.CreateDirectory(path)
         End If
     End Sub
 
-    Public Sub Close() Implements ISQLite.Close
+    Public Sub Close() Implements IDatabase.Close
         Try
             If _isConnected Then
                 _cmd.Dispose()
@@ -74,7 +74,7 @@ Public Class SQLite
         End Try
     End Sub
 
-    Public Sub ExecNonQuery(cmd As String) Implements ISQLite.ExecNonQuery
+    Public Sub ExecNonQuery(cmd As String) Implements IDatabase.ExecNonQuery
         If _isConnected Then
             _cmd = _con.CreateCommand()
             _cmd.CommandText = cmd
@@ -83,7 +83,7 @@ Public Class SQLite
         End If
     End Sub
 
-    Public Function ExecQuery(cmd As String) As DataTable Implements ISQLite.ExecQuery
+    Public Function ExecQuery(cmd As String) As DataTable Implements IDatabase.ExecQuery
         Dim dt As DataTable = New DataTable()
         If _isConnected Then
             _cmd = _con.CreateCommand()
@@ -95,7 +95,7 @@ Public Class SQLite
         Return dt
     End Function
 
-    Public Function DBSelect(param As String, table As String, where As String) As DataTable Implements ISQLite.DBSelect
+    Public Function DBSelect(param As String, table As String, where As String) As DataTable Implements IDatabase.DBSelect
         Dim dt As DataTable = New DataTable()
         If _isConnected Then
             Dim query As String = ""
@@ -112,7 +112,7 @@ Public Class SQLite
         Return dt
     End Function
 
-    Public Sub DBUpdate(param As String, table As String, where As String) Implements ISQLite.DBUpdate
+    Public Sub DBUpdate(param As String, table As String, where As String) Implements IDatabase.DBUpdate
         If _isConnected Then
             Dim query As String = ""
             query = String.Format("UPDATE {0} SET {1} WHERE {2}", table, param, where)
@@ -120,7 +120,7 @@ Public Class SQLite
         End If
     End Sub
 
-    Public Sub DBInsert(param As String, table As String, values As String) Implements ISQLite.DBInsert
+    Public Sub DBInsert(param As String, table As String, values As String) Implements IDatabase.DBInsert
         If _isConnected Then
             Dim query As String = ""
             query = String.Format("INSERT INTO {0} {1} VALUES {2}", table, param, values)
@@ -129,11 +129,11 @@ Public Class SQLite
 
     End Sub
 
-    Public Function GetDate(_date As Date) As String
+    Public Function GetDate(_date As Date) As String Implements IDatabase.GetDate
         Return String.Format("{0:0000}-{1:00}-{2:00}", _date.Year, _date.Month, _date.Day)
     End Function
 
-    Public Function Open(FileName As String, Type As Data.DbType) As Boolean Implements ISQLite.Open
+    Public Function Open(FileName As String, Type As Data.DbType) As Boolean Implements IDatabase.Open
         _isConnected = False
         Try
             Dim folderPath As String = Path.Combine(_path, GetFolderBase(Type))
