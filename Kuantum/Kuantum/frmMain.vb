@@ -28,6 +28,7 @@
 
     Private Sub ButtonClick(sender As Object, e As EventArgs) Handles btnTDash.Click, btnTRun.Click, btnTReff.Click, btnTManual.Click, btnTLog.Click, btnTConfig.Click, btnTAbout.Click
         Button(sender)
+
     End Sub
 
     Private Sub ButtonEnter(sender As Object, e As EventArgs) Handles btnTDash.MouseEnter, btnTRun.MouseEnter, btnTReff.MouseEnter, btnTManual.MouseEnter, btnTLog.MouseEnter, btnTConfig.MouseEnter, btnTAbout.MouseEnter

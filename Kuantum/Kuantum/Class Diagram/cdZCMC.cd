@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Kuantum.Database">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQAAAAAAAAECIAAAAEIAQRhAAAAEAAAIAAAAIBCAQEA=</HashCode>
+      <FileName>Class\Database\Database.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Kuantum.SQLite">
+    <Position X="9.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAIAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class\Database\SQLite.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Kuantum.IDatabase">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Kuantum.IDatabase.DATATYPE" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Class\Database\IDatabase.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Kuantum.IDatabase.CONTYPE" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Class\Database\IDatabase.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>BQAAAAAAAAEAIAAAAAAAQQgAAAAEAAAAAAAAIBCAQAA=</HashCode>
+      <FileName>Class\Database\IDatabase.vb</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
