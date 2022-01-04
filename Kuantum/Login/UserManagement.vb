@@ -5,7 +5,7 @@ Imports System.Data.SQLite
 Public Class UserManagement
     Implements IUserManagement
     Private _currUser As UserData = Nothing
-    Private _dbUser 'As SQLite
+    Private _dbUser As SQLite
 
     Public Property CurrentUser As UserData
         Get
@@ -36,7 +36,7 @@ Public Class UserManagement
         Return autorized
     End Function
 
-    Public Function GetUserList() As List(Of String)
+    Public Function GetUserList() As List(Of String) Implements IUserManagement.GetUserList
         Dim users As List(Of String) = New List(Of String)()
         Try
             Dim dt As DataTable = New DataTable()
@@ -51,7 +51,7 @@ Public Class UserManagement
 
         Return users
     End Function
-    Public Function ValidateUser(user As UserData) As Boolean
+    Public Function ValidateUser(user As UserData) As Boolean Implements IUserManagement.ValidateUser
         Dim pass As String = ""
         Dim auth As Boolean = False
         With user
@@ -73,11 +73,11 @@ Public Class UserManagement
         End With
     End Function
 
-    Public Sub ClearUser()
+    Public Sub ClearUser() Implements IUserManagement.ClearUser
         _currUser = Nothing
     End Sub
 
-    Public Function Open() As Boolean
+    Public Function Open() As Boolean Implements IUserManagement.Open
         'Try
         '    _dbUser = New SQLite(Application.StartupPath)
         '    Return _dbUser.Open("User", SQLite.DBTYPE.CONFIG)
@@ -85,7 +85,7 @@ Public Class UserManagement
         '    Return False
         'End Try
     End Function
-    Public Sub Close()
+    Public Sub Close() Implements IUserManagement.Close
         If _dbUser.IsConnected Then
             _dbUser.Close()
         End If
