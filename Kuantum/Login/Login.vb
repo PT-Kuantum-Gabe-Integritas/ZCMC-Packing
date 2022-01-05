@@ -1,4 +1,4 @@
-﻿Public Class login
+﻿Public Class frm_Login
 
     Private Sub TableLayoutPanel1_Paint(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel1.Paint
         cb_role.Text = "- Select Role -"

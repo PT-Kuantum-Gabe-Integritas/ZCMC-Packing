@@ -5,7 +5,7 @@ Imports System.Data.SQLite
 Public Class UserManagement
     Implements IUserManagement
     Private _currUser As UserData = Nothing
-    Private _dbUser As SQLite
+    Private _dbUser 'As 'SQLite
 
     Public Property CurrentUser As UserData
         Get
@@ -71,6 +71,9 @@ Public Class UserManagement
             End If
             Return .Logged
         End With
+    End Function
+    Function AddUser() Implements IUserManagement.AddUser
+
     End Function
 
     Public Sub ClearUser() Implements IUserManagement.ClearUser

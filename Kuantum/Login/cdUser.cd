@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Login.UserManagement">
-    <Position X="4.5" Y="1.25" Width="1.5" />
+    <Position X="4" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAABAAAAAIAAIQAAAAAAAAAAAAAAAAgECADAAACAAAA=</HashCode>
-      <FileName>UserManagement.vb</FileName>
+      <HashCode>AAABAAAAAIAAIQAAAAAAAAAAAAAAAAgkCADAAACAAAA=</HashCode>
+      <FileName>Class\UserManagement.vb</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Interface Name="Login.IUserManagement">
     <Position X="2" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAgECABAAACAAAA=</HashCode>
-      <FileName>IUserManagement.vb</FileName>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAgkCABAAACAAAA=</HashCode>
+      <FileName>Interface\IUserManagement.vb</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />
