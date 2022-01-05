@@ -109,6 +109,36 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\frmConfig.Designer.vb">
+      <DependentUpon>frmConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmConfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmHome.Designer.vb">
+      <DependentUpon>frmHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmManual.Designer.vb">
+      <DependentUpon>frmManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmReference.Designer.vb">
+      <DependentUpon>frmReference.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmReference.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRun.Designer.vb">
+      <DependentUpon>frmRun.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRun.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frmSplash.Designer.vb">
       <DependentUpon>frmSplash.vb</DependentUpon>
     </Compile>
@@ -122,7 +152,7 @@
       <DependentUpon>frmMain.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\Main.vb" />
+    <Compile Include="Modules\Form.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -140,6 +170,21 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\frmConfig.resx">
+      <DependentUpon>frmConfig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmHome.resx">
+      <DependentUpon>frmHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmManual.resx">
+      <DependentUpon>frmManual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmReference.resx">
+      <DependentUpon>frmReference.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRun.resx">
+      <DependentUpon>frmRun.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmSplash.resx">
       <DependentUpon>frmSplash.vb</DependentUpon>
     </EmbeddedResource>
