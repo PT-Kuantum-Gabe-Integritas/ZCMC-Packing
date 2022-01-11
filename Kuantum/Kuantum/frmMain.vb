@@ -191,6 +191,8 @@
                 _frmLog.Show()
                 lbMenu.Text = "Production Log"
 
+            Case TAB.LOGIN
+
 
         End Select
     End Sub
