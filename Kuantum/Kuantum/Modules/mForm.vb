@@ -1,5 +1,5 @@
 ﻿
-Module Form
+Module mForm
     Public _frmHome As frmHome = New frmHome()
     Public _frmMain As frmMain = New frmMain()
     Public _frmSplash As frmSplash = New frmSplash()

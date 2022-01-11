@@ -1,4 +1,4 @@
-﻿Imports Database
+﻿'Imports Database
 Imports System.Threading
 Imports System.IO
 Imports System.Data.SQLite
@@ -28,9 +28,11 @@ Public Class Database
     Public Property UID As Integer Implements IDatabase.UID
 
 
+
     Enum DATATYPE
         CONFIG
         USER
+        PRODUCT
     End Enum
 
     Public Property BasePath As String Implements IDatabase.BasePath

@@ -1,8 +1,6 @@
 ﻿Imports System.IO
 Imports System.Data.SQLite
 Imports System.Threading
-Imports Database.DBManager
-Imports Database
 
 Public Class SQLite
     Inherits Database
