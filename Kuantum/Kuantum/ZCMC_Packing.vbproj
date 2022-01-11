@@ -51,7 +51,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CS">
-      <HintPath>D:\Magang\Library\CS\bin\Debug\CS.dll</HintPath>
+      <HintPath>..\..\..\..\..\06. Pokapick Maximo\Library\CS\bin\Debug\CS.dll</HintPath>
     </Reference>
     <Reference Include="EasyModbus, Version=5.6.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -139,6 +139,12 @@
     <Compile Include="Forms\frmLog.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frmManual.Designer.vb">
       <DependentUpon>frmManual.vb</DependentUpon>
     </Compile>
@@ -161,12 +167,6 @@
       <DependentUpon>frmSplash.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmSplash.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmLogin.Designer.vb">
-      <DependentUpon>frmLogin.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frmLogin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMain.vb">
@@ -204,6 +204,9 @@
     <EmbeddedResource Include="Forms\frmLog.resx">
       <DependentUpon>frmLog.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmManual.resx">
       <DependentUpon>frmManual.vb</DependentUpon>
     </EmbeddedResource>
@@ -215,9 +218,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmSplash.resx">
       <DependentUpon>frmSplash.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmLogin.resx">
-      <DependentUpon>frmLogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>
