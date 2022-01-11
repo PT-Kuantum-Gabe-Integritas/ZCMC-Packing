@@ -24,26 +24,26 @@ Partial Class frmReference
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmReference))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnAdd = New System.Windows.Forms.Button()
+        Me.btnSave = New System.Windows.Forms.Button()
+        Me.txtBitmap = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.txtArt = New System.Windows.Forms.TextBox()
+        Me.txtGroup = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txtReff = New System.Windows.Forms.TextBox()
+        Me.txtInd = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.btnReset = New System.Windows.Forms.Button()
+        Me.btnSearch = New System.Windows.Forms.Button()
         Me.cbReff = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.cbArt = New System.Windows.Forms.ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.txtArt = New System.Windows.Forms.TextBox()
-        Me.txtReff = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.txtInd = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.txtGroup = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.txtBitmap = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.btnSearch = New System.Windows.Forms.Button()
-        Me.btnSave = New System.Windows.Forms.Button()
-        Me.btnAdd = New System.Windows.Forms.Button()
-        Me.btnReset = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -69,6 +69,127 @@ Partial Class frmReference
         Me.Panel1.Size = New System.Drawing.Size(244, 600)
         Me.Panel1.TabIndex = 0
         '
+        'btnAdd
+        '
+        Me.btnAdd.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAdd.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.btnAdd.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.btnAdd.Location = New System.Drawing.Point(37, 339)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.Size = New System.Drawing.Size(167, 42)
+        Me.btnAdd.TabIndex = 32
+        Me.btnAdd.Text = "Add New"
+        Me.btnAdd.UseVisualStyleBackColor = False
+        '
+        'btnSave
+        '
+        Me.btnSave.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSave.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.btnSave.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.btnSave.Location = New System.Drawing.Point(37, 291)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(167, 42)
+        Me.btnSave.TabIndex = 3
+        Me.btnSave.Text = "Save"
+        Me.btnSave.UseVisualStyleBackColor = False
+        '
+        'txtBitmap
+        '
+        Me.txtBitmap.Location = New System.Drawing.Point(3, 238)
+        Me.txtBitmap.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
+        Me.txtBitmap.Name = "txtBitmap"
+        Me.txtBitmap.Size = New System.Drawing.Size(238, 20)
+        Me.txtBitmap.TabIndex = 30
+        '
+        'Label6
+        '
+        Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.Label6.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(3, 46)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(238, 20)
+        Me.Label6.TabIndex = 21
+        Me.Label6.Text = "Art Number"
+        '
+        'Label9
+        '
+        Me.Label9.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.Label9.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.Label9.ForeColor = System.Drawing.Color.White
+        Me.Label9.Location = New System.Drawing.Point(3, 218)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(238, 20)
+        Me.Label9.TabIndex = 29
+        Me.Label9.Text = "Bitmap"
+        '
+        'txtArt
+        '
+        Me.txtArt.Location = New System.Drawing.Point(3, 66)
+        Me.txtArt.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
+        Me.txtArt.Name = "txtArt"
+        Me.txtArt.Size = New System.Drawing.Size(238, 20)
+        Me.txtArt.TabIndex = 22
+        '
+        'txtGroup
+        '
+        Me.txtGroup.Location = New System.Drawing.Point(3, 195)
+        Me.txtGroup.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
+        Me.txtGroup.Name = "txtGroup"
+        Me.txtGroup.Size = New System.Drawing.Size(238, 20)
+        Me.txtGroup.TabIndex = 28
+        '
+        'Label5
+        '
+        Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.Label5.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(3, 89)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(238, 20)
+        Me.Label5.TabIndex = 23
+        Me.Label5.Text = "Reference"
+        '
+        'Label8
+        '
+        Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.Label8.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.Label8.ForeColor = System.Drawing.Color.White
+        Me.Label8.Location = New System.Drawing.Point(3, 175)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(238, 20)
+        Me.Label8.TabIndex = 27
+        Me.Label8.Text = "Qty Group"
+        '
+        'txtReff
+        '
+        Me.txtReff.Location = New System.Drawing.Point(3, 109)
+        Me.txtReff.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
+        Me.txtReff.Name = "txtReff"
+        Me.txtReff.Size = New System.Drawing.Size(238, 20)
+        Me.txtReff.TabIndex = 24
+        '
+        'txtInd
+        '
+        Me.txtInd.Location = New System.Drawing.Point(3, 152)
+        Me.txtInd.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
+        Me.txtInd.Name = "txtInd"
+        Me.txtInd.Size = New System.Drawing.Size(238, 20)
+        Me.txtInd.TabIndex = 26
+        '
+        'Label7
+        '
+        Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.Label7.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(3, 132)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(238, 20)
+        Me.Label7.TabIndex = 25
+        Me.Label7.Text = "Qty Individual"
+        '
         'Panel2
         '
         Me.Panel2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -83,6 +204,34 @@ Partial Class frmReference
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1063, 58)
         Me.Panel2.TabIndex = 1
+        '
+        'btnReset
+        '
+        Me.btnReset.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnReset.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.btnReset.Image = CType(resources.GetObject("btnReset.Image"), System.Drawing.Image)
+        Me.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnReset.Location = New System.Drawing.Point(654, 23)
+        Me.btnReset.Name = "btnReset"
+        Me.btnReset.Size = New System.Drawing.Size(35, 35)
+        Me.btnReset.TabIndex = 12
+        Me.btnReset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnReset.UseVisualStyleBackColor = False
+        '
+        'btnSearch
+        '
+        Me.btnSearch.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSearch.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.btnSearch.Image = CType(resources.GetObject("btnSearch.Image"), System.Drawing.Image)
+        Me.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnSearch.Location = New System.Drawing.Point(613, 23)
+        Me.btnSearch.Name = "btnSearch"
+        Me.btnSearch.Size = New System.Drawing.Size(35, 35)
+        Me.btnSearch.TabIndex = 11
+        Me.btnSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnSearch.UseVisualStyleBackColor = False
         '
         'cbReff
         '
@@ -137,155 +286,6 @@ Partial Class frmReference
         Me.DataGridView1.Size = New System.Drawing.Size(1063, 512)
         Me.DataGridView1.TabIndex = 2
         '
-        'Label6
-        '
-        Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.Label6.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(3, 46)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(238, 20)
-        Me.Label6.TabIndex = 21
-        Me.Label6.Text = "Art Number"
-        '
-        'txtArt
-        '
-        Me.txtArt.Location = New System.Drawing.Point(3, 66)
-        Me.txtArt.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
-        Me.txtArt.Name = "txtArt"
-        Me.txtArt.Size = New System.Drawing.Size(238, 20)
-        Me.txtArt.TabIndex = 22
-        '
-        'txtReff
-        '
-        Me.txtReff.Location = New System.Drawing.Point(3, 109)
-        Me.txtReff.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
-        Me.txtReff.Name = "txtReff"
-        Me.txtReff.Size = New System.Drawing.Size(238, 20)
-        Me.txtReff.TabIndex = 24
-        '
-        'Label5
-        '
-        Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.Label5.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(3, 89)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(238, 20)
-        Me.Label5.TabIndex = 23
-        Me.Label5.Text = "Reference"
-        '
-        'txtInd
-        '
-        Me.txtInd.Location = New System.Drawing.Point(3, 152)
-        Me.txtInd.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
-        Me.txtInd.Name = "txtInd"
-        Me.txtInd.Size = New System.Drawing.Size(238, 20)
-        Me.txtInd.TabIndex = 26
-        '
-        'Label7
-        '
-        Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.Label7.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(3, 132)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(238, 20)
-        Me.Label7.TabIndex = 25
-        Me.Label7.Text = "Qty Individual"
-        '
-        'txtGroup
-        '
-        Me.txtGroup.Location = New System.Drawing.Point(3, 195)
-        Me.txtGroup.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
-        Me.txtGroup.Name = "txtGroup"
-        Me.txtGroup.Size = New System.Drawing.Size(238, 20)
-        Me.txtGroup.TabIndex = 28
-        '
-        'Label8
-        '
-        Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.Label8.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(3, 175)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(238, 20)
-        Me.Label8.TabIndex = 27
-        Me.Label8.Text = "Qty Group"
-        '
-        'txtBitmap
-        '
-        Me.txtBitmap.Location = New System.Drawing.Point(3, 238)
-        Me.txtBitmap.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
-        Me.txtBitmap.Name = "txtBitmap"
-        Me.txtBitmap.Size = New System.Drawing.Size(238, 20)
-        Me.txtBitmap.TabIndex = 30
-        '
-        'Label9
-        '
-        Me.Label9.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.Label9.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(3, 218)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(238, 20)
-        Me.Label9.TabIndex = 29
-        Me.Label9.Text = "Bitmap"
-        '
-        'btnSearch
-        '
-        Me.btnSearch.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSearch.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.btnSearch.Image = CType(resources.GetObject("btnSearch.Image"), System.Drawing.Image)
-        Me.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnSearch.Location = New System.Drawing.Point(613, 23)
-        Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(35, 35)
-        Me.btnSearch.TabIndex = 11
-        Me.btnSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnSearch.UseVisualStyleBackColor = False
-        '
-        'btnSave
-        '
-        Me.btnSave.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSave.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.btnSave.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.btnSave.Location = New System.Drawing.Point(37, 291)
-        Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(167, 42)
-        Me.btnSave.TabIndex = 3
-        Me.btnSave.Text = "Save"
-        Me.btnSave.UseVisualStyleBackColor = False
-        '
-        'btnAdd
-        '
-        Me.btnAdd.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAdd.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.btnAdd.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.btnAdd.Location = New System.Drawing.Point(37, 339)
-        Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(167, 42)
-        Me.btnAdd.TabIndex = 32
-        Me.btnAdd.Text = "Add New"
-        Me.btnAdd.UseVisualStyleBackColor = False
-        '
-        'btnReset
-        '
-        Me.btnReset.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnReset.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.btnReset.Image = CType(resources.GetObject("btnReset.Image"), System.Drawing.Image)
-        Me.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnReset.Location = New System.Drawing.Point(654, 23)
-        Me.btnReset.Name = "btnReset"
-        Me.btnReset.Size = New System.Drawing.Size(35, 35)
-        Me.btnReset.TabIndex = 12
-        Me.btnReset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnReset.UseVisualStyleBackColor = False
-        '
         'frmReference
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -297,7 +297,7 @@ Partial Class frmReference
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmReference"
-        Me.Text = "frmReference"
+        Me.Text = "gfe"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)

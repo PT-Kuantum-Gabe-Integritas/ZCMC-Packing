@@ -200,7 +200,7 @@ Partial Class frmHome
         Me.pbInd.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.pbInd.BackColor = System.Drawing.Color.Gainsboro
+        Me.pbInd.BackColor = System.Drawing.Color.WhiteSmoke
         Me.pbInd.Location = New System.Drawing.Point(0, 123)
         Me.pbInd.Margin = New System.Windows.Forms.Padding(0)
         Me.pbInd.Name = "pbInd"
@@ -223,10 +223,10 @@ Partial Class frmHome
         '
         'lblQtyInd
         '
-        Me.lblQtyInd.BackColor = System.Drawing.Color.Black
+        Me.lblQtyInd.BackColor = System.Drawing.Color.Gainsboro
         Me.lblQtyInd.Dock = System.Windows.Forms.DockStyle.Top
         Me.lblQtyInd.Font = New System.Drawing.Font("Nirmala UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblQtyInd.ForeColor = System.Drawing.Color.Lime
+        Me.lblQtyInd.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
         Me.lblQtyInd.Location = New System.Drawing.Point(0, 57)
         Me.lblQtyInd.Margin = New System.Windows.Forms.Padding(3, 0, 0, 0)
         Me.lblQtyInd.Name = "lblQtyInd"
@@ -237,17 +237,17 @@ Partial Class frmHome
         '
         'Label14
         '
-        Me.Label14.BackColor = System.Drawing.Color.Black
+        Me.Label14.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
         Me.Label14.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label14.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.ForeColor = System.Drawing.Color.Lime
+        Me.Label14.ForeColor = System.Drawing.Color.White
         Me.Label14.Location = New System.Drawing.Point(0, 37)
         Me.Label14.Margin = New System.Windows.Forms.Padding(3, 0, 0, 0)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(319, 20)
         Me.Label14.TabIndex = 17
         Me.Label14.Text = "Qty"
-        Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label15
         '
@@ -268,7 +268,7 @@ Partial Class frmHome
         Me.pbGroup.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.pbGroup.BackColor = System.Drawing.Color.Gainsboro
+        Me.pbGroup.BackColor = System.Drawing.Color.WhiteSmoke
         Me.pbGroup.Location = New System.Drawing.Point(0, 123)
         Me.pbGroup.Margin = New System.Windows.Forms.Padding(0)
         Me.pbGroup.Name = "pbGroup"
@@ -291,10 +291,10 @@ Partial Class frmHome
         '
         'lblQtyGroup
         '
-        Me.lblQtyGroup.BackColor = System.Drawing.Color.Black
+        Me.lblQtyGroup.BackColor = System.Drawing.Color.Gainsboro
         Me.lblQtyGroup.Dock = System.Windows.Forms.DockStyle.Top
         Me.lblQtyGroup.Font = New System.Drawing.Font("Nirmala UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblQtyGroup.ForeColor = System.Drawing.Color.Lime
+        Me.lblQtyGroup.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
         Me.lblQtyGroup.Location = New System.Drawing.Point(0, 57)
         Me.lblQtyGroup.Margin = New System.Windows.Forms.Padding(3, 0, 0, 0)
         Me.lblQtyGroup.Name = "lblQtyGroup"
@@ -305,17 +305,17 @@ Partial Class frmHome
         '
         'Label6
         '
-        Me.Label6.BackColor = System.Drawing.Color.Black
+        Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
         Me.Label6.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label6.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.Lime
+        Me.Label6.ForeColor = System.Drawing.Color.White
         Me.Label6.Location = New System.Drawing.Point(0, 37)
         Me.Label6.Margin = New System.Windows.Forms.Padding(3, 0, 0, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(338, 20)
         Me.Label6.TabIndex = 17
         Me.Label6.Text = "Qty"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label7
         '
@@ -349,7 +349,7 @@ Partial Class frmHome
         Me.pbPI.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.pbPI.BackColor = System.Drawing.Color.Gainsboro
+        Me.pbPI.BackColor = System.Drawing.Color.WhiteSmoke
         Me.pbPI.Location = New System.Drawing.Point(0, 60)
         Me.pbPI.Margin = New System.Windows.Forms.Padding(0)
         Me.pbPI.Name = "pbPI"

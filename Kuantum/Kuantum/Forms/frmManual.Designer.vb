@@ -24,8 +24,8 @@ Partial Class frmManual
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.btn_group = New System.Windows.Forms.Button()
-        Me.btn_ind = New System.Windows.Forms.Button()
+        Me.btnGroup = New System.Windows.Forms.Button()
+        Me.btnInd = New System.Windows.Forms.Button()
         Me.cb_reff = New System.Windows.Forms.ComboBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
@@ -51,33 +51,33 @@ Partial Class frmManual
         Me.Label1.TabIndex = 15
         Me.Label1.Text = "Reference"
         '
-        'btn_group
+        'btnGroup
         '
-        Me.btn_group.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btn_group.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btn_group.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_group.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_group.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.btn_group.Location = New System.Drawing.Point(385, 332)
-        Me.btn_group.Name = "btn_group"
-        Me.btn_group.Size = New System.Drawing.Size(350, 51)
-        Me.btn_group.TabIndex = 14
-        Me.btn_group.Text = "Print Group"
-        Me.btn_group.UseVisualStyleBackColor = False
+        Me.btnGroup.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnGroup.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btnGroup.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnGroup.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGroup.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.btnGroup.Location = New System.Drawing.Point(385, 332)
+        Me.btnGroup.Name = "btnGroup"
+        Me.btnGroup.Size = New System.Drawing.Size(350, 51)
+        Me.btnGroup.TabIndex = 14
+        Me.btnGroup.Text = "Print Group"
+        Me.btnGroup.UseVisualStyleBackColor = False
         '
-        'btn_ind
+        'btnInd
         '
-        Me.btn_ind.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btn_ind.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btn_ind.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_ind.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_ind.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.btn_ind.Location = New System.Drawing.Point(385, 270)
-        Me.btn_ind.Name = "btn_ind"
-        Me.btn_ind.Size = New System.Drawing.Size(350, 51)
-        Me.btn_ind.TabIndex = 13
-        Me.btn_ind.Text = "Print Individual"
-        Me.btn_ind.UseVisualStyleBackColor = False
+        Me.btnInd.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnInd.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btnInd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnInd.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnInd.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.btnInd.Location = New System.Drawing.Point(385, 270)
+        Me.btnInd.Name = "btnInd"
+        Me.btnInd.Size = New System.Drawing.Size(350, 51)
+        Me.btnInd.TabIndex = 13
+        Me.btnInd.Text = "Print Individual"
+        Me.btnInd.UseVisualStyleBackColor = False
         '
         'cb_reff
         '
@@ -85,7 +85,6 @@ Partial Class frmManual
         Me.cb_reff.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cb_reff.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cb_reff.FormattingEnabled = True
-        Me.cb_reff.Items.AddRange(New Object() {"XVBC07", "XVBC21"})
         Me.cb_reff.Location = New System.Drawing.Point(38, 285)
         Me.cb_reff.Name = "cb_reff"
         Me.cb_reff.Size = New System.Drawing.Size(302, 37)
@@ -102,8 +101,8 @@ Partial Class frmManual
         'Panel3
         '
         Me.Panel3.Controls.Add(Me.Label1)
-        Me.Panel3.Controls.Add(Me.btn_group)
-        Me.Panel3.Controls.Add(Me.btn_ind)
+        Me.Panel3.Controls.Add(Me.btnGroup)
+        Me.Panel3.Controls.Add(Me.btnInd)
         Me.Panel3.Controls.Add(Me.cb_reff)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(274, 0)
@@ -130,8 +129,8 @@ Partial Class frmManual
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label1 As Label
-    Friend WithEvents btn_group As Button
-    Friend WithEvents btn_ind As Button
+    Friend WithEvents btnGroup As Button
+    Friend WithEvents btnInd As Button
     Friend WithEvents cb_reff As ComboBox
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel3 As Panel

@@ -9,6 +9,7 @@
         MANUAL
         REFERENCE
         LOG
+        LOGIN
         ABOUT
     End Enum
 
@@ -55,8 +56,9 @@
     End Sub
 
     Public Sub LoadPanel(_tab As ToolStripButton)
+        System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = False
         If Me.InvokeRequired Then
-            Me.Invoke(Sub() LoadPanel(_tab))
+            Me.Invoke(Sub() LoadPanel(_tab.Tag))
         End If
 
         Select Case _tab.Tag
@@ -67,6 +69,7 @@
                 mainPanel.Controls.Clear()
                 mainPanel.Controls.Add(_frmHome)
                 _frmHome.Show()
+                lbMenu.Text = "Dashboard"
 
             Case "Configuration"
                 'Code
@@ -76,6 +79,7 @@
                 mainPanel.Controls.Clear()
                 mainPanel.Controls.Add(_frmConfig)
                 _frmConfig.Show()
+                lbMenu.Text = "Configuration"
 
             Case "Product Selection"
                 'Code
@@ -85,6 +89,7 @@
                 mainPanel.Controls.Clear()
                 mainPanel.Controls.Add(_frmRun)
                 _frmRun.Show()
+                lbMenu.Text = "Product Selection"
 
             Case "Manual Test"
                 'Code
@@ -94,6 +99,7 @@
                 mainPanel.Controls.Clear()
                 mainPanel.Controls.Add(_frmManual)
                 _frmManual.Show()
+                lbMenu.Text = "Manual Run"
 
             Case "Data Reference"
                 'Code
@@ -103,9 +109,87 @@
                 mainPanel.Controls.Clear()
                 mainPanel.Controls.Add(_frmReference)
                 _frmReference.Show()
+                lbMenu.Text = "Product Database"
+
+            Case "Data Log"
+                'Code
+                _frmLog.TopLevel = False
+                _frmLog.TopMost = True
+                _frmLog.Dock = DockStyle.Fill
+                mainPanel.Controls.Clear()
+                mainPanel.Controls.Add(_frmLog)
+                _frmLog.Show()
+                lbMenu.Text = "Production Log"
 
 
+        End Select
+    End Sub
 
+    Public Sub LoadPanel(_tab As TAB)
+        ' System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = False
+        If Me.InvokeRequired Then
+            Me.Invoke(Sub() LoadPanel(_tab))
+        End If
+
+        Select Case _tab
+            Case TAB.DASHBOARD
+                _frmHome.TopLevel = False
+                _frmHome.TopMost = True
+                _frmHome.Dock = DockStyle.Fill
+                mainPanel.Controls.Clear()
+                mainPanel.Controls.Add(_frmHome)
+                _frmHome.Show()
+                lbMenu.Text = "Dashboard"
+
+            Case TAB.CONFIG
+                'Code
+                _frmConfig.TopLevel = False
+                _frmConfig.TopMost = True
+                _frmConfig.Dock = DockStyle.Fill
+                mainPanel.Controls.Clear()
+                mainPanel.Controls.Add(_frmConfig)
+                _frmConfig.Show()
+                lbMenu.Text = "Configuration"
+
+            Case TAB.RUN
+                'Code
+                _frmRun.TopLevel = False
+                _frmRun.TopMost = True
+                _frmRun.Dock = DockStyle.Fill
+                mainPanel.Controls.Clear()
+                mainPanel.Controls.Add(_frmRun)
+                _frmRun.Show()
+                lbMenu.Text = "Product Selection"
+
+            Case TAB.MANUAL
+                'Code
+                _frmManual.TopLevel = False
+                _frmManual.TopMost = True
+                _frmManual.Dock = DockStyle.Fill
+                mainPanel.Controls.Clear()
+                mainPanel.Controls.Add(_frmManual)
+                _frmManual.Show()
+                lbMenu.Text = "Manual Run"
+
+            Case TAB.REFERENCE
+                'Code
+                _frmReference.TopLevel = False
+                _frmReference.TopMost = True
+                _frmReference.Dock = DockStyle.Fill
+                mainPanel.Controls.Clear()
+                mainPanel.Controls.Add(_frmReference)
+                _frmReference.Show()
+                lbMenu.Text = "Product Database"
+
+            Case TAB.LOG
+                'Code
+                _frmLog.TopLevel = False
+                _frmLog.TopMost = True
+                _frmLog.Dock = DockStyle.Fill
+                mainPanel.Controls.Clear()
+                mainPanel.Controls.Add(_frmLog)
+                _frmLog.Show()
+                lbMenu.Text = "Production Log"
 
 
         End Select
@@ -113,5 +197,9 @@
 
     Private Sub ToolStrip1_Leave(sender As Object, e As EventArgs) Handles ToolStrip1.Leave
 
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) 
+        LoadPanel(TAB.REFERENCE)
     End Sub
 End Class
