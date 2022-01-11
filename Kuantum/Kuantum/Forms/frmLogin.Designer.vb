@@ -66,8 +66,8 @@ Partial Class frm_Login
         'lb_info
         '
         Me.lb_info.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lb_info.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lb_info.ForeColor = System.Drawing.Color.Green
+        Me.lb_info.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.lb_info.ForeColor = System.Drawing.Color.White
         Me.lb_info.Location = New System.Drawing.Point(3, 39)
         Me.lb_info.Name = "lb_info"
         Me.lb_info.Size = New System.Drawing.Size(518, 39)
@@ -77,7 +77,7 @@ Partial Class frm_Login
         '
         'btn_login
         '
-        Me.btn_login.BackColor = System.Drawing.Color.Green
+        Me.btn_login.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
         Me.btn_login.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btn_login.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_login.ForeColor = System.Drawing.Color.White
@@ -101,6 +101,7 @@ Partial Class frm_Login
         '
         'TableLayoutPanel1
         '
+        Me.TableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.TableLayoutPanel1.ColumnCount = 3
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.0!))
