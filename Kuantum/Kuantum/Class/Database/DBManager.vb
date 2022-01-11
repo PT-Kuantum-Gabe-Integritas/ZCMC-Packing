@@ -3,6 +3,12 @@
 Public Class DBManager
     Implements IDBManager
 
+    Public ProductDB As Access = New Access()
+    Public ProductionDB As SQLite = New SQLite()
+    Public UserDB As SQLite = New SQLite()
+    Public ConfigDB As SQLite = New SQLite()
+
+
     Public DBList As List(Of IDatabase) = New List(Of IDatabase)()
     Private dbL
     Public Property DBTYPE As String
@@ -16,6 +22,15 @@ Public Class DBManager
     End Sub
 
     Public Sub New()
+
+    End Sub
+
+
+    Public Sub Connection()
+        ProductDB = DatabaseList.GetDataBase("Product", "PO1", 1, Database.DATATYPE.PRODUCT)
+        ProductionDB = DatabaseList.GetDataBase("Production", "PN1", 0, Database.DATATYPE.PRODUCT)
+        UserDB = DatabaseList.GetDataBase("User", "UO1", 0, Database.DATATYPE.USER)
+        ConfigDB = DatabaseList.GetDataBase("Config", "CO1", 0, Database.DATATYPE.CONFIG)
 
     End Sub
 

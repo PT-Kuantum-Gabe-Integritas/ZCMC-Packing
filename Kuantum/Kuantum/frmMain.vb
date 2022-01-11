@@ -1,4 +1,5 @@
-﻿Public Class frmMain
+﻿Imports WindowsApplication1
+Public Class frmMain
     Private last_btn As ToolStripButton
 
 
@@ -50,9 +51,10 @@
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = False
 
-        _frmMain = Me
+        '_frmMain = Me
         Hide()
         Main_Setup()
+
     End Sub
 
     Public Sub LoadPanel(_tab As ToolStripButton)
@@ -88,6 +90,7 @@
                 _frmRun.Dock = DockStyle.Fill
                 mainPanel.Controls.Clear()
                 mainPanel.Controls.Add(_frmRun)
+
                 _frmRun.Show()
                 lbMenu.Text = "Product Selection"
 
@@ -96,6 +99,8 @@
                 _frmManual.TopLevel = False
                 _frmManual.TopMost = True
                 _frmManual.Dock = DockStyle.Fill
+                Dim asd As Form1 = New Form1()
+                asd.TopLevel = False
                 mainPanel.Controls.Clear()
                 mainPanel.Controls.Add(_frmManual)
                 _frmManual.Show()
@@ -208,7 +213,7 @@
 
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) 
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
         LoadPanel(TAB.REFERENCE)
     End Sub
 End Class

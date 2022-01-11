@@ -117,6 +117,9 @@
   <ItemGroup>
     <Compile Include="Class\Database\Access.vb" />
     <Compile Include="Class\Database\Database.vb" />
+    <Compile Include="IInitialization.vb" />
+    <Compile Include="Initialization.vb" />
+    <Compile Include="IProduction.vb" />
     <Compile Include="Modules\mDatabase.vb" />
     <Compile Include="Class\Database\DBManager.vb" />
     <Compile Include="Class\Database\SQLite.vb" />
@@ -201,6 +204,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Production.vb" />
+    <Compile Include="TestItem.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Forms\frmConfig.resx">
