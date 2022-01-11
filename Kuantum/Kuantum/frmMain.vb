@@ -47,12 +47,12 @@
 
     End Sub
 
-    Private Sub ButtonLeave(sender As Object, e As EventArgs) Handles btnDash.MouseLeave, btnRun.MouseLeave, btnManual.MouseLeave, btnLog.MouseLeave, btnConfig.MouseLeave, btnAbout.MouseLeave, btnReff.MouseLeave
-        'btnHide(sender)
-    End Sub
-
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = False
+
+        _frmMain = Me
+        Hide()
+        Main_Setup()
     End Sub
 
     Public Sub LoadPanel(_tab As ToolStripButton)
@@ -192,7 +192,14 @@
                 lbMenu.Text = "Production Log"
 
             Case TAB.LOGIN
-
+                'Code
+                _frmLogin.TopLevel = False
+                _frmLogin.TopMost = True
+                _frmLogin.Dock = DockStyle.Fill
+                mainPanel.Controls.Clear()
+                mainPanel.Controls.Add(_frmLogin)
+                _frmLogin.Show()
+                lbMenu.Text = "User Login"
 
         End Select
     End Sub

@@ -8,7 +8,7 @@ Module mForm
     Public _frmReference As frmReference = New frmReference()
     Public _frmManual As frmManual = New frmManual()
     Public _frmLog As frmLog = New frmLog()
-    'Public _frmLogin As f
+    Public _frmLogin As frmLogin = New frmLogin()
 
 
 

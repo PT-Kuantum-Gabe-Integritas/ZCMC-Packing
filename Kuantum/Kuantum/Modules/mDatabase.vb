@@ -1,5 +1,4 @@
 ﻿Module mDatabase
-    Dim a As DBManager = New DBManager()
-
+    Public DatabaseList As DBManager = New DBManager()
 
 End Module

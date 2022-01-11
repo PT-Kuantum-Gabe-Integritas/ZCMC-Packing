@@ -137,6 +137,11 @@ Kuantum
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Kuantum.My.Resources.Resources.Schneider_Electric_Logo_wine">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Kuantum.My.Resources.Resources.server">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -163,6 +168,16 @@ Kuantum
 </summary>
 </member>
 <member name="P:Kuantum.My.Resources.Resources.user__2_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Kuantum.My.Resources.Resources.ZCMC">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Kuantum.My.Resources.Resources.ZCMC_removebg_preview">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

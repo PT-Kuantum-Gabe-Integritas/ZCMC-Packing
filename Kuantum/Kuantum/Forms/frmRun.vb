@@ -1,6 +1,8 @@
 ﻿Imports System.Threading
 Public Class frmRun
 
+    Private dbSelect As SQLite = New SQLite()
+
     Public Enum SEQ
         PO
         REFF
@@ -20,6 +22,8 @@ Public Class frmRun
 
     Private Sub frmRun_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         txtScan.Focus()
+
+        dbSelect = DatabaseList.GetDataBase("Production", "PN01", 0, Database.DATATYPE.PRODUCT)
     End Sub
 
     Private Sub txtScan_KeyDown(sender As Object, e As KeyEventArgs) Handles txtScan.KeyDown
