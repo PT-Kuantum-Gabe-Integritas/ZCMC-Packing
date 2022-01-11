@@ -117,7 +117,8 @@
   <ItemGroup>
     <Compile Include="Class\Database\Access.vb" />
     <Compile Include="Class\Database\Database.vb" />
-    <Compile Include="Modules\DBMain.vb" />
+    <Compile Include="Class\Mains\Mains.vb" />
+    <Compile Include="Modules\mDatabase.vb" />
     <Compile Include="Class\Database\DBManager.vb" />
     <Compile Include="Class\Database\SQLite.vb" />
     <Compile Include="Class\Data\Conversion.vb" />
@@ -184,7 +185,7 @@
     <Compile Include="Interface\IDatabase.vb" />
     <Compile Include="Interface\IDBManager.vb" />
     <Compile Include="Interface\IUserManagement.vb" />
-    <Compile Include="Modules\Form.vb" />
+    <Compile Include="Modules\mForm.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -236,8 +237,8 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Class\Diagram\cdDatabase.cd" />
-    <None Include="Class\Diagram\cdUser.cd" />
+    <None Include="Diagram\cdDatabase.cd" />
+    <None Include="Diagram\cdUser.cd" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -307,7 +308,6 @@
     <None Include="Resources\info.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Class\Mains\" />
     <Folder Include="Hardware\" />
   </ItemGroup>
   <ItemGroup>

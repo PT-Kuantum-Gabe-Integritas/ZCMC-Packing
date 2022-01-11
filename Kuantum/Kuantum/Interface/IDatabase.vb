@@ -11,5 +11,5 @@
     Property Filename As String
     Sub Open()
     Sub Close()
-    Property UID As Integer
+    Property UID As String
 End Interface

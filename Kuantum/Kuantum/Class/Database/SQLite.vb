@@ -51,14 +51,23 @@ Public Class SQLite
         Return folderPath
     End Function
 
+
+    Public Sub FolderExist(path As String)
+        If Not Directory.Exists(path) Then
+            Directory.CreateDirectory(path)
+        End If
+    End Sub
+
     Public Overrides Sub Open()
         Dim folderPath As String = Path.Combine(_path, GetFolderBase(_dataType))
         Try
+            FolderExist(folderPath)
             _connectionString = "Data Source =" & IO.Path.Combine(folderPath, _fileName + ".db") & ";Version=3;"
             _con = New SQLiteConnection(_connectionString)
             _cmd = New SQLiteCommand()
             _con.ParseViaFramework = True
             _con.Open()
+
             _isConnected = True
             _conType = 0
         Catch ex As Exception

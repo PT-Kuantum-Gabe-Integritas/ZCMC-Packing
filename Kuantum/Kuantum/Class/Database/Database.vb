@@ -25,7 +25,7 @@ Public Class Database
             value = _fn
         End Set
     End Property
-    Public Property UID As Integer Implements IDatabase.UID
+    Public Property UID As String Implements IDatabase.UID
 
 
 
