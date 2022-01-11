@@ -115,6 +115,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\Database\Access.vb" />
+    <Compile Include="Class\Database\Database.vb" />
+    <Compile Include="Modules\DBMain.vb" />
+    <Compile Include="Class\Database\DBManager.vb" />
+    <Compile Include="Class\Database\SQLite.vb" />
     <Compile Include="Class\Data\Conversion.vb" />
     <Compile Include="Class\Hardware\Codesoft.vb" />
     <Compile Include="Class\Hardware\Modbus.vb" />
@@ -176,6 +181,8 @@
       <DependentUpon>frmMain.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Interface\IDatabase.vb" />
+    <Compile Include="Interface\IDBManager.vb" />
     <Compile Include="Interface\IUserManagement.vb" />
     <Compile Include="Modules\Form.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -229,6 +236,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Class\Diagram\cdDatabase.cd" />
     <None Include="Class\Diagram\cdUser.cd" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -299,7 +307,6 @@
     <None Include="Resources\info.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Class\Database\" />
     <Folder Include="Class\Mains\" />
     <Folder Include="Hardware\" />
   </ItemGroup>

@@ -42,7 +42,6 @@ C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\bin\Debug\MB.dll
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\bin\Debug\MB.pdb
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\bin\Debug\MB.xml
-C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\Kuantum.frm_Login.resources
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\ZCMC_Packing.vbprojResolveAssemblyReference.cache
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\Kuantum.frmConfig.resources
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\Kuantum.frmHome.resources
@@ -56,3 +55,4 @@ C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\Kuantum\Kuantum\obj\Deb
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\Kuantum.Resources.resources
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\ZCMC_Packing.vbproj.GenerateResource.Cache
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\Kuantum.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\Kuantum.frmLogin.resources
