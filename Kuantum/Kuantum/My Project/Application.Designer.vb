@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Kuantum.frm_Login
+            Me.MainForm = Global.Kuantum.frmLogin
         End Sub
     End Class
 End Namespace

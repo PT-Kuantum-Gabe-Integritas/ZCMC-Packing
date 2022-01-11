@@ -51,7 +51,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CS">
-      <HintPath>..\..\..\..\..\06. Pokapick Maximo\Library\CS\bin\Debug\CS.dll</HintPath>
+      <HintPath>D:\Magang\Library\CS\bin\Debug\CS.dll</HintPath>
     </Reference>
     <Reference Include="EasyModbus, Version=5.6.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
