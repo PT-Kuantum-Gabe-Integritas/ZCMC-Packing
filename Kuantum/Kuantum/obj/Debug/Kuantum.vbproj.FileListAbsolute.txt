@@ -1,0 +1,46 @@
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Kuantum Gabe\Kuantum\Kuantum\bin\Debug\Kuantum.exe.config
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Kuantum Gabe\Kuantum\Kuantum\bin\Debug\Kuantum.exe
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Kuantum Gabe\Kuantum\Kuantum\bin\Debug\Kuantum.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Kuantum Gabe\Kuantum\Kuantum\bin\Debug\Kuantum.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Kuantum Gabe\Kuantum\Kuantum\obj\Debug\Kuantum.vbprojResolveAssemblyReference.cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Kuantum Gabe\Kuantum\Kuantum\obj\Debug\Kuantum.Resources.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Kuantum Gabe\Kuantum\Kuantum\obj\Debug\Kuantum.vbproj.GenerateResource.Cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Kuantum Gabe\Kuantum\Kuantum\obj\Debug\Kuantum.exe
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Kuantum Gabe\Kuantum\Kuantum\obj\Debug\Kuantum.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Kuantum Gabe\Kuantum\Kuantum\obj\Debug\Kuantum.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Kuantum Gabe\Kuantum\Kuantum\obj\Debug\Kuantum.frmMain.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Kuantum Gabe\Kuantum\Kuantum\bin\Debug\Guna.UI.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Kuantum Gabe\Kuantum\Kuantum\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Kuantum Gabe\Kuantum\Kuantum\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Kuantum Gabe\Kuantum\Kuantum\obj\Debug\Kuantum.frmSplash.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\Test UI\Test-UI\Kuantum\Kuantum\bin\Debug\Kuantum.exe.config
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\Test UI\Test-UI\Kuantum\Kuantum\obj\Debug\Kuantum.exe
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\Test UI\Test-UI\Kuantum\Kuantum\obj\Debug\Kuantum.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\Test UI\Test-UI\Kuantum\Kuantum\obj\Debug\Kuantum.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\Test UI\Test-UI\Kuantum\Kuantum\bin\Debug\Kuantum.exe
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\Test UI\Test-UI\Kuantum\Kuantum\bin\Debug\Kuantum.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\Test UI\Test-UI\Kuantum\Kuantum\bin\Debug\Kuantum.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\Test UI\Test-UI\Kuantum\Kuantum\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\Test UI\Test-UI\Kuantum\Kuantum\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\Test UI\Test-UI\Kuantum\Kuantum\obj\Debug\Kuantum.vbprojResolveAssemblyReference.cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\Test UI\Test-UI\Kuantum\Kuantum\obj\Debug\Kuantum.frmSplash.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\Test UI\Test-UI\Kuantum\Kuantum\obj\Debug\Kuantum.frmMain.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\Test UI\Test-UI\Kuantum\Kuantum\obj\Debug\Kuantum.Resources.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\Test UI\Test-UI\Kuantum\Kuantum\obj\Debug\Kuantum.vbproj.GenerateResource.Cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\User Interface\Kuantum\Kuantum\bin\Debug\Kuantum.exe.config
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\User Interface\Kuantum\Kuantum\obj\Debug\Kuantum.exe
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\User Interface\Kuantum\Kuantum\obj\Debug\Kuantum.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\User Interface\Kuantum\Kuantum\obj\Debug\Kuantum.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\User Interface\Kuantum\Kuantum\bin\Debug\Kuantum.exe
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\User Interface\Kuantum\Kuantum\bin\Debug\Kuantum.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\User Interface\Kuantum\Kuantum\bin\Debug\Kuantum.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\User Interface\Kuantum\Kuantum\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\User Interface\Kuantum\Kuantum\obj\Debug\Kuantum.vbprojResolveAssemblyReference.cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\User Interface\Kuantum\Kuantum\obj\Debug\Kuantum.frmSplash.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\User Interface\Kuantum\Kuantum\obj\Debug\Kuantum.frmMain.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\User Interface\Kuantum\Kuantum\obj\Debug\Kuantum.Resources.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\User Interface\Kuantum\Kuantum\obj\Debug\Kuantum.vbproj.GenerateResource.Cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC\Kuantum\Kuantum\bin\Debug\Kuantum.exe.config
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC\Kuantum\Kuantum\obj\Debug\Kuantum.exe
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC\Kuantum\Kuantum\obj\Debug\Kuantum.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC\Kuantum\Kuantum\obj\Debug\Kuantum.pdb
