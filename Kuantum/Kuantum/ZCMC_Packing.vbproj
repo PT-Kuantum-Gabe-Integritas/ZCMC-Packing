@@ -50,9 +50,6 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CS">
-      <HintPath>..\..\..\..\..\06. Pokapick Maximo\Library\CS\bin\Debug\CS.dll</HintPath>
-    </Reference>
     <Reference Include="EasyModbus, Version=5.6.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\06. Pokapick Maximo\Pokapick Maximo\Pokapick Maximo\bin\Debug\EasyModbus.dll</HintPath>
@@ -70,9 +67,6 @@
     </Reference>
     <Reference Include="Lppanet">
       <HintPath>..\..\..\..\..\04. Light Saber DNA\ligh saber\Tester and Packing Modif Scann On PC\SCH-DNA SABER\bin\Debug\Lppanet.dll</HintPath>
-    </Reference>
-    <Reference Include="MB">
-      <HintPath>..\..\..\..\..\06. Pokapick Maximo\Library\MB\bin\Debug\MB.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
@@ -115,68 +109,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\Database\Access.vb" />
-    <Compile Include="Class\Database\Database.vb" />
-    <Compile Include="IInitialization.vb" />
-    <Compile Include="Initialization.vb" />
-    <Compile Include="IProduction.vb" />
     <Compile Include="Modules\mDatabase.vb" />
-    <Compile Include="Class\Database\DBManager.vb" />
-    <Compile Include="Class\Database\SQLite.vb" />
-    <Compile Include="Class\Data\Conversion.vb" />
-    <Compile Include="Class\Hardware\Codesoft.vb" />
-    <Compile Include="Class\Hardware\Modbus.vb" />
-    <Compile Include="Class\Data\Variable.vb" />
-    <Compile Include="Class\User\UserData.vb" />
-    <Compile Include="Class\User\UserManagement.vb" />
-    <Compile Include="Forms\frmConfig.Designer.vb">
-      <DependentUpon>frmConfig.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frmConfig.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmHome.Designer.vb">
-      <DependentUpon>frmHome.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frmHome.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmLog.Designer.vb">
-      <DependentUpon>frmLog.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frmLog.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmLogin.Designer.vb">
-      <DependentUpon>frmLogin.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frmLogin.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmManual.Designer.vb">
-      <DependentUpon>frmManual.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frmManual.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmReference.Designer.vb">
-      <DependentUpon>frmReference.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frmReference.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmRun.Designer.vb">
-      <DependentUpon>frmRun.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frmRun.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmSplash.Designer.vb">
-      <DependentUpon>frmSplash.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frmSplash.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frmMain.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -184,9 +117,6 @@
       <DependentUpon>frmMain.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Interface\IDatabase.vb" />
-    <Compile Include="Interface\IDBManager.vb" />
-    <Compile Include="Interface\IUserManagement.vb" />
     <Compile Include="Modules\mForm.vb" />
     <Compile Include="Modules\mMains.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -204,34 +134,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Production.vb" />
-    <Compile Include="TestItem.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Forms\frmConfig.resx">
-      <DependentUpon>frmConfig.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmHome.resx">
-      <DependentUpon>frmHome.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmLog.resx">
-      <DependentUpon>frmLog.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmLogin.resx">
-      <DependentUpon>frmLogin.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmManual.resx">
-      <DependentUpon>frmManual.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmReference.resx">
-      <DependentUpon>frmReference.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmRun.resx">
-      <DependentUpon>frmRun.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmSplash.resx">
-      <DependentUpon>frmSplash.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>
     </EmbeddedResource>
@@ -313,7 +217,10 @@
     <None Include="Resources\info.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Class\" />
+    <Folder Include="Forms\" />
     <Folder Include="Hardware\" />
+    <Folder Include="Interface\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Line.png" />

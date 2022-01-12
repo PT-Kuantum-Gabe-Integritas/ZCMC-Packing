@@ -19,7 +19,6 @@ C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\bin\Debug\Kuantum.pdb
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\bin\Debug\Kuantum.xml
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\ZCMC_Packing.vbprojResolveAssemblyReference.cache
-C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\Kuantum.frmSplash.resources
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\Kuantum.frmMain.resources
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\Kuantum.Resources.resources
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\ZCMC_Packing.vbproj.GenerateResource.Cache
@@ -31,17 +30,8 @@ C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\bin\Debug\EntityFramework.xml
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\bin\Debug\System.Data.SQLite.xml
-C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\Kuantum.frmHome.resources
-C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\Kuantum.frmRun.resources
-C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\Kuantum.frmConfig.resources
-C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\Kuantum.frmReference.resources
-C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\Kuantum.frmManual.resources
-C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\Kuantum.frmLog.resources
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\bin\Debug\EasyModbus.dll
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\bin\Debug\Lppanet.dll
-C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\bin\Debug\MB.dll
-C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\bin\Debug\MB.pdb
-C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\bin\Debug\MB.xml
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\ZCMC_Packing.vbprojResolveAssemblyReference.cache
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\Kuantum.frmConfig.resources
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\Kuantum.frmHome.resources
@@ -55,4 +45,3 @@ C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\Kuantum\Kuantum\obj\Deb
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\Kuantum.Resources.resources
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\ZCMC_Packing.vbproj.GenerateResource.Cache
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\Kuantum.xml
-C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\Kuantum.frmLogin.resources

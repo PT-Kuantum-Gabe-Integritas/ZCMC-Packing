@@ -1,0 +1,40 @@
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\Pokapick Maximo\Pokapick Maximo\MB\bin\Debug\MB.dll
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\Pokapick Maximo\Pokapick Maximo\MB\bin\Debug\MB.pdb
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\Pokapick Maximo\Pokapick Maximo\MB\bin\Debug\MB.xml
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\Pokapick Maximo\Pokapick Maximo\MB\bin\Debug\EasyModbus.dll
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\Pokapick Maximo\Pokapick Maximo\MB\obj\Debug\MB.Resources.resources
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\Pokapick Maximo\Pokapick Maximo\MB\obj\Debug\MB.vbproj.GenerateResource.Cache
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\Pokapick Maximo\Pokapick Maximo\MB\obj\Debug\MB.dll
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\Pokapick Maximo\Pokapick Maximo\MB\obj\Debug\MB.xml
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\Pokapick Maximo\Pokapick Maximo\MB\obj\Debug\MB.pdb
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\Pokapick Maximo\Pokapick Maximo\MB\obj\Debug\MB.vbprojResolveAssemblyReference.cache
+C:\Pokapick Maximo\Pokapick Maximo\MB\bin\Debug\MB.dll
+C:\Pokapick Maximo\Pokapick Maximo\MB\bin\Debug\MB.pdb
+C:\Pokapick Maximo\Pokapick Maximo\MB\bin\Debug\MB.xml
+C:\Pokapick Maximo\Pokapick Maximo\MB\bin\Debug\EasyModbus.dll
+C:\Pokapick Maximo\Pokapick Maximo\MB\obj\Debug\MB.Resources.resources
+C:\Pokapick Maximo\Pokapick Maximo\MB\obj\Debug\MB.vbproj.GenerateResource.Cache
+C:\Pokapick Maximo\Pokapick Maximo\MB\obj\Debug\MB.dll
+C:\Pokapick Maximo\Pokapick Maximo\MB\obj\Debug\MB.xml
+C:\Pokapick Maximo\Pokapick Maximo\MB\obj\Debug\MB.pdb
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\update\Pokapick Maximo\Pokapick Maximo\MB\bin\Debug\MB.dll
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\update\Pokapick Maximo\Pokapick Maximo\MB\bin\Debug\MB.pdb
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\update\Pokapick Maximo\Pokapick Maximo\MB\bin\Debug\MB.xml
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\update\Pokapick Maximo\Pokapick Maximo\MB\bin\Debug\EasyModbus.dll
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\update\Pokapick Maximo\Pokapick Maximo\MB\obj\Debug\MB.vbprojResolveAssemblyReference.cache
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\update\Pokapick Maximo\Pokapick Maximo\MB\obj\Debug\MB.Resources.resources
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\update\Pokapick Maximo\Pokapick Maximo\MB\obj\Debug\MB.vbproj.GenerateResource.Cache
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\update\Pokapick Maximo\Pokapick Maximo\MB\obj\Debug\MB.dll
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\update\Pokapick Maximo\Pokapick Maximo\MB\obj\Debug\MB.xml
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\update\Pokapick Maximo\Pokapick Maximo\MB\obj\Debug\MB.pdb
+C:\Pokapick Maximo\Pokapick Maximo\MB\obj\Debug\MB.vbprojResolveAssemblyReference.cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\06. Pokapick Maximo\Library\MB\bin\Debug\MB.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\06. Pokapick Maximo\Library\MB\bin\Debug\MB.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\06. Pokapick Maximo\Library\MB\bin\Debug\MB.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\06. Pokapick Maximo\Library\MB\bin\Debug\EasyModbus.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\06. Pokapick Maximo\Library\MB\obj\Debug\MB.vbprojResolveAssemblyReference.cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\06. Pokapick Maximo\Library\MB\obj\Debug\MB.Resources.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\06. Pokapick Maximo\Library\MB\obj\Debug\MB.vbproj.GenerateResource.Cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\06. Pokapick Maximo\Library\MB\obj\Debug\MB.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\06. Pokapick Maximo\Library\MB\obj\Debug\MB.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\06. Pokapick Maximo\Library\MB\obj\Debug\MB.pdb

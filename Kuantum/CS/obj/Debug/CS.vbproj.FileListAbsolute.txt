@@ -1,0 +1,19 @@
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\Pokapick Maximo\Pokapick Maximo\CS\obj\Debug\CS.vbprojResolveAssemblyReference.cache
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\Pokapick Maximo\Pokapick Maximo\CS\obj\Debug\CS.Resources.resources
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\Pokapick Maximo\Pokapick Maximo\CS\obj\Debug\CS.vbproj.GenerateResource.Cache
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\Pokapick Maximo\Pokapick Maximo\CS\bin\Debug\CS.dll
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\Pokapick Maximo\Pokapick Maximo\CS\bin\Debug\CS.pdb
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\Pokapick Maximo\Pokapick Maximo\CS\bin\Debug\CS.xml
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\Pokapick Maximo\Pokapick Maximo\CS\bin\Debug\Lppanet.dll
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\Pokapick Maximo\Pokapick Maximo\CS\obj\Debug\CS.dll
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\Pokapick Maximo\Pokapick Maximo\CS\obj\Debug\CS.xml
+D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\Pokapick Maximo\Pokapick Maximo\CS\obj\Debug\CS.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\06. Pokapick Maximo\Library\CS\bin\Debug\CS.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\06. Pokapick Maximo\Library\CS\bin\Debug\CS.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\06. Pokapick Maximo\Library\CS\bin\Debug\CS.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\06. Pokapick Maximo\Library\CS\obj\Debug\CS.vbprojResolveAssemblyReference.cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\06. Pokapick Maximo\Library\CS\obj\Debug\CS.Resources.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\06. Pokapick Maximo\Library\CS\obj\Debug\CS.vbproj.GenerateResource.Cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\06. Pokapick Maximo\Library\CS\obj\Debug\CS.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\06. Pokapick Maximo\Library\CS\obj\Debug\CS.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\06. Pokapick Maximo\Library\CS\obj\Debug\CS.pdb
