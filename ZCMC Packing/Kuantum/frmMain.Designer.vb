@@ -171,7 +171,7 @@ Partial Class frmMain
         Me.btnDash.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btnDash.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.btnDash.ForeColor = System.Drawing.Color.White
-        Me.btnDash.Image = Global.Kuantum.My.Resources.Resources.monitor
+        Me.btnDash.Image = Global.ZCMC_Packing.My.Resources.Resources.monitor
         Me.btnDash.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.btnDash.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnDash.Margin = New System.Windows.Forms.Padding(0, 1, 5, 2)
@@ -187,7 +187,7 @@ Partial Class frmMain
         Me.btnRun.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btnRun.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.btnRun.ForeColor = System.Drawing.Color.White
-        Me.btnRun.Image = Global.Kuantum.My.Resources.Resources.browser
+        Me.btnRun.Image = Global.ZCMC_Packing.My.Resources.Resources.browser
         Me.btnRun.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.btnRun.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnRun.Margin = New System.Windows.Forms.Padding(0, 1, 5, 2)
@@ -203,7 +203,7 @@ Partial Class frmMain
         Me.btnConfig.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btnConfig.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.btnConfig.ForeColor = System.Drawing.Color.White
-        Me.btnConfig.Image = Global.Kuantum.My.Resources.Resources.settings__3_
+        Me.btnConfig.Image = Global.ZCMC_Packing.My.Resources.Resources.settings__3_
         Me.btnConfig.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.btnConfig.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnConfig.Margin = New System.Windows.Forms.Padding(0, 1, 5, 2)
@@ -219,7 +219,7 @@ Partial Class frmMain
         Me.btnManual.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btnManual.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.btnManual.ForeColor = System.Drawing.Color.White
-        Me.btnManual.Image = Global.Kuantum.My.Resources.Resources.manuals__1_
+        Me.btnManual.Image = Global.ZCMC_Packing.My.Resources.Resources.manuals__1_
         Me.btnManual.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.btnManual.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnManual.Margin = New System.Windows.Forms.Padding(0, 1, 5, 2)
@@ -235,7 +235,7 @@ Partial Class frmMain
         Me.btnReff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btnReff.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.btnReff.ForeColor = System.Drawing.Color.White
-        Me.btnReff.Image = Global.Kuantum.My.Resources.Resources.server
+        Me.btnReff.Image = Global.ZCMC_Packing.My.Resources.Resources.server
         Me.btnReff.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.btnReff.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnReff.Margin = New System.Windows.Forms.Padding(0, 1, 5, 2)
@@ -251,7 +251,7 @@ Partial Class frmMain
         Me.btnLog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btnLog.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.btnLog.ForeColor = System.Drawing.Color.White
-        Me.btnLog.Image = Global.Kuantum.My.Resources.Resources.file
+        Me.btnLog.Image = Global.ZCMC_Packing.My.Resources.Resources.file
         Me.btnLog.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.btnLog.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnLog.Margin = New System.Windows.Forms.Padding(0, 1, 5, 2)
@@ -267,7 +267,7 @@ Partial Class frmMain
         Me.btnAbout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btnAbout.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.btnAbout.ForeColor = System.Drawing.Color.White
-        Me.btnAbout.Image = Global.Kuantum.My.Resources.Resources.info__1_
+        Me.btnAbout.Image = Global.ZCMC_Packing.My.Resources.Resources.info__1_
         Me.btnAbout.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.btnAbout.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnAbout.Margin = New System.Windows.Forms.Padding(0, 1, 5, 2)
@@ -278,7 +278,7 @@ Partial Class frmMain
         '
         'PictureBox2
         '
-        Me.PictureBox2.Image = Global.Kuantum.My.Resources.Resources.user__2_
+        Me.PictureBox2.Image = Global.ZCMC_Packing.My.Resources.Resources.user__2_
         Me.PictureBox2.Location = New System.Drawing.Point(11, 8)
         Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox2.Name = "PictureBox2"

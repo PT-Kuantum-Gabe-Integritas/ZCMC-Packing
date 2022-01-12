@@ -44,3 +44,28 @@ C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\Kuantum.exe
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\Kuantum.xml
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Kuantum\obj\Debug\Kuantum.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\ZCMC_Packing.exe.config
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\obj\Debug\ZCMC_Packing.vbprojResolveAssemblyReference.cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\obj\Debug\ZCMC_Packing.frmMain.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\obj\Debug\ZCMC_Packing.Resources.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\obj\Debug\ZCMC_Packing.vbproj.GenerateResource.Cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\obj\Debug\ZCMC_Packing.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\ZCMC_Packing.exe
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\ZCMC_Packing.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\ZCMC_Packing.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\EntityFramework.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\System.Data.SQLite.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\EntityFramework.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\System.Data.SQLite.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\obj\Debug\ZCMC_Packing.exe
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\obj\Debug\ZCMC_Packing.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\Splash.exe
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\Splash.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\Splash.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\Config.exe
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\Config.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\Config.xml

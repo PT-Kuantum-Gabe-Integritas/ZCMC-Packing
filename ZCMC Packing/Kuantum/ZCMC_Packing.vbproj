@@ -7,9 +7,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{72300099-9E6A-4C38-93E8-E46D858BE37B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Kuantum.My.MyApplication</StartupObject>
-    <RootNamespace>Kuantum</RootNamespace>
-    <AssemblyName>Kuantum</AssemblyName>
+    <StartupObject>ZCMC_Packing.My.MyApplication</StartupObject>
+    <RootNamespace>ZCMC_Packing</RootNamespace>
+    <AssemblyName>ZCMC_Packing</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -24,7 +24,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Kuantum.xml</DocumentationFile>
+    <DocumentationFile>ZCMC_Packing.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -34,7 +34,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Kuantum.xml</DocumentationFile>
+    <DocumentationFile>ZCMC_Packing.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -50,6 +50,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Config">
+      <HintPath>..\Config\bin\Debug\Config.exe</HintPath>
+    </Reference>
     <Reference Include="EasyModbus, Version=5.6.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\06. Pokapick Maximo\Pokapick Maximo\Pokapick Maximo\bin\Debug\EasyModbus.dll</HintPath>
@@ -66,6 +69,9 @@
       <HintPath>..\..\..\..\..\04. Light Saber DNA\ligh saber\Tester and Packing Modif Scann On PC\SCH-DNA SABER\bin\Debug\Lppanet.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Splash">
+      <HintPath>..\Splash\bin\Debug\Splash.exe</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
@@ -107,6 +113,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\Initialization.vb" />
+    <Compile Include="Class\Data\MachineData.vb" />
+    <Compile Include="Interface\IInitialization.vb" />
     <Compile Include="Modules\mDatabase.vb" />
     <Compile Include="frmMain.vb">
       <SubType>Form</SubType>
@@ -132,6 +140,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Class\Sequence.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmMain.resx">
@@ -216,7 +225,6 @@
   <ItemGroup>
     <Folder Include="Forms\" />
     <Folder Include="Hardware\" />
-    <Folder Include="Interface\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Line.png" />
@@ -231,7 +239,6 @@
     <None Include="Resources\Click1.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="EasyModbus.dll" />
     <None Include="Resources\Schneider_Electric-Logo.wine.png" />
     <None Include="Resources\ZCMC-removebg-preview.png" />
     <None Include="Resources\ZCMC.jpg" />

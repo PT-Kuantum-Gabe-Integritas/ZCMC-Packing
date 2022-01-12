@@ -1,5 +1,7 @@
 ﻿
 Public Class frmMain
+
+    Dim initialization As Initialization = Initialization.getInstance()
     Private last_btn As ToolStripButton
 
     Public Enum TAB
@@ -50,9 +52,10 @@ Public Class frmMain
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = False
 
-        '_frmMain = Me
-        'Hide()
-        'Main_Setup()
+        Hide()
+
+        initialization.Start()
+        Show()
 
     End Sub
 
