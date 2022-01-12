@@ -1,0 +1,10 @@
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Dashboard\bin\Debug\Dashboard.exe.config
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Dashboard\bin\Debug\Dashboard.exe
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Dashboard\bin\Debug\Dashboard.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Dashboard\bin\Debug\Dashboard.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Dashboard\obj\Debug\Dashboard.frmHome.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Dashboard\obj\Debug\Dashboard.Resources.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Dashboard\obj\Debug\Dashboard.vbproj.GenerateResource.Cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Dashboard\obj\Debug\Dashboard.exe
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Dashboard\obj\Debug\Dashboard.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Dashboard\obj\Debug\Dashboard.pdb

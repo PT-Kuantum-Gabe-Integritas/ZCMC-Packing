@@ -1,0 +1,10 @@
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Reference\bin\Debug\Reference.exe.config
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Reference\bin\Debug\Reference.exe
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Reference\bin\Debug\Reference.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Reference\bin\Debug\Reference.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Reference\obj\Debug\Reference.frmReference.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Reference\obj\Debug\Reference.Resources.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Reference\obj\Debug\Reference.vbproj.GenerateResource.Cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Reference\obj\Debug\Reference.exe
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Reference\obj\Debug\Reference.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Pack\ZCMC-Packing\Kuantum\Reference\obj\Debug\Reference.pdb
