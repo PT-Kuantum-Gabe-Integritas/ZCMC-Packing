@@ -3,7 +3,7 @@ Public Class Reference
     Implements IReference
     Private Shared _instance As Reference
     Dim _database As DBManager = DBManager.getInstance()
-    Dim _dbProduction As SQLite = New SQLite()
+    Dim _dbProduct As Access = New Access()
 
 
     Public Sub New()
@@ -28,12 +28,18 @@ Public Class Reference
 
     Public Function Open() As Boolean Implements IReference.Open
         'Code
-        '_dbProduction = _database.GetDataBase("Production.db", "PO01", "-SQLite", "Production")
-        Return True
+        Dim status As Boolean = True
+        'If Not _dbProduct.isConnected Then
+        '    _dbProduct = _database.GetDataBase("dbProduct.mdb", "PD01", "-Access", "Reference")
+        '    status = True
+        'End If
+        Return status
     End Function
 
     Public Function Read() As DataTable Implements IReference.Read
         Dim dt As DataTable = New DataTable()
+        Dim str_where = "Reference='ZCMC21T10'"
+        dt = _dbProduct.DBSelect("*", "PRODUCT", str_where)
         Return dt
     End Function
 
@@ -96,6 +102,7 @@ Public Class Reference
         Dim dt As DataTable = New DataTable()
         Try
             ' dt = Select File dt = databaseee.DBSelect("*", tableName, "")
+
         Catch ex As Exception
 
         End Try
@@ -112,6 +119,7 @@ Public Class Reference
         Return dt
 
     End Function
+
 
 
 

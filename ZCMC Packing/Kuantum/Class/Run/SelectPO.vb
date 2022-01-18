@@ -4,7 +4,7 @@ Public Class SelectPO
     Private _ui As UserInterface = UserInterface.getInstance()
 
     'Private _database As DBManager = DBManager.getInstance()
-    Private _production As Production = Production.getInstance()
+    Private _production As Production
     'Private _dbProduction As SQLite = New SQLite()
 
     Public Enum SEQ
@@ -84,6 +84,7 @@ Public Class SelectPO
             Case SEQ.PO
 
                 'Connect the Production Database
+                _production = Production.getInstance()
                 If Not _production.dbProduction.isConnected Then
                     _production.Open()
                 End If

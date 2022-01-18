@@ -45,16 +45,9 @@ Public Class frmMain
 
         UserInterface._frmMain = Me
         Me.Hide()
-        initialization.Start()
+        'Start Production 
+        _production.Starts()
         Me.Show()
-        _ui.LoadPanel(UserInterface.TAB.RUN)
-        Dim setup = _production.Starts()
 
-        If setup Then
-            UserInterface._frmHome.lb_msg.Text = "Standby.."
-        Else
-            UserInterface._frmHome.lb_msg.Text = "Device Not Connected.."
-        End If
-        'Dim setup = 
     End Sub
 End Class

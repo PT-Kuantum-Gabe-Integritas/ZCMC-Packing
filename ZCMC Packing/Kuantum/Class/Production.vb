@@ -51,6 +51,7 @@ Public Class Production
 
 
     Private Shared _instance As Production
+    Private _Initialization As Initialization = Initialization.getInstance()
     Private _modbus As Modbus = Modbus.getInstance()
     Private _label As Codesoft
     Private _ui As UserInterface = UserInterface.getInstance()
@@ -112,6 +113,12 @@ Public Class Production
 
     Public Function Starts() As Boolean Implements IProduction.Starts
         Dim result As Boolean
+
+        'Starting Initialization
+        _Initialization.Start()
+
+        Open()
+
         If _modbus.Stats = Status.Connected Then
             ts = New ThreadStart(AddressOf Looping)
             th = New Thread(ts)
@@ -131,6 +138,8 @@ Public Class Production
 
             _modbus.Write(Name.Q_Ind_Trig, ind.Enable)
             _modbus.Write(Name.Q_Group, group.Enable)
+
+            _ui.LoadPanel(UserInterface.TAB.RUN)
             result = True
         Else
             result = False
@@ -144,7 +153,6 @@ Public Class Production
     End Sub
 
     Public Sub Looping() Implements IProduction.Looping
-        Open()
         While Not _exit
 
 
@@ -187,28 +195,34 @@ Public Class Production
                         Update(COL.DATEOUT, String.Format("{0:0000}-{1:00}-{2:00} {3:00}:{4:00}:{5:00}",
                                                                         Date.Now.Year, Date.Now.Month, Date.Now.Day, Date.Now.Hour, Date.Now.Minute, Date.Now.Second), wo.PO, wo.RefTicket)
                         'RESET ALL
+                        Reset()
+                        GoTo Finish
                     End If
+                End If
+
+                If ind.Qty Mod group.Total = 0 And group.PrintFlag = False And ind.Qty > 0 Then
+                    'label.print(fn_group,1,printer_group)
+                    group.Qty += 1
+                    Update(COL.GROUP, group.Qty, wo.PO, wo.RefTicket)
+                    UserInterface._frmHome.UpdateUI(frmHome.CONTROL.GROUP_QTY, group.Qty.ToString())
+                    group.PrintFlag = True
+                End If
+
+                If ind.Qty Mod group.Total <> 0 And group.PrintFlag = True Then
+                    group.PrintFlag = False
                 End If
             End If
 
-            'If ind.Qty Mod group.Total = 0 And group.PrintFlag = False And ind.Qty > 0 Then
-            '        'label.print(fn_group,1,printer_group)
-            '        group.Qty += 1
-            '        Update(COL.GROUP, group.Qty, wo.PO, wo.RefTicket)
-            '        UserInterface._frmHome.UpdateUI(frmHome.CONTROL.GROUP_QTY, group.Qty.ToString())
-            '        group.PrintFlag = True
-            '    End If
 
-            'If ind.Qty Mod group.Total <> 0 And group.PrintFlag = True Then
-            '    group.PrintFlag = False
-            'End If
 
+Finish:
 
             'IF ALL COMPLETE
             If ind.Complete And group.Complete Then
                 Update(COL.DATEOUT, String.Format("{0:0000}-{1:00}-{2:00} {3:00}:{4:00}:{5:00}",
                                                                     Date.Now.Year, Date.Now.Month, Date.Now.Day, Date.Now.Hour, Date.Now.Minute, Date.Now.Second), wo.PO, wo.RefTicket)
                 Update(COL.COMPLETE, "1", wo.PO, wo.RefTicket)
+                Reset()
             End If
             Thread.Sleep(100)
 
@@ -329,16 +343,19 @@ Public Class Production
 
     Public Function Open() As Boolean Implements IProduction.Open
         Dim prodStat As Boolean
-        fn_group = _config._currConfig.GROUP_NAME
-        fn_ind = _config._currConfig.INDIVIDUAL_NAME
-        printer_ind = _config._currConfig.IND_PRINTER
-        printer_group = _config._currConfig.GROUP_PRINTER
-
 
         If Not dbProduction.isConnected Then
             dbProduction = database.GetDataBase("Production.db", "P01", "-SQLite", "Order")
             prodStat = True
         End If
+
+        fn_group = _config._currConfig.GROUP_NAME
+        fn_ind = _config._currConfig.INDIVIDUAL_NAME
+        printer_ind = _config._currConfig.IND_PRINTER
+        printer_group = _config._currConfig.GROUP_PRINTER
+        group.Total = 10
+
+
         Return prodStat
     End Function
 

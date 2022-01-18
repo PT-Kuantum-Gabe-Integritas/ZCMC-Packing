@@ -47,7 +47,9 @@ Public Class Databasemain
     'End Sub
 
     Public Function GetFolderBase(type As String) As String
-        Return type
+        Dim str As String = String.Empty
+        str = String.Format("Database\{0}", type)
+        Return str
     End Function
 
 

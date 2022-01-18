@@ -20,3 +20,14 @@ C:\Users\Barelang63\Documents\Yogy\Kuantum\07. ZCMC Packing\Backup 140122\ZCMC P
 C:\Users\Barelang63\Documents\Yogy\Kuantum\07. ZCMC Packing\Backup 140122\ZCMC Packing\Database-add-CL\ClassLibrary1\obj\Debug\Database.dll
 C:\Users\Barelang63\Documents\Yogy\Kuantum\07. ZCMC Packing\Backup 140122\ZCMC Packing\Database-add-CL\ClassLibrary1\obj\Debug\Database.xml
 C:\Users\Barelang63\Documents\Yogy\Kuantum\07. ZCMC Packing\Backup 140122\ZCMC Packing\Database-add-CL\ClassLibrary1\obj\Debug\Database.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Database-add-CL\ClassLibrary1\bin\Debug\Database.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Database-add-CL\ClassLibrary1\bin\Debug\Database.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Database-add-CL\ClassLibrary1\bin\Debug\Database.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Database-add-CL\ClassLibrary1\bin\Debug\System.Data.SQLite.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Database-add-CL\ClassLibrary1\bin\Debug\System.Data.SQLite.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Database-add-CL\ClassLibrary1\obj\Debug\Database.vbprojResolveAssemblyReference.cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Database-add-CL\ClassLibrary1\obj\Debug\Database.Resources.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Database-add-CL\ClassLibrary1\obj\Debug\Database.vbproj.GenerateResource.Cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Database-add-CL\ClassLibrary1\obj\Debug\Database.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Database-add-CL\ClassLibrary1\obj\Debug\Database.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Database-add-CL\ClassLibrary1\obj\Debug\Database.pdb

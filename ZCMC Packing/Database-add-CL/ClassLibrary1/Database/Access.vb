@@ -20,11 +20,14 @@ Public Class Access
     End Sub
     Public Overrides Sub Open()
         Dim folderPath As String = Path.Combine(_path, GetFolderBase(_dataType))
+        FolderExist(folderPath)
         Try
-            _connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & IO.Path.Combine(folderPath, _fileName) & ";"
-            _con = New OleDbConnection(_connectionString)
-            _cmd = New OleDbCommand()
-            _con.Open()
+            _connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & IO.Path.Combine(folderPath, _fileName) & ";Persist Security Info=False;"
+            _con = New OleDbConnection()
+            _con.ConnectionString = _connectionString
+            '_cmd = New OleDbCommand()
+            '_con.Open()
+
             _isConnected = True
         Catch ex As Exception
             _isConnected = False
