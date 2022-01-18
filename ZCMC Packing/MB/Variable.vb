@@ -2,17 +2,12 @@
 
 Public Class Variable
     Public Enum Name
-        I_poka1
-        I_poka2
-        I_poka3
-        I_poka4
-        I_np_print
-        I_np_out
+        I_group_print
+        I_group_out
         I_ind_print
         I_ind_out
         Q_Ind_Trig
-        Q_poka
-        Q_np
+        Q_Group
     End Enum
 
     Public Enum Status

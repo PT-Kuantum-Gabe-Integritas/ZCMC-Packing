@@ -8,6 +8,7 @@ Public Class Codesoft
     Private _preview As Image = Nothing
     Private var_doc As Variable
     Private _base_path As String
+    'Private Shared _instance As Codesoft
 
 
     Public ReadOnly Property Preview As Image
@@ -26,6 +27,14 @@ Public Class Codesoft
     Public Sub New()
         _app = New TKX.Lppa.Application()
     End Sub
+
+
+    'Public Shared Function getInstance() As Codesoft
+    '    If _instance Is Nothing Then
+    '        _instance = New Codesoft()
+    '    End If
+    '    Return _instance
+    'End Function
 
     Public Structure DOCS
         Public _doc As Document

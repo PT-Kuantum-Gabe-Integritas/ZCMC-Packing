@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ZCMC_Packing.MachineData" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAMAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Class\Data\MachineData.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZCMC_Packing.Initialization" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAMAAIEASCAAQAAAAAAAAIBAgAEAAQAAAAAgACAAAA=</HashCode>
+      <FileName>Class\Initialization.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ZCMC_Packing.Production" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class\Production.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZCMC_Packing.frmMain" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAEIIAAECACCAAAAACQQBgChAAFAiABAMCAAAAEgEg=</HashCode>
+      <FileName>frmMain.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZCMC_Packing.My.MyApplication" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZCMC_Packing.My.MySettings" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAABEAAAAABAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ZCMC_Packing.IInitialization" Collapsed="true">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEACAAAAAAAAAAAAAAAAAEAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Interface\IInitialization.vb</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ZCMC_Packing.IProduction" Collapsed="true">
+    <Position X="2.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\IProduction.vb</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Module Name="ZCMC_Packing.mDatabase" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modules\mDatabase.vb</FileName>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="ZCMC_Packing.mForm" Collapsed="true">
+    <Position X="2.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modules\mForm.vb</FileName>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="ZCMC_Packing.mMains" Collapsed="true">
+    <Position X="4" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modules\mMains.vb</FileName>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="ZCMC_Packing.My.MySettingsProperty" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="ZCMC_Packing.My.Resources.Resources" Collapsed="true">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAACAAMAECBBJAABFAAAiQJGAAAgxIAQCgABAoI=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

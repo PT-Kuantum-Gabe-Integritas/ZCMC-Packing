@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Database.SQLite">
+    <Position X="4" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAIAQAAAAAAQAAAAAAAAAAAAAAABCAAAA=</HashCode>
+      <FileName>Database\SQLite.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Database.DBManager" BaseTypeListCollapsed="true">
+    <Position X="6" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIgAAAAAAAQAAAAAAAAAAAAEAAAAAAAAEAAAABAAAA=</HashCode>
+      <FileName>Database\DBManager.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Database.Databasemain">
+    <Position X="2.25" Y="1" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Database.Databasemain.DATATYPE" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Database\Databasemain.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>BQCAAAAAAAECYAAAAEAAQRhAAAAEABAIAAAAIBCQUEA=</HashCode>
+      <FileName>Database\Databasemain.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Database.Access">
+    <Position X="4" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAIAQAAAAAAQAAAAAAAAAAAAAAABCAAAA=</HashCode>
+      <FileName>Database\Access.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Database.IDBManager">
+    <Position X="7.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Database\IDBManager.vb</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Database.IDatabase">
+    <Position X="0.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQAAAAAAAAEAYAAAAAAAQAgAAAAEAAAAAAAAIACAUAA=</HashCode>
+      <FileName>Database\IDatabase.vb</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

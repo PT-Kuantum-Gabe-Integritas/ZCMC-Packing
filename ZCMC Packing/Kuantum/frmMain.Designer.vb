@@ -25,12 +25,13 @@ Partial Class frmMain
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lbMenu = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.mainPanel = New System.Windows.Forms.Panel()
         Me.btnDash = New System.Windows.Forms.ToolStripButton()
         Me.btnRun = New System.Windows.Forms.ToolStripButton()
@@ -39,13 +40,13 @@ Partial Class frmMain
         Me.btnReff = New System.Windows.Forms.ToolStripButton()
         Me.btnLog = New System.Windows.Forms.ToolStripButton()
         Me.btnAbout = New System.Windows.Forms.ToolStripButton()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnUser = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.Panel2.SuspendLayout()
         Me.Panel5.SuspendLayout()
-        Me.ToolStrip1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel2
@@ -70,10 +71,21 @@ Partial Class frmMain
         Me.Panel5.Controls.Add(Me.PictureBox2)
         Me.Panel5.Controls.Add(Me.Label3)
         Me.Panel5.Controls.Add(Me.Label2)
-        Me.Panel5.Location = New System.Drawing.Point(1155, 40)
+        Me.Panel5.Location = New System.Drawing.Point(1146, 39)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(167, 53)
         Me.Panel5.TabIndex = 0
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.ZCMC_Packing.My.Resources.Resources.user__2_
+        Me.PictureBox2.Location = New System.Drawing.Point(11, 8)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(35, 35)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 2
+        Me.PictureBox2.TabStop = False
         '
         'Label3
         '
@@ -98,6 +110,17 @@ Partial Class frmMain
         Me.Label2.Size = New System.Drawing.Size(79, 20)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Welcome!"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(272, 97)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 2
+        Me.PictureBox1.TabStop = False
         '
         'lbMenu
         '
@@ -142,19 +165,6 @@ Partial Class frmMain
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "X"
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'ToolStrip1
-        '
-        Me.ToolStrip1.AutoSize = False
-        Me.ToolStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.ToolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.ToolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnDash, Me.btnRun, Me.btnConfig, Me.btnManual, Me.btnReff, Me.btnLog, Me.btnAbout})
-        Me.ToolStrip1.Location = New System.Drawing.Point(0, 508)
-        Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(1325, 81)
-        Me.ToolStrip1.TabIndex = 4
-        Me.ToolStrip1.Text = "ToolStrip1"
         '
         'mainPanel
         '
@@ -228,6 +238,7 @@ Partial Class frmMain
         Me.btnManual.Tag = "Manual Test"
         Me.btnManual.Text = "Manual"
         Me.btnManual.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
+        Me.btnManual.Visible = False
         '
         'btnReff
         '
@@ -273,30 +284,39 @@ Partial Class frmMain
         Me.btnAbout.Margin = New System.Windows.Forms.Padding(0, 1, 5, 2)
         Me.btnAbout.Name = "btnAbout"
         Me.btnAbout.Size = New System.Drawing.Size(160, 60)
+        Me.btnAbout.Tag = "About"
         Me.btnAbout.Text = "About"
         Me.btnAbout.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
         '
-        'PictureBox2
+        'btnUser
         '
-        Me.PictureBox2.Image = Global.ZCMC_Packing.My.Resources.Resources.user__2_
-        Me.PictureBox2.Location = New System.Drawing.Point(11, 8)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(35, 35)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 2
-        Me.PictureBox2.TabStop = False
+        Me.btnUser.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.btnUser.AutoSize = False
+        Me.btnUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnUser.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Bold)
+        Me.btnUser.ForeColor = System.Drawing.Color.White
+        Me.btnUser.Image = Global.ZCMC_Packing.My.Resources.Resources.admin
+        Me.btnUser.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.btnUser.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.btnUser.Margin = New System.Windows.Forms.Padding(0, 1, 5, 2)
+        Me.btnUser.Name = "btnUser"
+        Me.btnUser.Size = New System.Drawing.Size(160, 60)
+        Me.btnUser.Tag = "User"
+        Me.btnUser.Text = "User Management"
+        Me.btnUser.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
         '
-        'PictureBox1
+        'ToolStrip1
         '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(272, 97)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 2
-        Me.PictureBox1.TabStop = False
+        Me.ToolStrip1.AutoSize = False
+        Me.ToolStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.ToolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.ToolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnDash, Me.btnRun, Me.btnConfig, Me.btnManual, Me.btnReff, Me.btnLog, Me.btnAbout, Me.btnUser})
+        Me.ToolStrip1.Location = New System.Drawing.Point(0, 508)
+        Me.ToolStrip1.Name = "ToolStrip1"
+        Me.ToolStrip1.Size = New System.Drawing.Size(1325, 81)
+        Me.ToolStrip1.TabIndex = 4
+        Me.ToolStrip1.Text = "ToolStrip1"
         '
         'frmMain
         '
@@ -316,10 +336,10 @@ Partial Class frmMain
         Me.Panel2.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
-        Me.ToolStrip1.ResumeLayout(False)
-        Me.ToolStrip1.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ToolStrip1.ResumeLayout(False)
+        Me.ToolStrip1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -331,14 +351,15 @@ Partial Class frmMain
     Friend WithEvents Label3 As Label
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Panel5 As Panel
-    Friend WithEvents ToolStrip1 As ToolStrip
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents mainPanel As Panel
     Friend WithEvents btnDash As ToolStripButton
     Friend WithEvents btnRun As ToolStripButton
     Friend WithEvents btnConfig As ToolStripButton
     Friend WithEvents btnManual As ToolStripButton
+    Friend WithEvents btnReff As ToolStripButton
     Friend WithEvents btnLog As ToolStripButton
     Friend WithEvents btnAbout As ToolStripButton
-    Friend WithEvents btnReff As ToolStripButton
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents mainPanel As Panel
+    Friend WithEvents btnUser As ToolStripButton
+    Friend WithEvents ToolStrip1 As ToolStrip
 End Class

@@ -17,12 +17,12 @@ C:\Users\Barelang63\Documents\Yogy\Kuantum\06. Pokapick Maximo\Library\CS\obj\De
 C:\Users\Barelang63\Documents\Yogy\Kuantum\06. Pokapick Maximo\Library\CS\obj\Debug\CS.dll
 C:\Users\Barelang63\Documents\Yogy\Kuantum\06. Pokapick Maximo\Library\CS\obj\Debug\CS.xml
 C:\Users\Barelang63\Documents\Yogy\Kuantum\06. Pokapick Maximo\Library\CS\obj\Debug\CS.pdb
-C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\CS\bin\Debug\CS.dll
-C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\CS\bin\Debug\CS.pdb
-C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\CS\bin\Debug\CS.xml
-C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\CS\obj\Debug\CS.vbprojResolveAssemblyReference.cache
-C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\CS\obj\Debug\CS.Resources.resources
-C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\CS\obj\Debug\CS.vbproj.GenerateResource.Cache
-C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\CS\obj\Debug\CS.dll
-C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\CS\obj\Debug\CS.xml
-C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\CS\obj\Debug\CS.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\07. ZCMC Packing\Backup 140122\ZCMC Packing\CS\bin\Debug\CS.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\07. ZCMC Packing\Backup 140122\ZCMC Packing\CS\bin\Debug\CS.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\07. ZCMC Packing\Backup 140122\ZCMC Packing\CS\bin\Debug\CS.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\07. ZCMC Packing\Backup 140122\ZCMC Packing\CS\obj\Debug\CS.vbprojResolveAssemblyReference.cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\07. ZCMC Packing\Backup 140122\ZCMC Packing\CS\obj\Debug\CS.Resources.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\07. ZCMC Packing\Backup 140122\ZCMC Packing\CS\obj\Debug\CS.vbproj.GenerateResource.Cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\07. ZCMC Packing\Backup 140122\ZCMC Packing\CS\obj\Debug\CS.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\07. ZCMC Packing\Backup 140122\ZCMC Packing\CS\obj\Debug\CS.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\07. ZCMC Packing\Backup 140122\ZCMC Packing\CS\obj\Debug\CS.pdb

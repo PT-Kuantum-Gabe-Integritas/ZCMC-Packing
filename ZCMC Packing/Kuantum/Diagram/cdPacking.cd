@@ -1,25 +1,88 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="ZCMC_Packing.Initialization">
-    <Position X="6" Y="2" Width="1.5" />
+    <Position X="6" Y="1.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAMAAAAASAAAAAAAAAAAAABAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAMAAIEACCAAQAAAAAAAAIBAgAEAAQAAAAAgACAAAA=</HashCode>
       <FileName>Class\Initialization.vb</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="ZCMC_Packing.Sequence">
-    <Position X="8.25" Y="2" Width="1.5" />
+  <Class Name="ZCMC_Packing.Production">
+    <Position X="10.75" Y="1.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="ZCMC_Packing.Production.STATION" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Class\Production.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="ZCMC_Packing.Production.ORDER" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Class\Production.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Enum Name="ZCMC_Packing.Production.COL" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Class\Production.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Class\Sequence.vb</FileName>
+      <HashCode>UAQFIEAAQGAAJABgABAQABoAgAAAAgQAAgAAAAAASAA=</HashCode>
+      <FileName>Class\Production.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ZCMC_Packing.Configuration">
+    <Position X="10.75" Y="5.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAEAIAAIAAAIgAAAAAAAAIgAEAAAAQAAAAAAACAAAA=</HashCode>
+      <FileName>Class\Config\Configuration.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ZCMC_Packing.ConfigData">
+    <Position X="12.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IQAAAgEADAAAAAAAAAAABAEAAAAMAAAAABhAAAAAQgA=</HashCode>
+      <FileName>Class\Config\ConfigData.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="ZCMC_Packing.IInitialization">
-    <Position X="4" Y="2" Width="1.5" />
+    <Position X="4" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAEACAAAAAAAAAAAAAAAAAEAAAAAAAAAACAAAA=</HashCode>
       <FileName>Interface\IInitialization.vb</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ZCMC_Packing.IProduction">
+    <Position X="9" Y="1.25" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="ZCMC_Packing.IProduction.COL" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interface\IProduction.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>EAQBAEAAAGAAJAAAAAAQAAAAgAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Interface\IProduction.vb</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ZCMC_Packing.IConfiguration">
+    <Position X="9" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAIAAAIgAAAAAAAAAgAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Interface\IConfiguration.vb</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

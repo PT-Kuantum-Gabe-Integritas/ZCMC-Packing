@@ -53,7 +53,7 @@ Public Class Modbus
     '        _wd = value
     '    End Set
     'End Property
-
+    Private Shared _instance As Modbus
 
     Private _th_read As Thread
     Private _ts_read As ThreadStart
@@ -98,17 +98,12 @@ Public Class Modbus
     Private vd As VariableData = New VariableData()
 
     Private _mem_array() As Memories = {
-        New Memories(Variable.Name.I_poka1, 100, 0, True),
-        New Memories(Variable.Name.I_poka2, 100, 1, True),
-        New Memories(Variable.Name.I_poka3, 100, 2, True),
-        New Memories(Variable.Name.I_poka4, 100, 3, True),
-        New Memories(Variable.Name.I_np_print, 101, 0, True),
-        New Memories(Variable.Name.I_np_out, 101, 1, True),
+        New Memories(Variable.Name.I_group_print, 101, 0, True),
+        New Memories(Variable.Name.I_group_out, 101, 1, True),
         New Memories(Variable.Name.I_ind_print, 102, 0, True),
         New Memories(Variable.Name.I_ind_out, 102, 1, True),
         New Memories(Variable.Name.Q_Ind_Trig, 120, 0, False),
-        New Memories(Variable.Name.Q_np, 130, 0, False),
-        New Memories(Variable.Name.Q_poka, 110, 0, False)
+        New Memories(Variable.Name.Q_group, 130, 0, False)
     }
 
 
@@ -123,19 +118,37 @@ Public Class Modbus
         device = New ModbusClient("127.0.0.1", _port)
     End Sub
 
-    Public Sub New(IPAddress As String)
+    'Public Sub New(IPAddress As String)
+    '    _ipaddress = IPAddress
+    '    _ts_read = New ThreadStart(AddressOf ReadLoop)
+    '    _th_read = New Thread(_ts_read)
+    '    _th_read.IsBackground = False
+
+    '    _ts_write = New ThreadStart(AddressOf WriteLoop)
+    '    _th_write = New Thread(_ts_write)
+    '    _th_write.IsBackground = False
+    '    device = New ModbusClient(_ipaddress, _port)
+    'End Sub
+
+    Public Shared Function getInstance() As Modbus
+        If _instance Is Nothing Then
+            _instance = New Modbus()
+        End If
+        Return _instance
+    End Function
+
+    Public Function Start(IPAddress As String) As Boolean
+
         _ipaddress = IPAddress
         _ts_read = New ThreadStart(AddressOf ReadLoop)
         _th_read = New Thread(_ts_read)
         _th_read.IsBackground = False
-
         _ts_write = New ThreadStart(AddressOf WriteLoop)
         _th_write = New Thread(_ts_write)
         _th_write.IsBackground = False
         device = New ModbusClient(_ipaddress, _port)
-    End Sub
 
-    Public Function Start() As Boolean
+
         If Connect() Then
             If _th_read.ThreadState <> ThreadState.Running Then
                 _th_read.Start()

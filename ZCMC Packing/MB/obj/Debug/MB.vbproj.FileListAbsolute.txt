@@ -38,3 +38,23 @@ C:\Users\Barelang63\Documents\Yogy\Kuantum\06. Pokapick Maximo\Library\MB\obj\De
 C:\Users\Barelang63\Documents\Yogy\Kuantum\06. Pokapick Maximo\Library\MB\obj\Debug\MB.dll
 C:\Users\Barelang63\Documents\Yogy\Kuantum\06. Pokapick Maximo\Library\MB\obj\Debug\MB.xml
 C:\Users\Barelang63\Documents\Yogy\Kuantum\06. Pokapick Maximo\Library\MB\obj\Debug\MB.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\MB\bin\Debug\MB.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\MB\bin\Debug\MB.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\MB\bin\Debug\MB.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\MB\bin\Debug\EasyModbus.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\MB\obj\Debug\MB.vbprojResolveAssemblyReference.cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\MB\obj\Debug\MB.Resources.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\MB\obj\Debug\MB.vbproj.GenerateResource.Cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\MB\obj\Debug\MB.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\MB\obj\Debug\MB.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\MB\obj\Debug\MB.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\07. ZCMC Packing\Backup 140122\ZCMC Packing\MB\bin\Debug\MB.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\07. ZCMC Packing\Backup 140122\ZCMC Packing\MB\bin\Debug\MB.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\07. ZCMC Packing\Backup 140122\ZCMC Packing\MB\bin\Debug\MB.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\07. ZCMC Packing\Backup 140122\ZCMC Packing\MB\bin\Debug\EasyModbus.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\07. ZCMC Packing\Backup 140122\ZCMC Packing\MB\obj\Debug\MB.vbprojResolveAssemblyReference.cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\07. ZCMC Packing\Backup 140122\ZCMC Packing\MB\obj\Debug\MB.Resources.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\07. ZCMC Packing\Backup 140122\ZCMC Packing\MB\obj\Debug\MB.vbproj.GenerateResource.Cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\07. ZCMC Packing\Backup 140122\ZCMC Packing\MB\obj\Debug\MB.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\07. ZCMC Packing\Backup 140122\ZCMC Packing\MB\obj\Debug\MB.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\07. ZCMC Packing\Backup 140122\ZCMC Packing\MB\obj\Debug\MB.pdb
