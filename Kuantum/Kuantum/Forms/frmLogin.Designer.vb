@@ -24,10 +24,11 @@ Partial Class frmLogin
     Private Sub InitializeComponent()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
-        Me.cb_Role = New System.Windows.Forms.ComboBox()
         Me.lb_info = New System.Windows.Forms.Label()
-        Me.tb_pass = New System.Windows.Forms.TextBox()
         Me.btn_login = New System.Windows.Forms.Button()
+        Me.cb_user = New System.Windows.Forms.ComboBox()
+        Me.tb_input = New System.Windows.Forms.TextBox()
+        Me.lb_name = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.SuspendLayout()
@@ -54,68 +55,81 @@ Partial Class frmLogin
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.lb_info, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.btn_login, 0, 4)
-        Me.TableLayoutPanel2.Controls.Add(Me.tb_pass, 0, 2)
-        Me.TableLayoutPanel2.Controls.Add(Me.cb_Role, 0, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.cb_user, 0, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.tb_input, 0, 3)
+        Me.TableLayoutPanel2.Controls.Add(Me.lb_name, 0, 2)
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(400, 125)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 5
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.69794!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.06357!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.69794!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.04334!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.4972!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(524, 157)
         Me.TableLayoutPanel2.TabIndex = 0
-        '
-        'cb_Role
-        '
-        Me.cb_Role.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.cb_Role.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cb_Role.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.cb_Role.FormattingEnabled = True
-        Me.cb_Role.Location = New System.Drawing.Point(3, 3)
-        Me.cb_Role.Name = "cb_Role"
-        Me.cb_Role.Size = New System.Drawing.Size(518, 25)
-        Me.cb_Role.TabIndex = 0
         '
         'lb_info
         '
         Me.lb_info.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lb_info.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.lb_info.Location = New System.Drawing.Point(3, 29)
+        Me.lb_info.Location = New System.Drawing.Point(3, 28)
         Me.lb_info.Name = "lb_info"
-        Me.lb_info.Size = New System.Drawing.Size(518, 34)
+        Me.lb_info.Size = New System.Drawing.Size(518, 32)
         Me.lb_info.TabIndex = 1
         Me.lb_info.Text = "Please Fill ID or Username"
         Me.lb_info.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'tb_pass
-        '
-        Me.tb_pass.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.tb_pass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.tb_pass.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tb_pass.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.tb_pass.Location = New System.Drawing.Point(3, 66)
-        Me.tb_pass.Name = "tb_pass"
-        Me.tb_pass.Size = New System.Drawing.Size(518, 25)
-        Me.tb_pass.TabIndex = 2
         '
         'btn_login
         '
         Me.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_login.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_login.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.btn_login.Location = New System.Drawing.Point(3, 118)
+        Me.btn_login.Location = New System.Drawing.Point(3, 119)
         Me.btn_login.Name = "btn_login"
-        Me.btn_login.Size = New System.Drawing.Size(518, 36)
+        Me.btn_login.Size = New System.Drawing.Size(518, 35)
         Me.btn_login.TabIndex = 3
         Me.btn_login.Text = "Login"
         Me.btn_login.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btn_login.UseVisualStyleBackColor = True
+        '
+        'cb_user
+        '
+        Me.cb_user.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cb_user.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cb_user.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.cb_user.FormattingEnabled = True
+        Me.cb_user.Location = New System.Drawing.Point(3, 3)
+        Me.cb_user.Name = "cb_user"
+        Me.cb_user.Size = New System.Drawing.Size(518, 25)
+        Me.cb_user.TabIndex = 0
+        '
+        'tb_input
+        '
+        Me.tb_input.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.tb_input.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.tb_input.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tb_input.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.tb_input.Location = New System.Drawing.Point(3, 91)
+        Me.tb_input.Name = "tb_input"
+        Me.tb_input.Size = New System.Drawing.Size(518, 25)
+        Me.tb_input.TabIndex = 2
+        '
+        'lb_name
+        '
+        Me.lb_name.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lb_name.Font = New System.Drawing.Font("Nirmala UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lb_name.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.lb_name.Location = New System.Drawing.Point(3, 60)
+        Me.lb_name.Name = "lb_name"
+        Me.lb_name.Size = New System.Drawing.Size(518, 28)
+        Me.lb_name.TabIndex = 4
+        Me.lb_name.Text = "User"
+        Me.lb_name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'frmLogin
         '
@@ -138,6 +152,7 @@ Partial Class frmLogin
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents lb_info As Label
     Friend WithEvents btn_login As Button
-    Friend WithEvents tb_pass As TextBox
-    Friend WithEvents cb_Role As ComboBox
+    Friend WithEvents tb_input As TextBox
+    Friend WithEvents cb_user As ComboBox
+    Friend WithEvents lb_name As Label
 End Class

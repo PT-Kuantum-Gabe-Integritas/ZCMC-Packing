@@ -4,7 +4,6 @@ Imports System.IO
 Imports System.Data.SQLite
 Imports System.Data.OleDb
 
-
 Public Class Database
     Implements IDatabase
 
@@ -26,8 +25,6 @@ Public Class Database
         End Set
     End Property
     Public Property UID As Integer Implements IDatabase.UID
-
-
     Enum DATATYPE
         CONFIG
         USER
@@ -41,11 +38,6 @@ Public Class Database
             _path = value
         End Set
     End Property
-
-    'Public Sub New(Path As String)
-    '    _path = Path
-    'End Sub
-
     Public Function GetFolderBase(type As DATATYPE) As String
         Select Case type
             Case DATATYPE.CONFIG
@@ -56,8 +48,6 @@ Public Class Database
                 Return "None"
         End Select
     End Function
-
-
     Public ReadOnly Property isConnected As String Implements IDatabase.isConnected
         Get
             Return _isConnected
@@ -71,7 +61,6 @@ Public Class Database
             query = String.Format("INSERT INTO {0} {1} VALUES {2}", table, param, values)
         End If
         ExecNonQuery(query)
-        'Return query
     End Sub
 
     Public Sub DBUpdate(table As String, param As String, where As String) Implements IDatabase.DBUpdate
@@ -81,7 +70,6 @@ Public Class Database
         End If
         ExecNonQuery(query)
     End Sub
-
     Public Sub DBDelete(table As String, where As String) Implements IDatabase.DBDelete
         Dim query As String = ""
         If _isConnected Then
@@ -89,13 +77,11 @@ Public Class Database
         End If
         ExecNonQuery(query)
     End Sub
-
     Private Sub FolderExist(path As String) Implements IDatabase.FolderExist
         If Not Directory.Exists(path) Then
             Directory.CreateDirectory(path)
         End If
     End Sub
-
     Public Function DBSelect(param As String, table As String, where As String, sortbyASC As Boolean, limit As Integer) As DataTable Implements IDatabase.DBSelect
         Dim query As String = ""
         Dim dt As DataTable
@@ -112,32 +98,14 @@ Public Class Database
         dt = ExecQuery(query)
         Return dt
     End Function
-
-
     Public Function GetDate(_date As Date) As String Implements IDatabase.GetDate
         Return String.Format("{0:0000}-{1:00}-{2:00}", _date.Year, _date.Month, _date.Day)
     End Function
-
-
     Public Overridable Sub Open() Implements IDatabase.Open
-
-        'Return _isConnected
     End Sub
-
     Public Overridable Sub Close() Implements IDatabase.Close
-        'Try
-        '    If _isConnected Then
-        '        _cmd.Dispose()
-        '        _con.Close()
-
-        '    End If
-        'Catch ex As Exception
-
-        'End Try
     End Sub
-
     Public Overridable Sub ExecNonQuery(cmd As String)
-
     End Sub
     Public Overridable Function ExecQuery(cmd As String) As DataTable
         Dim dt As DataTable = New DataTable()
