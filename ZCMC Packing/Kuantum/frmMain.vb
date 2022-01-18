@@ -50,4 +50,9 @@ Public Class frmMain
         Me.Show()
 
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        _production.CloseALL()
+        Me.Close()
+    End Sub
 End Class

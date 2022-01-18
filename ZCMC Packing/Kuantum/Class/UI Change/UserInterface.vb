@@ -22,6 +22,7 @@
     Public Shared _frmLog As frmLog = New frmLog()
     Public Shared _frmMain As frmMain = New frmMain()
     Public Shared _frmAbout As frmAbout = New frmAbout()
+    Public Shared _frmLogin As frmLogin = New frmLogin()
 
 
     Public Enum TAB
@@ -130,7 +131,7 @@
                 _frmMain.mainPanel.Controls.Clear()
                 _frmMain.mainPanel.Controls.Add(_frmAbout)
                 _frmAbout.Show()
-                _frmMain.lbMenu.Text = "Production Log"
+                _frmMain.lbMenu.Text = "Software About"
 
 
 
@@ -204,13 +205,13 @@
 
             Case TAB.LOGIN
                 'Code
-                '_frmLogin.TopLevel = False
-                '_frmLogin.TopMost = True
-                '_frmLogin.Dock = DockStyle.Fill
-                'mainPanel.Controls.Clear()
-                'mainPanel.Controls.Add(_frmLogin)
-                '_frmLogin.Show()
-                _frmMain.lbMenu.Text = "User Management"
+                _frmLogin.TopLevel = False
+                _frmLogin.TopMost = True
+                _frmLogin.Dock = DockStyle.Fill
+                _frmMain.mainPanel.Controls.Clear()
+                _frmMain.mainPanel.Controls.Add(_frmLogin)
+                _frmLogin.Show()
+                _frmMain.lbMenu.Text = "Login"
 
         End Select
     End Sub

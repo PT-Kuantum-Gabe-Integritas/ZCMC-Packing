@@ -50,7 +50,7 @@
             Return _groupPrint
         End Get
         Set(value As String)
-            value = _groupPrint
+            _groupPrint = value
         End Set
     End Property
 

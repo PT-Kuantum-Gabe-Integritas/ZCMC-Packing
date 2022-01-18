@@ -34,12 +34,12 @@ Public Class frmRun
         Initial()
     End Sub
 
-    Private Sub Initial()
+    Public Sub Initial()
         lbPO.Text = String.Empty
         lbReff.Text = String.Empty
         lbQty.Text = String.Empty
         order.Sequence = SelectPO.SEQ.PO
-        lbl_Instruction.Text = "Please"
+        lbl_Instruction.Text = "Please Scan PO"
     End Sub
 
 

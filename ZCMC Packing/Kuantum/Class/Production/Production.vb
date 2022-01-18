@@ -139,7 +139,7 @@ Public Class Production
             _modbus.Write(Name.Q_Ind_Trig, ind.Enable)
             _modbus.Write(Name.Q_Group, group.Enable)
 
-            _ui.LoadPanel(UserInterface.TAB.RUN)
+            _ui.LoadPanel(UserInterface.TAB.LOGIN)
             result = True
         Else
             result = False
@@ -148,7 +148,8 @@ Public Class Production
     End Function
 
     Public Sub Stops() Implements IProduction.Stops
-
+        th.Abort()
+        _exit = True
 
     End Sub
 
@@ -181,6 +182,8 @@ Public Class Production
                     ind.Complete = True
                 End If
 
+
+
             End If
 
             'GROUP RUNNING
@@ -194,9 +197,11 @@ Public Class Production
                         Update(COL.GROUP, group.Qty, wo.PO, wo.RefTicket)
                         Update(COL.DATEOUT, String.Format("{0:0000}-{1:00}-{2:00} {3:00}:{4:00}:{5:00}",
                                                                         Date.Now.Year, Date.Now.Month, Date.Now.Day, Date.Now.Hour, Date.Now.Minute, Date.Now.Second), wo.PO, wo.RefTicket)
+                        Update(COL.COMPLETE, "2", wo.PO, wo.RefTicket)
                         'RESET ALL
+                        _exit = True
+                        Stops()
                         Reset()
-                        GoTo Finish
                     End If
                 End If
 
@@ -213,16 +218,22 @@ Public Class Production
                 End If
             End If
 
+            'CHECK QTY
+            If ind.Qty >= wo.Qty Then
+                ind.Complete = True
+            End If
 
 
-Finish:
 
             'IF ALL COMPLETE
             If ind.Complete And group.Complete Then
                 Update(COL.DATEOUT, String.Format("{0:0000}-{1:00}-{2:00} {3:00}:{4:00}:{5:00}",
                                                                     Date.Now.Year, Date.Now.Month, Date.Now.Day, Date.Now.Hour, Date.Now.Minute, Date.Now.Second), wo.PO, wo.RefTicket)
                 Update(COL.COMPLETE, "1", wo.PO, wo.RefTicket)
+                _exit = True
+                Stops()
                 Reset()
+
             End If
             Thread.Sleep(100)
 
@@ -375,12 +386,21 @@ Finish:
         UserInterface._frmHome.UpdateUI(frmHome.CONTROL.TOTAL_QTY, wo.Qty.ToString())
         UserInterface._frmHome.UpdateUI(frmHome.CONTROL.PO, wo.PO)
         UserInterface._frmHome.UpdateUI(frmHome.CONTROL.REFF, wo.RefTicket)
+        UserInterface._frmRun.Initial()
+        '_ui.LoadPanel(UserInterface.TAB.RUN)
 
         _modbus.Write(Name.Q_Ind_Trig, ind.Enable)
         _modbus.Write(Name.Q_Group, group.Enable)
 
     End Sub
 
+
+    Public Sub CloseALL()
+        _modbus.Dispose()
+        _config.Close()
+        Stops()
+
+    End Sub
 
 
 End Class

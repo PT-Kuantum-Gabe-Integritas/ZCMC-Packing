@@ -1,0 +1,34 @@
+C:\Users\Judi\Documents\GitHub\Database\User\bin\Debug\User.exe.config
+C:\Users\Judi\Documents\GitHub\Database\User\obj\Debug\User.vbprojResolveAssemblyReference.cache
+C:\Users\Judi\Documents\GitHub\Database\User\obj\Debug\User.frmLogin.resources
+C:\Users\Judi\Documents\GitHub\Database\User\obj\Debug\User.Resources.resources
+C:\Users\Judi\Documents\GitHub\Database\User\obj\Debug\User.vbproj.GenerateResource.Cache
+C:\Users\Judi\Documents\GitHub\Database\User\obj\Debug\User.xml
+C:\Users\Judi\Documents\GitHub\Database\User\bin\Debug\User.exe
+C:\Users\Judi\Documents\GitHub\Database\User\bin\Debug\User.pdb
+C:\Users\Judi\Documents\GitHub\Database\User\bin\Debug\User.xml
+C:\Users\Judi\Documents\GitHub\Database\User\bin\Debug\Database.dll
+C:\Users\Judi\Documents\GitHub\Database\User\bin\Debug\System.Data.SQLite.dll
+C:\Users\Judi\Documents\GitHub\Database\User\bin\Debug\Database.pdb
+C:\Users\Judi\Documents\GitHub\Database\User\bin\Debug\System.Data.SQLite.xml
+C:\Users\Judi\Documents\GitHub\Database\User\obj\Debug\User.exe
+C:\Users\Judi\Documents\GitHub\Database\User\obj\Debug\User.pdb
+C:\Users\Judi\Documents\GitHub\Database\User\bin\Debug\EasyModbus.dll
+C:\Users\Judi\Documents\GitHub\Database\User\obj\Debug\User.frmUserManagement.resources
+C:\Users\Judi\Documents\GitHub\Database\User\bin\Debug\Database.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\User\bin\Debug\User.exe.config
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\User\bin\Debug\User.exe
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\User\bin\Debug\User.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\User\bin\Debug\User.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\User\bin\Debug\System.Data.SQLite.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\User\bin\Debug\Database.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\User\bin\Debug\Database.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\User\bin\Debug\System.Data.SQLite.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\User\obj\Debug\User.vbprojResolveAssemblyReference.cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\User\obj\Debug\User.frmLogin.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\User\obj\Debug\User.Resources.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\User\obj\Debug\User.frmUserManagement.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\User\obj\Debug\User.vbproj.GenerateResource.Cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\User\obj\Debug\User.exe
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\User\obj\Debug\User.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\User\obj\Debug\User.pdb

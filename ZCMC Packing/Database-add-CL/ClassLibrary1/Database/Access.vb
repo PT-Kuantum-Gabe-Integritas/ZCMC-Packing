@@ -23,10 +23,9 @@ Public Class Access
         FolderExist(folderPath)
         Try
             _connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & IO.Path.Combine(folderPath, _fileName) & ";Persist Security Info=False;"
-            _con = New OleDbConnection()
-            _con.ConnectionString = _connectionString
-            '_cmd = New OleDbCommand()
-            '_con.Open()
+            _con = New OleDbConnection(_connectionString)
+            _cmd = New OleDbCommand()
+            _con.Open()
 
             _isConnected = True
         Catch ex As Exception

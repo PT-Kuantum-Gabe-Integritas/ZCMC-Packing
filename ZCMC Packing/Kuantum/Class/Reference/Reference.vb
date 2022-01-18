@@ -28,11 +28,11 @@ Public Class Reference
 
     Public Function Open() As Boolean Implements IReference.Open
         'Code
-        Dim status As Boolean = True
-        'If Not _dbProduct.isConnected Then
-        '    _dbProduct = _database.GetDataBase("dbProduct.mdb", "PD01", "-Access", "Reference")
-        '    status = True
-        'End If
+        Dim status As Boolean
+        If Not _dbProduct.isConnected Then
+            _dbProduct = _database.GetDataBase("dbProduct.mdb", "PD01", "-Access", "Reference")
+            status = True
+        End If
         Return status
     End Function
 
