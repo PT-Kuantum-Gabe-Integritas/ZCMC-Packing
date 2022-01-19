@@ -47,6 +47,7 @@ Public Class frmMain
         Me.Hide()
         'Start Production 
         _production.Starts()
+        HideAll()
         Me.Show()
 
     End Sub
@@ -54,5 +55,23 @@ Public Class frmMain
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         _production.CloseALL()
         Me.Close()
+    End Sub
+
+
+
+    Sub HideAll()
+        panelUser.Visible = False
+        btnDash.Visible = False
+        btnLog.Visible = False
+        btnRun.Visible = False
+        btnReff.Visible = False
+        btnConfig.Visible = False
+        btnUser.Visible = False
+
+    End Sub
+
+    Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
+        HideAll()
+        _ui.LoadPanel(UserInterface.TAB.LOGIN)
     End Sub
 End Class

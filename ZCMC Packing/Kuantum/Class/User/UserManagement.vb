@@ -9,6 +9,16 @@ Public Class UserManagement
     Private getdatabase As DBManager = DBManager.getInstance()
     Private _dbUser As SQLite = New SQLite()
 
+    Public UserType_ As USERTYPE
+
+
+    Public Enum USERTYPE
+        OPERATOR_
+        ENGINEER_
+        QUALITY_
+        ADMIN_
+    End Enum
+
     Public Property CurrentUser As UserData
         Get
             Return _currUser
@@ -46,12 +56,23 @@ Public Class UserManagement
         Return autorized
     End Function
     Public Function GetPermit(type As String) Implements IUserManagement.GetPermit
+
+        UserInterface._frmMain.panelUser.Visible = True
+        UserInterface._frmMain.lbUsername.Text = String.Format("Hi, {0}", type)
+
+
         Dim dt As DataTable = New DataTable()
         Try
             Dim str_where As String = String.Format("user='{0}'", type)
             dt = _dbUser.DBSelect("Dashboard, Run, Config, Manual, Reference, LOG, UserManage", "tb_user", str_where)
+            UserInterface._frmMain.btnDash.Visible = Integer.Parse(dt.Rows(0).Item("Dashboard").ToString())
+            UserInterface._frmMain.btnLog.Visible = Integer.Parse(dt.Rows(0).Item("LOG").ToString())
+            UserInterface._frmMain.btnConfig.Visible = Integer.Parse(dt.Rows(0).Item("Config").ToString())
+            UserInterface._frmMain.btnRun.Visible = Integer.Parse(dt.Rows(0).Item("Run").ToString())
+            UserInterface._frmMain.btnReff.Visible = Integer.Parse(dt.Rows(0).Item("Reference").ToString())
+            UserInterface._frmMain.btnUser.Visible = Integer.Parse(dt.Rows(0).Item("UserManage").ToString())
         Catch ex As Exception
-
+            MsgBox("Failed Get User Permission..")
         End Try
         Return dt
     End Function

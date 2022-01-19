@@ -1,6 +1,17 @@
 ﻿Public Class frmLogin
+
+    'Public Enum USERTYPE
+    '    OPERATOR_
+    '    ENGINEER_
+    '    QUALITY_
+    '    ADMIN_
+    'End Enum
+
+
     Private _newUser As UserData = New UserData()
     Public _userManager As UserManagement = New UserManagement()
+    'Public _ui As UserInterface = UserInterface.getInstance()
+
     Public Sub Initialize()
         cb_user.Items.Clear()
         Dim tb As DataTable = _userManager.loadTable()
@@ -14,20 +25,37 @@
         cb_user.SelectedIndex = 0
         SetDisplay(False)
     End Sub
-    Public Sub SetDisplay(requiredPassword As Boolean)
-        If requiredPassword Then
-            lb_user.Text = cb_user.Text
-            lb_info.Text = "Please fill password to continue!"
-            tb_input.PasswordChar = "*"
-            tb_input.Text = ""
-            tb_input.Focus()
-        Else
-            lb_user.Text = cb_user.Text
-            lb_info.Text = "Please fill name or id to continue!"
-            tb_input.PasswordChar = ""
-            tb_input.Text = ""
-            tb_input.Focus()
-        End If
+    Public Sub SetDisplay(_ut As UserManagement.USERTYPE)
+        Select Case _ut
+            Case UserManagement.USERTYPE.OPERATOR_
+                tb_input.Text = ""
+                tb_input.Enabled = True
+                lb_info1.Text = "Choose your Role."
+                lbInfo2.Text = "Please fill your badge number"
+                tb_input.Focus()
+                tb_input.PasswordChar = ""
+            Case UserManagement.USERTYPE.ENGINEER_
+                tb_input.Text = ""
+                tb_input.Enabled = True
+                lb_info1.Text = "Choose your Role."
+                lbInfo2.Text = "Please fill your password"
+                tb_input.Focus()
+                tb_input.PasswordChar = "*"
+            Case UserManagement.USERTYPE.QUALITY_
+                tb_input.Text = ""
+                tb_input.Enabled = True
+                lb_info1.Text = "Choose your Role."
+                lbInfo2.Text = "Please fill your password"
+                tb_input.Focus()
+                tb_input.PasswordChar = "*"
+            Case UserManagement.USERTYPE.ADMIN_
+                tb_input.Text = ""
+                tb_input.Enabled = True
+                lb_info1.Text = "Choose your Role."
+                lbInfo2.Text = "Please fill your password"
+                tb_input.Focus()
+                tb_input.PasswordChar = "*"
+        End Select
     End Sub
     Private Sub DoLogin()
         With _newUser
@@ -40,26 +68,27 @@
 
         End With
         If _userManager.ValidateUser(_newUser, tb_input.Text) Then
-            'Main_ChangeUser()
-            'frmUserManagement.Show()
+
+
+            _userManager.GetPermit(_newUser.Type)
+
+
             Me.Hide()
         Else
-            lb_info.Text = "Wrong Password!"
-            lb_info.ForeColor = Color.Red
+            lb_info1.Text = "Wrong Password!"
+            lb_info1.ForeColor = Color.Red
             tb_input.Text = ""
             tb_input.Focus()
         End If
     End Sub
 
-    Private Sub cb_user_SelectedIndexChanged(sender As Object, e As EventArgs)
-        If _userManager.GetPass(cb_user.SelectedItem) Then
-            SetDisplay(True)
-        Else
-            SetDisplay(False)
-        End If
+    Private Sub cb_user_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cb_user.SelectedIndexChanged
+
+        _userManager.UserType_ = DirectCast([Enum].Parse(GetType(UserManagement.USERTYPE), cb_user.SelectedItem.ToString()), UserManagement.USERTYPE)
+        SetDisplay(_userManager.UserType_)
     End Sub
 
-    Private Sub tb_input_KeyDown(sender As Object, e As KeyEventArgs)
+    Private Sub tb_input_KeyDown(sender As Object, e As KeyEventArgs) Handles tb_input.KeyDown
         If e.KeyCode = Keys.Enter Or e.KeyCode = Keys.Return Then
             DoLogin()
         End If

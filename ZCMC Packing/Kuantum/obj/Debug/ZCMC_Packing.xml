@@ -132,6 +132,11 @@ ZCMC_Packing
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.logout">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ZCMC_Packing.My.Resources.Resources.manuals__1_">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

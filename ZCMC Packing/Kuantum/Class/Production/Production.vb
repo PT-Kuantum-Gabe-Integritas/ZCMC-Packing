@@ -118,7 +118,7 @@ Public Class Production
         _Initialization.Start()
 
         Open()
-
+        _ui.LoadPanel(UserInterface.TAB.LOGIN)
         If _modbus.Stats = Status.Connected Then
             ts = New ThreadStart(AddressOf Looping)
             th = New Thread(ts)
@@ -139,7 +139,7 @@ Public Class Production
             _modbus.Write(Name.Q_Ind_Trig, ind.Enable)
             _modbus.Write(Name.Q_Group, group.Enable)
 
-            _ui.LoadPanel(UserInterface.TAB.LOGIN)
+
             result = True
         Else
             result = False
@@ -148,8 +148,14 @@ Public Class Production
     End Function
 
     Public Sub Stops() Implements IProduction.Stops
-        th.Abort()
         _exit = True
+        Try
+            th.Abort()
+        Catch ex As Exception
+
+        End Try
+
+
 
     End Sub
 
