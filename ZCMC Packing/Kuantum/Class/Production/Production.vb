@@ -283,10 +283,10 @@ Public Class Production
         UserInterface._frmHome.UpdateUI(frmHome.CONTROL.TOTAL_QTY, wo.Qty)
 
         'LOAD LABEL IMAGE
-        'ind.Img = _label.LoadLabel(fn_ind, "Bitmap", wo.Bitmap, False)
-        'group.Img = _label.LoadLabel(fn_group, "Bitmap", wo.Bitmap, False)
+        ind.Img = _label.LoadLabel(fn_ind, "Bitmap", wo.Bitmap, False)
+        group.Img = _label.LoadLabel(fn_group, "Bitmap", wo.Bitmap, False)
         'pack.Img = Image.FromFile(IO.Path.Combine(fn_pack, wo.RefTicket & ".PNG"))
-        'LOAD LABEL IMAGE
+        'LOAD Label IMAGE
 
 
         UserInterface._frmHome.UpdateUI(frmHome.CONTROL.IND_QTY, ind.Qty)
