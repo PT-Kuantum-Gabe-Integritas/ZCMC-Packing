@@ -155,3 +155,4 @@ C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\bi
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\obj\Debug\ZCMC_Packing.exe
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\obj\Debug\ZCMC_Packing.xml
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\obj\Debug\ZCMC_Packing.pdb
+C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\bin\Debug\Database.xml

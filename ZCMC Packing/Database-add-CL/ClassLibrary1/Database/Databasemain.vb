@@ -5,7 +5,6 @@ Imports System.Data.SQLite
 Imports System.Data.OleDb
 Imports System.Windows.Forms
 
-
 Public Class Databasemain
     Implements IDatabase
 

@@ -6,9 +6,7 @@
     Private _bitmap As String = String.Empty
     Private _logOffer As String = String.Empty
     Private _Information As String = String.Empty
-
     Public NewProduct As ReferenceData
-
 
     Public Property Art_Number As String
         Get

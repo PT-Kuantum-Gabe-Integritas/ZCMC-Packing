@@ -66,6 +66,6 @@ Public Class Access
 
         End If
 
-        Return MyBase.ExecQuery(cmd)
+        Return dt 'MyBase.ExecQuery(cmd)
     End Function
 End Class

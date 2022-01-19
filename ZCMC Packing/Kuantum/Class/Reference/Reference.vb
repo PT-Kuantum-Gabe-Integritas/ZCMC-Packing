@@ -5,6 +5,8 @@ Public Class Reference
     Dim _database As DBManager = DBManager.getInstance()
     Dim _dbProduct As Access = New Access()
 
+    Private _Reff As ReferenceData = New ReferenceData()
+    Private _dt As DataTable
 
     Public Sub New()
 
@@ -17,10 +19,6 @@ Public Class Reference
         Return _instance
     End Function
 
-    Private _Reff As ReferenceData = New ReferenceData()
-    Private _dt As DataTable
-
-
     Public Function Close() As Boolean Implements IReference.Close
         'Code
         Return True
@@ -31,15 +29,22 @@ Public Class Reference
         Dim status As Boolean
         If Not _dbProduct.isConnected Then
             _dbProduct = _database.GetDataBase("dbProduct.mdb", "PD01", "-Access", "Reference")
-            status = True
+            status = _dbProduct._isConnected
         End If
         Return status
     End Function
 
-    Public Function Read() As DataTable Implements IReference.Read
+    Public Function Read(ref As String, artno As String) As DataTable Implements IReference.Read
         Dim dt As DataTable = New DataTable()
-        Dim str_where = "Reference='ZCMC21T10'"
-        dt = _dbProduct.DBSelect("*", "PRODUCT", str_where)
+        Dim str_where As String = ""
+        If artno = "" Then
+            str_where = String.Format("Reference = '{0}'", ref)
+        ElseIf ref = "" Then
+            str_where = String.Format("Art_Number = '{0}'", artno)
+        Else
+            str_where = String.Format("Art_Number = '{0}' and Reference = '{1}' ", artno, ref)
+        End If
+        dt = _dbProduct.DBSelect("*", "ProductData", str_where)
         Return dt
     End Function
 
@@ -59,12 +64,11 @@ Public Class Reference
         End With
     End Sub
 
-
     Private Sub InsertProd(art_number As String, reff As String, qty_ind As String, qty_group As String, Bitmap As String, information As String)
         Try
-            Dim str_param = "(ArtNumber,Reference,Qty_ind,Qty_Group,Bitmap,InformationPic)"
+            Dim str_param = "(Art_Number,Reference,Qty_ind,Qty_Group,Bitmap,InformationPic)"
             Dim str_value = String.Format("('{0}','{1}','{2}','{3}','{4}','{5}')", art_number, reff, qty_ind, qty_group, Bitmap, information)
-
+            _dbProduct.DBInsert("ProductData", str_param, str_value)
             'Code Insert to Product Data Reference
         Catch ex As Exception
 
@@ -73,13 +77,14 @@ Public Class Reference
 
     Private Sub setValue(param As String, val As String, where As String)
         Try
-            Dim str_param As String = String.Format("{0}='{1}'", param, val)
-            Dim str_where As String = String.Format("Reference='{1}'", where)
-
+            Dim str_param As String = String.Format("{0} = '{1}'", param, val)
+            Dim str_where As String = String.Format("Reference='{0}'", where)
+            _dbProduct.DBUpdate("ProductData", str_param, str_where)
             'Code Update to Product Data
         Catch ex As Exception
 
         End Try
+
     End Sub
 
     Private Function getValue(Item As String) As String
@@ -98,29 +103,14 @@ Public Class Reference
         Return val
     End Function
 
-    Public Function ReadAll(table As String) As DataTable Implements IReference.ReadAll
-        Dim dt As DataTable = New DataTable()
+    Public Function loadTable()
+        Dim dt As New DataTable
         Try
-            ' dt = Select File dt = databaseee.DBSelect("*", tableName, "")
-
+            dt = _dbProduct.DBSelect("*", "ProductData", String.Empty)
         Catch ex As Exception
-
+            MsgBox(ex.Message)
         End Try
+
         Return dt
     End Function
-
-    Public Function ReadData(dbSelect As String, table As String, where As String) As DataTable Implements IReference.ReadData
-        Dim dt As DataTable = New DataTable()
-        Try
-            ' dt = Select File
-        Catch ex As Exception
-
-        End Try
-        Return dt
-
-    End Function
-
-
-
-
 End Class
