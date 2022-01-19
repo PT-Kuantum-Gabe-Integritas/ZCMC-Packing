@@ -52,11 +52,11 @@ Public Class Production
 
     Private Shared _instance As Production
     Private _Initialization As Initialization = Initialization.getInstance()
-    Private _modbus As Modbus = Modbus.getInstance()
+    Private _modbus As Modbus
     Private _label As Codesoft
     Private _ui As UserInterface = UserInterface.getInstance()
     Public database As DBManager = DBManager.getInstance()
-    Private _config As Configuration = Configuration.getInstance()
+    Private _config As Configuration
     Public dbProduction As SQLite = New SQLite()
     Public Shared th As Thread
     Public Shared ts As ThreadStart
@@ -193,6 +193,7 @@ Public Class Production
             End If
 
             'GROUP RUNNING
+            group.Total = 10
             If group.Run Then
                 If ind.Qty Mod group.Total <> 0 And ind.Qty >= wo.Qty Then
                     Dim result As DialogResult = MessageBox.Show("Order Finish", "Order was Finish ", MessageBoxButtons.YesNo)
@@ -363,14 +364,10 @@ Public Class Production
 
         If Not dbProduction.isConnected Then
             dbProduction = database.GetDataBase("Production.db", "P01", "-SQLite", "Order")
+            _config = Configuration.getInstance()
+            _modbus = Modbus.getInstance()
             prodStat = True
         End If
-
-        fn_group = _config._currConfig.GROUP_NAME
-        fn_ind = _config._currConfig.INDIVIDUAL_NAME
-        printer_ind = _config._currConfig.IND_PRINTER
-        printer_group = _config._currConfig.GROUP_PRINTER
-        group.Total = 10
 
 
         Return prodStat

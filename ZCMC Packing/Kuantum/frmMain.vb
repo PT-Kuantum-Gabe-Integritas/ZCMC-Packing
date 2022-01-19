@@ -30,12 +30,12 @@ Public Class frmMain
     End Sub
 
 
-    Private Sub ButtonClick(sender As Object, e As EventArgs) Handles btnUser.Click, btnRun.Click, btnReff.Click, btnManual.Click, btnLog.Click, btnDash.Click, btnConfig.Click, btnAbout.Click
+    Private Sub ButtonClick(sender As Object, e As EventArgs)
         Button(sender)
         _ui.LoadPanel(sender)
     End Sub
 
-    Private Sub ButtonEnter(sender As Object, e As EventArgs) Handles btnUser.MouseEnter, btnRun.MouseEnter, btnReff.MouseEnter, btnManual.MouseEnter, btnLog.MouseEnter, btnDash.MouseEnter, btnConfig.MouseEnter, btnAbout.MouseEnter
+    Private Sub ButtonEnter(sender As Object, e As EventArgs)
         btnShow(sender)
 
     End Sub
@@ -60,7 +60,8 @@ Public Class frmMain
 
 
     Sub HideAll()
-        panelUser.Visible = False
+        'panelUser.Visible = False
+        btnLogout.Visible = False
         btnDash.Visible = False
         btnLog.Visible = False
         btnRun.Visible = False

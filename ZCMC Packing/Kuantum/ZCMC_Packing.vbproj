@@ -350,6 +350,30 @@
   <ItemGroup>
     <None Include="Resources\logout.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ethernet on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\local-area-network %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\local-area-network.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\local-area-network %281%29%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Connected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Disconnected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correct.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

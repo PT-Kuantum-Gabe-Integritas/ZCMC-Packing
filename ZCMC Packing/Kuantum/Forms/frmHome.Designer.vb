@@ -35,7 +35,6 @@ Partial Class frmHome
         Me.Label10 = New System.Windows.Forms.Label()
         Me.lb_qtyInd = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
         Me.pbGroup = New System.Windows.Forms.PictureBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.lb_qtyGroup = New System.Windows.Forms.Label()
@@ -46,6 +45,7 @@ Partial Class frmHome
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.lb_msg = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -77,14 +77,13 @@ Partial Class frmHome
         '
         Me.lb_Total.BackColor = System.Drawing.Color.Gainsboro
         Me.lb_Total.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lb_Total.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Bold)
+        Me.lb_Total.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lb_Total.ForeColor = System.Drawing.Color.Green
         Me.lb_Total.Location = New System.Drawing.Point(1005, 0)
         Me.lb_Total.Margin = New System.Windows.Forms.Padding(0, 0, 3, 0)
         Me.lb_Total.Name = "lb_Total"
         Me.lb_Total.Size = New System.Drawing.Size(311, 37)
         Me.lb_Total.TabIndex = 6
-        Me.lb_Total.Text = "1234567890"
         Me.lb_Total.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label4
@@ -105,14 +104,13 @@ Partial Class frmHome
         '
         Me.lb_PO.BackColor = System.Drawing.Color.Gainsboro
         Me.lb_PO.Dock = System.Windows.Forms.DockStyle.Left
-        Me.lb_PO.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Bold)
+        Me.lb_PO.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lb_PO.ForeColor = System.Drawing.Color.Green
         Me.lb_PO.Location = New System.Drawing.Point(554, 0)
         Me.lb_PO.Margin = New System.Windows.Forms.Padding(0, 0, 3, 0)
         Me.lb_PO.Name = "lb_PO"
         Me.lb_PO.Size = New System.Drawing.Size(348, 37)
         Me.lb_PO.TabIndex = 3
-        Me.lb_PO.Text = "1234567890"
         Me.lb_PO.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label2
@@ -133,14 +131,13 @@ Partial Class frmHome
         '
         Me.lb_Reff.BackColor = System.Drawing.Color.Gainsboro
         Me.lb_Reff.Dock = System.Windows.Forms.DockStyle.Left
-        Me.lb_Reff.Font = New System.Drawing.Font("Nirmala UI", 10.2!, System.Drawing.FontStyle.Bold)
+        Me.lb_Reff.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lb_Reff.ForeColor = System.Drawing.Color.Green
         Me.lb_Reff.Location = New System.Drawing.Point(103, 0)
         Me.lb_Reff.Margin = New System.Windows.Forms.Padding(0, 0, 3, 0)
         Me.lb_Reff.Name = "lb_Reff"
         Me.lb_Reff.Size = New System.Drawing.Size(348, 37)
         Me.lb_Reff.TabIndex = 1
-        Me.lb_Reff.Text = "Reference"
         Me.lb_Reff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label1
@@ -249,20 +246,6 @@ Partial Class frmHome
         Me.Label14.TabIndex = 17
         Me.Label14.Text = "Qty"
         Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label15
-        '
-        Me.Label15.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.Label15.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label15.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(0, 0)
-        Me.Label15.Margin = New System.Windows.Forms.Padding(3, 0, 0, 0)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(319, 37)
-        Me.Label15.TabIndex = 16
-        Me.Label15.Text = "Individual"
-        Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'pbGroup
         '
@@ -399,6 +382,20 @@ Partial Class frmHome
         Me.lb_msg.Text = "Message"
         Me.lb_msg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Label15
+        '
+        Me.Label15.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.Label15.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label15.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.ForeColor = System.Drawing.Color.White
+        Me.Label15.Location = New System.Drawing.Point(0, 0)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(3, 0, 0, 0)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(319, 37)
+        Me.Label15.TabIndex = 16
+        Me.Label15.Text = "Individual"
+        Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'frmHome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -443,7 +440,6 @@ Partial Class frmHome
     Friend WithEvents Label10 As Label
     Friend WithEvents lb_qtyInd As Label
     Friend WithEvents Label14 As Label
-    Friend WithEvents Label15 As Label
     Friend WithEvents pbGroup As PictureBox
     Friend WithEvents Label9 As Label
     Friend WithEvents lb_qtyGroup As Label
@@ -451,4 +447,5 @@ Partial Class frmHome
     Friend WithEvents Label7 As Label
     Friend WithEvents lb_msg As Label
     Friend WithEvents lb_Total As Label
+    Friend WithEvents Label15 As Label
 End Class

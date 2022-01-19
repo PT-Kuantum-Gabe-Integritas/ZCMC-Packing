@@ -57,7 +57,7 @@ Public Class UserManagement
     End Function
     Public Function GetPermit(type As String) Implements IUserManagement.GetPermit
 
-        UserInterface._frmMain.panelUser.Visible = True
+        UserInterface._frmMain.btnLogout.Visible = True
         UserInterface._frmMain.lbUsername.Text = String.Format("Hi, {0}", type)
 
 

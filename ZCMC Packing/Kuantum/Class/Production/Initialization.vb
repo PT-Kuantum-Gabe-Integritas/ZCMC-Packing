@@ -12,6 +12,8 @@ Public Class Initialization
     Dim _config As IConfiguration = Configuration.getInstance()
     Dim _Reference As IReference = Reference.getInstance()
     Dim _modbus As Modbus = Modbus.getInstance()
+    Private _label As Codesoft
+    Private _production As Production
     'Dim _database As DBManager = New DBManager
     'Dim _dbProduction As SQLite = New SQLite()
     Private Shared _frmSplash As frmSplash
@@ -85,15 +87,17 @@ Public Class Initialization
         UpdateStatus(String.Format("{0}...", str_status), progress)
         Thread.Sleep(delay)
         If Not _config.Open Then
+            UserInterface._frmMain.lbConfig.Image = My.Resources.remove
             UpdateStatus(String.Format("{0} - Failed", str_status), progress)
             Thread.Sleep(delay)
-            GoTo Finish
-
+        Else
+            UserInterface._frmMain.lbConfig.Image = My.Resources.correct
+            _config.Read()
+            UpdateStatus(String.Format("{0} - Success", str_status), progress)
+            progress += 5
+            Thread.Sleep(delay)
         End If
-        _config.Read()
-        UpdateStatus(String.Format("{0} - Success", str_status), progress)
-        progress += 5
-        Thread.Sleep(delay)
+
 
         'STEP 3 OPEN PRODUCT REFERENCE
         str_status = "Open DB Reference"
@@ -101,14 +105,15 @@ Public Class Initialization
         UpdateStatus(String.Format("{0}...", str_status), progress)
         Thread.Sleep(delay)
         If Not _Reference.Open Then
+            UserInterface._frmMain.lbReff.Image = My.Resources.remove
             UpdateStatus(String.Format("{0} - Failed", str_status), progress)
             Thread.Sleep(delay)
-            GoTo Finish
+        Else
+            UserInterface._frmMain.lbReff.Image = My.Resources.correct
+            UpdateStatus(String.Format("{0} - Success", str_status), progress)
+            progress += 5
+            Thread.Sleep(delay)
         End If
-        UpdateStatus(String.Format("{0} - Success", str_status), progress)
-        progress += 5
-        Thread.Sleep(delay)
-
 
         'STEP 4 OPEN MODBUS
         str_status = "Connecting to Modbus"
@@ -116,28 +121,56 @@ Public Class Initialization
         UpdateStatus(String.Format("{0}...", str_status), progress)
         Thread.Sleep(delay)
         If Not _modbus.Start("127.0.0.1") Then
+            UserInterface._frmMain.lbModbus.Image = My.Resources.remove
             UpdateStatus(String.Format("{0} - Failed", str_status), progress)
             Thread.Sleep(delay)
-            GoTo Finish
+        Else
+            UserInterface._frmMain.lbModbus.Image = My.Resources.correct
+            UpdateStatus(String.Format("{0} - Success", str_status), progress)
+            progress += 5
+            Thread.Sleep(delay)
         End If
-        UpdateStatus(String.Format("{0} - Success", str_status), progress)
-        progress += 5
-        Thread.Sleep(delay)
 
-        ''STEP 5 OPEN LABEL
+        'STEP 5 OPEN PRODUCTION
+        str_status = "Opening Production"
+        progress += 10
+        UpdateStatus(String.Format("{0}...", str_status), progress)
+        Thread.Sleep(delay)
+        Try
+            _production = Production.getInstance()
+            If Not _production.Open() Then
+                UserInterface._frmMain.lbLog.Image = My.Resources.remove
+                UpdateStatus(String.Format("{0} - Failed", str_status), progress)
+                Thread.Sleep(delay)
+            Else
+                UserInterface._frmMain.lbLog.Image = My.Resources.correct
+                UpdateStatus(String.Format("{0} - Success", str_status), progress)
+                progress += 5
+                Thread.Sleep(delay)
+            End If
+        Catch ex As Exception
+
+        End Try
+
+
+
+
+        ''STEP 6 OPEN LABEL
         str_status = "Opening Label"
         progress += 10
         UpdateStatus(String.Format("{0}...", str_status), progress)
         Thread.Sleep(delay)
         Try
-            '    _label = Codesoft.getInstance()
-            '    _label.BasePath = Application.StartupPath
-            '    _label.Open("Individual", TYPE.IND)
-            '    _label.Open("Group", TYPE.GROUP)
+            _label = Codesoft.getInstance()
+            _label.BasePath = Application.StartupPath
+            _label.Open("Individual", TYPE.IND)
+            _label.Open("Group", TYPE.GROUP)
+            UserInterface._frmMain.lbCodeSoft.Image = My.Resources.correct
             UpdateStatus(String.Format("{0} - Success", str_status), progress)
             progress += 5
         Catch ex As Exception
-        UpdateStatus(String.Format("{0} - Failed", str_status), progress)
+            UserInterface._frmMain.lbCodeSoft.Image = My.Resources.remove
+            UpdateStatus(String.Format("{0} - Failed", str_status), progress)
         Thread.Sleep(delay)
         'GoTo Finish
         End Try
@@ -150,8 +183,6 @@ Public Class Initialization
         progress = 100
         UpdateStatus("Initialization Done...", progress)
         Thread.Sleep(delay)
-Finish:
-
         Close()
 
 

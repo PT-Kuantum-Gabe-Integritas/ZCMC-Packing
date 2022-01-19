@@ -10,7 +10,7 @@
 
     Private _newUser As UserData = New UserData()
     Public _userManager As UserManagement = New UserManagement()
-    'Public _ui As UserInterface = UserInterface.getInstance()
+    Public _ui As UserInterface
 
     Public Sub Initialize()
         cb_user.Items.Clear()
@@ -71,9 +71,10 @@
 
 
             _userManager.GetPermit(_newUser.Type)
-
+            _ui.LoadPanel(UserInterface.TAB.RUN)
 
             Me.Hide()
+
         Else
             lb_info1.Text = "Wrong Password!"
             lb_info1.ForeColor = Color.Red
@@ -97,6 +98,7 @@
     Private Sub frmLogin_Load(sender As Object, e As EventArgs) Handles Me.Load
         _userManager.Initialize()
         Initialize()
+        _ui = UserInterface.getInstance()
     End Sub
 
     Private Sub btn_login_Click(sender As Object, e As EventArgs) Handles btn_login.Click
