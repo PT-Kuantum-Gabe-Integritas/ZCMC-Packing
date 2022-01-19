@@ -72,7 +72,7 @@ Public Class Codesoft
             If _app IsNot Nothing Then
                 _app.Documents.Item(name).Activate()
                 _app.ActiveDocument.Variables(var).Value = value
-                img = _app.ActiveDocument.GetPreview(True, True, 500)
+                img = _app.ActiveDocument.GetPreview(True, True, 100)
                 If rotate Then
                     img.RotateFlip(RotateFlipType.Rotate180FlipNone)
                 End If

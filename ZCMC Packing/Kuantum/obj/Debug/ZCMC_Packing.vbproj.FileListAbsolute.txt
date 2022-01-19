@@ -107,7 +107,6 @@ C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\System.Data.SQLite.Linq.dll
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\Lppanet.dll
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\CS.pdb
-C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\CS.xml
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\Database.pdb
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\Database.xml
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\EntityFramework.xml
@@ -119,3 +118,4 @@ C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\obj\
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\obj\Debug\ZCMC_Packing.exe
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\obj\Debug\ZCMC_Packing.xml
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\obj\Debug\ZCMC_Packing.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\CS.xml

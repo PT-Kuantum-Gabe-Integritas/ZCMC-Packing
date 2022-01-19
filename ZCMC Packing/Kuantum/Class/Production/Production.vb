@@ -4,6 +4,7 @@ Imports CS
 Imports CS.Variable
 Imports System.Threading
 Imports Database
+Imports System.IO
 Public Class Production
     Implements IProduction
 
@@ -61,6 +62,7 @@ Public Class Production
     Private _Reference As Reference
     Private _config As Configuration
     Public dbProduction As SQLite = New SQLite()
+    Dim productPict As Image
     Public Shared th As Thread
     Public Shared ts As ThreadStart
     Public Shared wo As ORDER
@@ -71,6 +73,7 @@ Public Class Production
 
     Public fn_ind As String
     Public fn_group As String
+    Public Shared fn_pack As String = System.IO.Path.Combine(System.Windows.Forms.Application.StartupPath, "Label\Pictures")
     Public printer_ind As String
     Public printer_group As String
 
@@ -287,9 +290,14 @@ Public Class Production
 
         'LOAD LABEL IMAGE
 
-        ind.Img = _label.LoadLabel(fn_ind, "Bitmap", wo.Bitmap, False)
-        group.Img = _label.LoadLabel(fn_group, "Bitmap", wo.Bitmap, False)
-        'pack.Img = Image.FromFile(IO.Path.Combine(fn_pack, wo.RefTicket & ".PNG"))
+        'ind.Img = _label.LoadLabel(fn_ind, "Bitmap", wo.Bitmap, False)
+        'group.Img = _label.LoadLabel(fn_group, "Bitmap", wo.Bitmap, False)
+        Try
+            productPict = Image.FromFile(Path.Combine(fn_pack, wo.RefTicket & ".jpg"))
+        Catch ex As Exception
+
+        End Try
+
         'LOAD Label IMAGE
 
 
@@ -297,7 +305,8 @@ Public Class Production
         UserInterface._frmHome.UpdateUI(frmHome.CONTROL.GROUP_QTY, group.Qty)
         UserInterface._frmHome.UpdateUI(frmHome.CONTROL.IND_IMG, ind.Img)
         UserInterface._frmHome.UpdateUI(frmHome.CONTROL.GROUP_IMG, group.Img)
-        'UserInterface._frmHome.UpdateUI(frmHome.CONTROL.PRODUCT_IMG, pack.Img)
+        UserInterface._frmHome.pbPI.SizeMode = PictureBoxSizeMode.StretchImage
+        UserInterface._frmHome.UpdateUI(frmHome.CONTROL.PRODUCT_IMG, productPict)
 
 
 
