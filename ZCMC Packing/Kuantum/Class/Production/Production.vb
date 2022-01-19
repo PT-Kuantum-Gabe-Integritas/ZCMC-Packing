@@ -278,11 +278,15 @@ Public Class Production
         ind.Qty = Integer.Parse(qty_ind)
         group.Qty = Integer.Parse(qty_group)
 
+
+
+
         UserInterface._frmHome.UpdateUI(frmHome.CONTROL.REFF, wo.RefTicket)
         UserInterface._frmHome.UpdateUI(frmHome.CONTROL.PO, wo.PO)
         UserInterface._frmHome.UpdateUI(frmHome.CONTROL.TOTAL_QTY, wo.Qty)
 
         'LOAD LABEL IMAGE
+
         ind.Img = _label.LoadLabel(fn_ind, "Bitmap", wo.Bitmap, False)
         group.Img = _label.LoadLabel(fn_group, "Bitmap", wo.Bitmap, False)
         'pack.Img = Image.FromFile(IO.Path.Combine(fn_pack, wo.RefTicket & ".PNG"))
@@ -380,6 +384,11 @@ Public Class Production
             _Reference = Reference.getInstance()
             _modbus = Modbus.getInstance()
             prodStat = True
+
+            fn_ind = _config._currConfig.INDIVIDUAL_NAME
+            printer_ind = _config._currConfig.IND_PRINTER
+            fn_group = _config._currConfig.GROUP_NAME
+            printer_group = _config._currConfig.GROUP_PRINTER
         End If
 
 
