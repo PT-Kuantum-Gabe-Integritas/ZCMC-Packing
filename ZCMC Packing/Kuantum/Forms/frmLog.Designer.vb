@@ -24,32 +24,32 @@ Partial Class frmLog
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmLog))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.cbFilter = New System.Windows.Forms.CheckBox()
+        Me.comboFilter = New System.Windows.Forms.CheckBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+        Me.dtTo = New System.Windows.Forms.DateTimePicker()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.dtFrom = New System.Windows.Forms.DateTimePicker()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.btnReset = New System.Windows.Forms.Button()
         Me.btnSearch = New System.Windows.Forms.Button()
-        Me.cbReff = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.cbArt = New System.Windows.Forms.ComboBox()
+        Me.cbPO = New System.Windows.Forms.ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.dgvOrder = New System.Windows.Forms.DataGridView()
+        Me.txtReff = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvOrder, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.cbFilter)
+        Me.Panel1.Controls.Add(Me.comboFilter)
         Me.Panel1.Controls.Add(Me.Label5)
-        Me.Panel1.Controls.Add(Me.DateTimePicker2)
+        Me.Panel1.Controls.Add(Me.dtTo)
         Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.DateTimePicker1)
+        Me.Panel1.Controls.Add(Me.dtFrom)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
@@ -57,15 +57,15 @@ Partial Class frmLog
         Me.Panel1.Size = New System.Drawing.Size(244, 600)
         Me.Panel1.TabIndex = 0
         '
-        'cbFilter
+        'comboFilter
         '
-        Me.cbFilter.AutoSize = True
-        Me.cbFilter.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.cbFilter.Location = New System.Drawing.Point(186, 85)
-        Me.cbFilter.Name = "cbFilter"
-        Me.cbFilter.Size = New System.Drawing.Size(15, 14)
-        Me.cbFilter.TabIndex = 20
-        Me.cbFilter.UseVisualStyleBackColor = False
+        Me.comboFilter.AutoSize = True
+        Me.comboFilter.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.comboFilter.Location = New System.Drawing.Point(213, 54)
+        Me.comboFilter.Name = "comboFilter"
+        Me.comboFilter.Size = New System.Drawing.Size(15, 14)
+        Me.comboFilter.TabIndex = 20
+        Me.comboFilter.UseVisualStyleBackColor = False
         '
         'Label5
         '
@@ -79,13 +79,13 @@ Partial Class frmLog
         Me.Label5.Text = "To"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'DateTimePicker2
+        'dtTo
         '
-        Me.DateTimePicker2.Location = New System.Drawing.Point(3, 137)
-        Me.DateTimePicker2.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(238, 20)
-        Me.DateTimePicker2.TabIndex = 22
+        Me.dtTo.Location = New System.Drawing.Point(3, 137)
+        Me.dtTo.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
+        Me.dtTo.Name = "dtTo"
+        Me.dtTo.Size = New System.Drawing.Size(238, 20)
+        Me.dtTo.TabIndex = 22
         '
         'Label2
         '
@@ -99,13 +99,13 @@ Partial Class frmLog
         Me.Label2.Text = "From"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'DateTimePicker1
+        'dtFrom
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(3, 94)
-        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(238, 20)
-        Me.DateTimePicker1.TabIndex = 19
+        Me.dtFrom.Location = New System.Drawing.Point(3, 94)
+        Me.dtFrom.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
+        Me.dtFrom.Name = "dtFrom"
+        Me.dtFrom.Size = New System.Drawing.Size(238, 20)
+        Me.dtFrom.TabIndex = 19
         '
         'Label1
         '
@@ -122,25 +122,27 @@ Partial Class frmLog
         '
         'Panel2
         '
+        Me.Panel2.Controls.Add(Me.txtReff)
         Me.Panel2.Controls.Add(Me.btnReset)
         Me.Panel2.Controls.Add(Me.btnSearch)
-        Me.Panel2.Controls.Add(Me.cbReff)
         Me.Panel2.Controls.Add(Me.Label4)
-        Me.Panel2.Controls.Add(Me.cbArt)
+        Me.Panel2.Controls.Add(Me.cbPO)
         Me.Panel2.Controls.Add(Me.Label3)
-        Me.Panel2.Location = New System.Drawing.Point(250, 12)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel2.Location = New System.Drawing.Point(244, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1063, 64)
+        Me.Panel2.Size = New System.Drawing.Size(1081, 64)
         Me.Panel2.TabIndex = 1
         '
         'btnReset
         '
         Me.btnReset.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btnReset.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnReset.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
         Me.btnReset.Image = CType(resources.GetObject("btnReset.Image"), System.Drawing.Image)
         Me.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnReset.Location = New System.Drawing.Point(654, 29)
+        Me.btnReset.Location = New System.Drawing.Point(654, 26)
         Me.btnReset.Name = "btnReset"
         Me.btnReset.Size = New System.Drawing.Size(35, 35)
         Me.btnReset.TabIndex = 18
@@ -150,24 +152,17 @@ Partial Class frmLog
         'btnSearch
         '
         Me.btnSearch.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btnSearch.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSearch.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
         Me.btnSearch.Image = CType(resources.GetObject("btnSearch.Image"), System.Drawing.Image)
         Me.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnSearch.Location = New System.Drawing.Point(613, 29)
+        Me.btnSearch.Location = New System.Drawing.Point(613, 26)
         Me.btnSearch.Name = "btnSearch"
         Me.btnSearch.Size = New System.Drawing.Size(35, 35)
         Me.btnSearch.TabIndex = 17
         Me.btnSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnSearch.UseVisualStyleBackColor = False
-        '
-        'cbReff
-        '
-        Me.cbReff.FormattingEnabled = True
-        Me.cbReff.Location = New System.Drawing.Point(412, 40)
-        Me.cbReff.Name = "cbReff"
-        Me.cbReff.Size = New System.Drawing.Size(195, 21)
-        Me.cbReff.TabIndex = 16
         '
         'Label4
         '
@@ -182,13 +177,16 @@ Partial Class frmLog
         Me.Label4.Text = "Reference"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'cbArt
+        'cbPO
         '
-        Me.cbArt.FormattingEnabled = True
-        Me.cbArt.Location = New System.Drawing.Point(107, 40)
-        Me.cbArt.Name = "cbArt"
-        Me.cbArt.Size = New System.Drawing.Size(195, 21)
-        Me.cbArt.TabIndex = 14
+        Me.cbPO.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cbPO.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cbPO.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cbPO.FormattingEnabled = True
+        Me.cbPO.Location = New System.Drawing.Point(107, 40)
+        Me.cbPO.Name = "cbPO"
+        Me.cbPO.Size = New System.Drawing.Size(195, 21)
+        Me.cbPO.TabIndex = 14
         '
         'Label3
         '
@@ -203,16 +201,22 @@ Partial Class frmLog
         Me.Label3.Text = "PO No."
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'DataGridView1
+        'dgvOrder
         '
-        Me.DataGridView1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(250, 82)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(1063, 506)
-        Me.DataGridView1.TabIndex = 3
+        Me.dgvOrder.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvOrder.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgvOrder.Location = New System.Drawing.Point(244, 64)
+        Me.dgvOrder.Name = "dgvOrder"
+        Me.dgvOrder.Size = New System.Drawing.Size(1081, 536)
+        Me.dgvOrder.TabIndex = 3
+        '
+        'txtReff
+        '
+        Me.txtReff.Location = New System.Drawing.Point(412, 40)
+        Me.txtReff.Name = "txtReff"
+        Me.txtReff.Size = New System.Drawing.Size(195, 20)
+        Me.txtReff.TabIndex = 20
         '
         'frmLog
         '
@@ -220,7 +224,7 @@ Partial Class frmLog
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1325, 600)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.dgvOrder)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -229,7 +233,8 @@ Partial Class frmLog
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.PerformLayout()
+        CType(Me.dgvOrder, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -238,15 +243,15 @@ Partial Class frmLog
     Friend WithEvents Panel2 As Panel
     Friend WithEvents btnReset As Button
     Friend WithEvents btnSearch As Button
-    Friend WithEvents cbReff As ComboBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents cbArt As ComboBox
+    Friend WithEvents cbPO As ComboBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dgvOrder As DataGridView
     Friend WithEvents Label5 As Label
-    Friend WithEvents DateTimePicker2 As DateTimePicker
+    Friend WithEvents dtTo As DateTimePicker
     Friend WithEvents Label2 As Label
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents dtFrom As DateTimePicker
     Friend WithEvents Label1 As Label
-    Friend WithEvents cbFilter As CheckBox
+    Friend WithEvents comboFilter As CheckBox
+    Friend WithEvents txtReff As TextBox
 End Class

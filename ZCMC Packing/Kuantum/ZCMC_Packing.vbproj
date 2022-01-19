@@ -116,6 +116,7 @@
   <ItemGroup>
     <Compile Include="Class\Config\ConfigData.vb" />
     <Compile Include="Class\Config\Configuration.vb" />
+    <Compile Include="Class\Data Log\DataLog.vb" />
     <Compile Include="Class\Production\Initialization.vb" />
     <Compile Include="Class\Reference\Reference.vb" />
     <Compile Include="Class\Reference\ReferenceData.vb" />

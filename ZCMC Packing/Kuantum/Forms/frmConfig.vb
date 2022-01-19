@@ -37,6 +37,7 @@
 
     Private Sub frmConfig_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         _config = Configuration.getInstance()
+        Reset()
     End Sub
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
@@ -49,11 +50,31 @@
             _conData.GROUP_PRINTER = txtGroupPrint.Text
 
             _config.Save(_conData)
+            Reset()
 
 
         Catch ex As Exception
 
         End Try
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        txtPLCIP.Enabled = True
+        txtPLCPort.Enabled = True
+        txtIndName.Enabled = True
+        txtIndPrint.Enabled = True
+        txtGroupName.Enabled = True
+        txtGroupPrint.Enabled = True
+
+    End Sub
+
+    Sub Reset()
+        txtPLCIP.Enabled = False
+        txtPLCPort.Enabled = False
+        txtIndName.Enabled = False
+        txtIndPrint.Enabled = False
+        txtGroupName.Enabled = False
+        txtGroupPrint.Enabled = False
     End Sub
 
     'Public Sub Load()

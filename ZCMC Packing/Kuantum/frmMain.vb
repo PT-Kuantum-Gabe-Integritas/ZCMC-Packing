@@ -30,12 +30,12 @@ Public Class frmMain
     End Sub
 
 
-    Private Sub ButtonClick(sender As Object, e As EventArgs)
+    Private Sub ButtonClick(sender As Object, e As EventArgs) Handles btnRun.Click, btnReff.Click, btnManual.Click, btnLog.Click, btnDash.Click, btnConfig.Click, btnAbout.Click
         Button(sender)
         _ui.LoadPanel(sender)
     End Sub
 
-    Private Sub ButtonEnter(sender As Object, e As EventArgs)
+    Private Sub ButtonEnter(sender As Object, e As EventArgs) Handles btnRun.MouseEnter, btnReff.MouseEnter, btnManual.MouseEnter, btnLog.MouseEnter, btnDash.MouseEnter, btnConfig.MouseEnter, btnAbout.MouseEnter
         btnShow(sender)
 
     End Sub
