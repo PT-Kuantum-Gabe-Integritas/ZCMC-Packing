@@ -131,7 +131,7 @@ Public Class Production
             th.IsBackground = False
             th.Start()
 
-            'OPENING LABEL
+            'OPENING Label
             '_label = New Codesoft()
             '_label.BasePath = Application.StartupPath
             '_label.Open(fn_ind, TYPE.IND)
@@ -290,8 +290,8 @@ Public Class Production
 
         'LOAD LABEL IMAGE
 
-        'ind.Img = _label.LoadLabel(fn_ind, "Bitmap", wo.Bitmap, False)
-        'group.Img = _label.LoadLabel(fn_group, "Bitmap", wo.Bitmap, False)
+        ind.Img = _label.LoadLabel(fn_ind, "Bitmap", wo.Bitmap, False)
+        group.Img = _label.LoadLabel(fn_group, "Bitmap", wo.Bitmap, False)
         Try
             productPict = Image.FromFile(Path.Combine(fn_pack, wo.RefTicket & ".jpg"))
         Catch ex As Exception
@@ -391,6 +391,7 @@ Public Class Production
             dbProduction = database.GetDataBase("Production.db", "P01", "-SQLite", "Order")
             _config = Configuration.getInstance()
             _Reference = Reference.getInstance()
+            _label = Codesoft.getInstance()
             _modbus = Modbus.getInstance()
             prodStat = True
 
