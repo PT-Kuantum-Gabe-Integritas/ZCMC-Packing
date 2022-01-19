@@ -53,7 +53,7 @@ Public Class Production
     Private Shared _instance As Production
     Private _Initialization As Initialization = Initialization.getInstance()
     Private _modbus As Modbus = Modbus.getInstance()
-    Private _label As Codesoft
+    Private _label As Codesoft = New Codesoft
     Private _ui As UserInterface = UserInterface.getInstance()
     Public database As DBManager = DBManager.getInstance()
     Private _config As Configuration = Configuration.getInstance()

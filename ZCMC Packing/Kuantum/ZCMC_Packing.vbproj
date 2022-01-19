@@ -177,12 +177,17 @@
     <Compile Include="Forms\frmSplash.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\frmUserManagement.designer.vb">
+      <DependentUpon>frmUserManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmUserManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Interface\IConfiguration.vb" />
     <Compile Include="Interface\IInitialization.vb" />
     <Compile Include="Interface\IProduction.vb" />
     <Compile Include="Interface\IReference.vb" />
     <Compile Include="Interface\IUserManagement.vb" />
-    <Compile Include="Modules\mDatabase.vb" />
     <Compile Include="frmMain.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -190,8 +195,6 @@
       <DependentUpon>frmMain.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\mForm.vb" />
-    <Compile Include="Modules\mMains.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -236,6 +239,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmSplash.resx">
       <DependentUpon>frmSplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmUserManagement.resx">
+      <DependentUpon>frmUserManagement.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>

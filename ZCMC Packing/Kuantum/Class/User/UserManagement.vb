@@ -37,8 +37,6 @@ Public Class UserManagement
         Try
             Dim str_where As String = String.Format("user='{0}'", type)
             Dim dt As DataTable = New DataTable()
-
-            'dt = _dbUser.DBSelect("pass, authorization", "tb_user", str_where, False, 1)
             dt = _dbUser.DBSelect("pass, authorization", "tb_user", str_where)
             If dt.Rows.Count > 0 Then
                 autorized = Convert.ToBoolean(dt.Rows(0).Item("authorization"))
@@ -138,9 +136,9 @@ Public Class UserManagement
         _dbUser.DBDelete("tb_user", str_where)
     End Sub
 
-    Public Sub UpdateUser(user As String, pass As String) Implements IUserManagement.UpdateUser
-        Dim str_where As String = String.Format("user = '{0}'", user)
-        Dim str_val As String = String.Format("pass = '{0}'", pass)
+    Public Sub UpdateUser(user As String, pass As String, permit As String) Implements IUserManagement.UpdateUser
+        Dim str_where As String = String.Format("ID = '{0}'", user)
+        Dim str_val As String = String.Format("pass = '{0}', {1}", pass, permit)
         _dbUser.DBUpdate("tb_user", str_val, str_where)
     End Sub
 

@@ -23,6 +23,7 @@
     Public Shared _frmMain As frmMain = New frmMain()
     Public Shared _frmAbout As frmAbout = New frmAbout()
     Public Shared _frmLogin As frmLogin = New frmLogin()
+    Public Shared _frmUserManagement As frmUserManagement = New frmUserManagement()
 
 
     Public Enum TAB

@@ -30,7 +30,7 @@ Public Class frmMain
     End Sub
 
 
-    Private Sub ButtonClick(sender As Object, e As EventArgs) Handles btnUser.Click, btnRun.Click, btnReff.Click, btnManual.Click, btnLog.Click, btnDash.Click, btnConfig.Click, btnAbout.Click
+    Private Sub ButtonClick(sender As Object, e As EventArgs) Handles btnRun.Click, btnReff.Click, btnManual.Click, btnLog.Click, btnDash.Click, btnConfig.Click, btnAbout.Click
         Button(sender)
         _ui.LoadPanel(sender)
     End Sub
@@ -73,5 +73,10 @@ Public Class frmMain
     Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
         HideAll()
         _ui.LoadPanel(UserInterface.TAB.LOGIN)
+    End Sub
+
+    Private Sub btnUser_Click(sender As Object, e As EventArgs) Handles btnUser.Click
+        Dim _frmUserManagement As frmUserManagement = New frmUserManagement()
+        _frmUserManagement.Show()
     End Sub
 End Class

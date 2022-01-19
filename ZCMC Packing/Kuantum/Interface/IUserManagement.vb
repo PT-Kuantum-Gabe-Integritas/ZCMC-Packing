@@ -8,6 +8,6 @@
     Function loadTable()
     Sub ClearUser()
     Sub DeleteUser(param As String)
-    Sub UpdateUser(user As String, pass As String)
+    Sub UpdateUser(user As String, pass As String, permit As String)
 
 End Interface
