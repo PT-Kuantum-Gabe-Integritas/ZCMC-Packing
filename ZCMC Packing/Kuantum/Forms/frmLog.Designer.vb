@@ -23,13 +23,6 @@ Partial Class frmLog
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmLog))
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.comboFilter = New System.Windows.Forms.CheckBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.dtTo = New System.Windows.Forms.DateTimePicker()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.dtFrom = New System.Windows.Forms.DateTimePicker()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.btnReset = New System.Windows.Forms.Button()
         Me.btnSearch = New System.Windows.Forms.Button()
@@ -38,87 +31,17 @@ Partial Class frmLog
         Me.Label3 = New System.Windows.Forms.Label()
         Me.dgvOrder = New System.Windows.Forms.DataGridView()
         Me.txtReff = New System.Windows.Forms.TextBox()
-        Me.Panel1.SuspendLayout()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.dtFrom = New System.Windows.Forms.DateTimePicker()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.dtTo = New System.Windows.Forms.DateTimePicker()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.comboFilter = New System.Windows.Forms.CheckBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2.SuspendLayout()
         CType(Me.dgvOrder, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'Panel1
-        '
-        Me.Panel1.Controls.Add(Me.comboFilter)
-        Me.Panel1.Controls.Add(Me.Label5)
-        Me.Panel1.Controls.Add(Me.dtTo)
-        Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.dtFrom)
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(244, 600)
-        Me.Panel1.TabIndex = 0
-        '
-        'comboFilter
-        '
-        Me.comboFilter.AutoSize = True
-        Me.comboFilter.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.comboFilter.Location = New System.Drawing.Point(213, 54)
-        Me.comboFilter.Name = "comboFilter"
-        Me.comboFilter.Size = New System.Drawing.Size(15, 14)
-        Me.comboFilter.TabIndex = 20
-        Me.comboFilter.UseVisualStyleBackColor = False
-        '
-        'Label5
-        '
-        Me.Label5.BackColor = System.Drawing.Color.Silver
-        Me.Label5.Font = New System.Drawing.Font("Nirmala UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(3, 117)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(238, 20)
-        Me.Label5.TabIndex = 23
-        Me.Label5.Text = "To"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'dtTo
-        '
-        Me.dtTo.Location = New System.Drawing.Point(3, 137)
-        Me.dtTo.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
-        Me.dtTo.Name = "dtTo"
-        Me.dtTo.Size = New System.Drawing.Size(238, 20)
-        Me.dtTo.TabIndex = 22
-        '
-        'Label2
-        '
-        Me.Label2.BackColor = System.Drawing.Color.Silver
-        Me.Label2.Font = New System.Drawing.Font("Nirmala UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(3, 74)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(238, 20)
-        Me.Label2.TabIndex = 20
-        Me.Label2.Text = "From"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'dtFrom
-        '
-        Me.dtFrom.Location = New System.Drawing.Point(3, 94)
-        Me.dtFrom.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
-        Me.dtFrom.Name = "dtFrom"
-        Me.dtFrom.Size = New System.Drawing.Size(238, 20)
-        Me.dtFrom.TabIndex = 19
-        '
-        'Label1
-        '
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.Label1.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(3, 50)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(238, 20)
-        Me.Label1.TabIndex = 14
-        Me.Label1.Text = "Filter Date"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Panel2
         '
@@ -218,6 +141,83 @@ Partial Class frmLog
         Me.txtReff.Size = New System.Drawing.Size(195, 20)
         Me.txtReff.TabIndex = 20
         '
+        'Label1
+        '
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.Label1.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(3, 41)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(238, 20)
+        Me.Label1.TabIndex = 14
+        Me.Label1.Text = "Filter Date"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'dtFrom
+        '
+        Me.dtFrom.Location = New System.Drawing.Point(3, 85)
+        Me.dtFrom.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
+        Me.dtFrom.Name = "dtFrom"
+        Me.dtFrom.Size = New System.Drawing.Size(238, 20)
+        Me.dtFrom.TabIndex = 19
+        '
+        'Label2
+        '
+        Me.Label2.BackColor = System.Drawing.Color.Silver
+        Me.Label2.Font = New System.Drawing.Font("Nirmala UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(3, 65)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(238, 20)
+        Me.Label2.TabIndex = 20
+        Me.Label2.Text = "From"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'dtTo
+        '
+        Me.dtTo.Location = New System.Drawing.Point(3, 128)
+        Me.dtTo.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
+        Me.dtTo.Name = "dtTo"
+        Me.dtTo.Size = New System.Drawing.Size(238, 20)
+        Me.dtTo.TabIndex = 22
+        '
+        'Label5
+        '
+        Me.Label5.BackColor = System.Drawing.Color.Silver
+        Me.Label5.Font = New System.Drawing.Font("Nirmala UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.Label5.Location = New System.Drawing.Point(3, 108)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(238, 20)
+        Me.Label5.TabIndex = 23
+        Me.Label5.Text = "To"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'comboFilter
+        '
+        Me.comboFilter.AutoSize = True
+        Me.comboFilter.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.comboFilter.Location = New System.Drawing.Point(213, 54)
+        Me.comboFilter.Name = "comboFilter"
+        Me.comboFilter.Size = New System.Drawing.Size(15, 14)
+        Me.comboFilter.TabIndex = 20
+        Me.comboFilter.UseVisualStyleBackColor = False
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.comboFilter)
+        Me.Panel1.Controls.Add(Me.Label5)
+        Me.Panel1.Controls.Add(Me.dtTo)
+        Me.Panel1.Controls.Add(Me.Label2)
+        Me.Panel1.Controls.Add(Me.dtFrom)
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(244, 600)
+        Me.Panel1.TabIndex = 0
+        '
         'frmLog
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -230,16 +230,14 @@ Partial Class frmLog
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmLog"
         Me.Text = "frmLog"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.dgvOrder, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents btnReset As Button
     Friend WithEvents btnSearch As Button
@@ -247,11 +245,12 @@ Partial Class frmLog
     Friend WithEvents cbPO As ComboBox
     Friend WithEvents Label3 As Label
     Friend WithEvents dgvOrder As DataGridView
-    Friend WithEvents Label5 As Label
-    Friend WithEvents dtTo As DateTimePicker
-    Friend WithEvents Label2 As Label
-    Friend WithEvents dtFrom As DateTimePicker
-    Friend WithEvents Label1 As Label
-    Friend WithEvents comboFilter As CheckBox
     Friend WithEvents txtReff As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents dtFrom As DateTimePicker
+    Friend WithEvents Label2 As Label
+    Friend WithEvents dtTo As DateTimePicker
+    Friend WithEvents Label5 As Label
+    Friend WithEvents comboFilter As CheckBox
+    Friend WithEvents Panel1 As Panel
 End Class

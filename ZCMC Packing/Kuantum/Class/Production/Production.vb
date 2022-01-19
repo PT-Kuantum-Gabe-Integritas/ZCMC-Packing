@@ -19,6 +19,7 @@ Public Class Production
         Public Enable As Short
         Public Total As Integer
         Public Stp As Integer
+        Public Bitmap As String
         Public Sub Reset()
             Print = False
             PrintFlag = False
@@ -31,6 +32,7 @@ Public Class Production
             Stp = 0
             Img = Nothing
             Enable = 0
+            Bitmap = Nothing
         End Sub
     End Structure
 
@@ -56,6 +58,7 @@ Public Class Production
     Private _label As Codesoft
     Private _ui As UserInterface = UserInterface.getInstance()
     Public database As DBManager = DBManager.getInstance()
+    Private _Reference As Reference
     Private _config As Configuration
     Public dbProduction As SQLite = New SQLite()
     Public Shared th As Thread
@@ -305,7 +308,15 @@ Public Class Production
             ind.Complete = True
         End If
 
+        Dim dt As DataTable = New DataTable()
 
+        dt = _Reference.ReadData("*", "ProductData", wo.RefTicket)
+        Dim cnt = dt.Rows.Count
+        If cnt > 0 Then
+            cnt -= 1
+        End If
+        group.Total = Integer.Parse(dt.Rows(cnt).Item("Qty_Group").ToString())
+        group.Bitmap = dt.Rows(cnt).Item("Bitmap").ToString()
 
     End Sub
 
@@ -363,11 +374,15 @@ Public Class Production
         Dim prodStat As Boolean
 
         If Not dbProduction.isConnected Then
+
             dbProduction = database.GetDataBase("Production.db", "P01", "-SQLite", "Order")
             _config = Configuration.getInstance()
+            _Reference = Reference.getInstance()
             _modbus = Modbus.getInstance()
             prodStat = True
         End If
+
+
 
 
         Return prodStat

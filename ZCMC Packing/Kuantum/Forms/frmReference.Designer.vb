@@ -235,6 +235,8 @@ Partial Class frmReference
         '
         'cbReff
         '
+        Me.cbReff.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cbReff.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.cbReff.FormattingEnabled = True
         Me.cbReff.Location = New System.Drawing.Point(412, 34)
         Me.cbReff.Name = "cbReff"
@@ -256,6 +258,8 @@ Partial Class frmReference
         '
         'cbArt
         '
+        Me.cbArt.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cbArt.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.cbArt.FormattingEnabled = True
         Me.cbArt.Location = New System.Drawing.Point(107, 34)
         Me.cbArt.Name = "cbArt"
@@ -280,9 +284,12 @@ Partial Class frmReference
         Me.DataGridView1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(250, 76)
+        Me.DataGridView1.MultiSelect = False
         Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridView1.Size = New System.Drawing.Size(1063, 512)
         Me.DataGridView1.TabIndex = 2
         '

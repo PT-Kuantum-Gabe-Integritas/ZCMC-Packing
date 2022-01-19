@@ -53,7 +53,7 @@
         dgvOrder.AllowUserToAddRows = False
         dgvOrder.AllowUserToResizeRows = False
         dgvOrder.EditMode = DataGridViewEditMode.EditProgrammatically
-        lbOffset.Text = String.Format("Show {0} Record(s)", dgvOrder.Rows.Count)
+        'lbOffset.Text = String.Format("Show {0} Record(s)", dgvOrder.Rows.Count)
         dgvOrder.Columns("po_number").HeaderText = "PO No."
         dgvOrder.Columns("reference").HeaderText = "Reference"
         dgvOrder.Columns("qty_po").HeaderText = "PO Qty"

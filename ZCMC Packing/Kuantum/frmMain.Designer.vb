@@ -25,13 +25,21 @@ Partial Class frmMain
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.panelUser = New System.Windows.Forms.Panel()
+        Me.btnLogout = New System.Windows.Forms.Button()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.lbUsername = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lbMenu = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.mainPanel = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.lbModbus = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.lbCodeSoft = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.lbReff = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.lbConfig = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.lbLog = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.btnDash = New System.Windows.Forms.ToolStripButton()
         Me.btnRun = New System.Windows.Forms.ToolStripButton()
@@ -41,20 +49,12 @@ Partial Class frmMain
         Me.btnLog = New System.Windows.Forms.ToolStripButton()
         Me.btnAbout = New System.Windows.Forms.ToolStripButton()
         Me.btnUser = New System.Windows.Forms.ToolStripButton()
-        Me.lbModbus = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.lbReff = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.lbConfig = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.lbLog = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.btnLogout = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.lbCodeSoft = New System.Windows.Forms.ToolStripStatusLabel()
         Me.Panel2.SuspendLayout()
         Me.panelUser.SuspendLayout()
-        Me.StatusStrip1.SuspendLayout()
-        Me.ToolStrip1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.StatusStrip1.SuspendLayout()
+        Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel2
@@ -85,6 +85,29 @@ Partial Class frmMain
         Me.panelUser.Size = New System.Drawing.Size(218, 47)
         Me.panelUser.TabIndex = 0
         '
+        'btnLogout
+        '
+        Me.btnLogout.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLogout.Image = Global.ZCMC_Packing.My.Resources.Resources.logout
+        Me.btnLogout.Location = New System.Drawing.Point(169, 3)
+        Me.btnLogout.Name = "btnLogout"
+        Me.btnLogout.Size = New System.Drawing.Size(40, 40)
+        Me.btnLogout.TabIndex = 5
+        Me.btnLogout.UseVisualStyleBackColor = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.ZCMC_Packing.My.Resources.Resources.user__2_
+        Me.PictureBox2.Location = New System.Drawing.Point(11, 6)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(35, 35)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 2
+        Me.PictureBox2.TabStop = False
+        '
         'lbUsername
         '
         Me.lbUsername.AutoSize = True
@@ -96,6 +119,29 @@ Partial Class frmMain
         Me.lbUsername.Size = New System.Drawing.Size(28, 20)
         Me.lbUsername.TabIndex = 3
         Me.lbUsername.Text = "Hi,"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Nirmala UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(50, 22)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(79, 20)
+        Me.Label2.TabIndex = 4
+        Me.Label2.Text = "Welcome!"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(272, 97)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 2
+        Me.PictureBox1.TabStop = False
         '
         'lbMenu
         '
@@ -150,18 +196,6 @@ Partial Class frmMain
         Me.mainPanel.Size = New System.Drawing.Size(1325, 490)
         Me.mainPanel.TabIndex = 5
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Nirmala UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(50, 22)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(79, 20)
-        Me.Label2.TabIndex = 4
-        Me.Label2.Text = "Welcome!"
-        '
         'StatusStrip1
         '
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lbModbus, Me.lbCodeSoft, Me.lbReff, Me.lbConfig, Me.lbLog})
@@ -170,6 +204,62 @@ Partial Class frmMain
         Me.StatusStrip1.Size = New System.Drawing.Size(1325, 22)
         Me.StatusStrip1.TabIndex = 6
         Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'lbModbus
+        '
+        Me.lbModbus.AutoSize = False
+        Me.lbModbus.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Right
+        Me.lbModbus.BorderStyle = System.Windows.Forms.Border3DStyle.Etched
+        Me.lbModbus.Image = Global.ZCMC_Packing.My.Resources.Resources.remove
+        Me.lbModbus.Name = "lbModbus"
+        Me.lbModbus.Size = New System.Drawing.Size(100, 17)
+        Me.lbModbus.Text = "Modbus"
+        Me.lbModbus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lbModbus.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
+        '
+        'lbCodeSoft
+        '
+        Me.lbCodeSoft.AutoSize = False
+        Me.lbCodeSoft.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Right
+        Me.lbCodeSoft.Image = Global.ZCMC_Packing.My.Resources.Resources.remove
+        Me.lbCodeSoft.Name = "lbCodeSoft"
+        Me.lbCodeSoft.Size = New System.Drawing.Size(100, 17)
+        Me.lbCodeSoft.Text = "CodeSoft"
+        Me.lbCodeSoft.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lbCodeSoft.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
+        '
+        'lbReff
+        '
+        Me.lbReff.AutoSize = False
+        Me.lbReff.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Right
+        Me.lbReff.Image = CType(resources.GetObject("lbReff.Image"), System.Drawing.Image)
+        Me.lbReff.Name = "lbReff"
+        Me.lbReff.Size = New System.Drawing.Size(100, 17)
+        Me.lbReff.Text = "Reference"
+        Me.lbReff.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lbReff.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
+        '
+        'lbConfig
+        '
+        Me.lbConfig.AutoSize = False
+        Me.lbConfig.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Right
+        Me.lbConfig.Image = CType(resources.GetObject("lbConfig.Image"), System.Drawing.Image)
+        Me.lbConfig.Name = "lbConfig"
+        Me.lbConfig.Size = New System.Drawing.Size(100, 17)
+        Me.lbConfig.Text = "Config"
+        Me.lbConfig.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lbConfig.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
+        '
+        'lbLog
+        '
+        Me.lbLog.AutoSize = False
+        Me.lbLog.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Right
+        Me.lbLog.Image = CType(resources.GetObject("lbLog.Image"), System.Drawing.Image)
+        Me.lbLog.Name = "lbLog"
+        Me.lbLog.Size = New System.Drawing.Size(100, 17)
+        Me.lbLog.Text = "Data Log"
+        Me.lbLog.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lbLog.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
         '
         'ToolStrip1
         '
@@ -314,96 +404,6 @@ Partial Class frmMain
         Me.btnUser.Text = "User Management"
         Me.btnUser.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
         '
-        'lbModbus
-        '
-        Me.lbModbus.AutoSize = False
-        Me.lbModbus.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Right
-        Me.lbModbus.BorderStyle = System.Windows.Forms.Border3DStyle.Etched
-        Me.lbModbus.Image = Global.ZCMC_Packing.My.Resources.Resources.correct
-        Me.lbModbus.Name = "lbModbus"
-        Me.lbModbus.Size = New System.Drawing.Size(100, 17)
-        Me.lbModbus.Text = "Modbus"
-        Me.lbModbus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.lbModbus.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
-        '
-        'lbReff
-        '
-        Me.lbReff.AutoSize = False
-        Me.lbReff.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Right
-        Me.lbReff.Image = CType(resources.GetObject("lbReff.Image"), System.Drawing.Image)
-        Me.lbReff.Name = "lbReff"
-        Me.lbReff.Size = New System.Drawing.Size(100, 17)
-        Me.lbReff.Text = "Reference"
-        Me.lbReff.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.lbReff.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
-        '
-        'lbConfig
-        '
-        Me.lbConfig.AutoSize = False
-        Me.lbConfig.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Right
-        Me.lbConfig.Image = CType(resources.GetObject("lbConfig.Image"), System.Drawing.Image)
-        Me.lbConfig.Name = "lbConfig"
-        Me.lbConfig.Size = New System.Drawing.Size(100, 17)
-        Me.lbConfig.Text = "Config"
-        Me.lbConfig.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.lbConfig.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
-        '
-        'lbLog
-        '
-        Me.lbLog.AutoSize = False
-        Me.lbLog.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Right
-        Me.lbLog.Image = CType(resources.GetObject("lbLog.Image"), System.Drawing.Image)
-        Me.lbLog.Name = "lbLog"
-        Me.lbLog.Size = New System.Drawing.Size(100, 17)
-        Me.lbLog.Text = "Data Log"
-        Me.lbLog.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.lbLog.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
-        '
-        'btnLogout
-        '
-        Me.btnLogout.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLogout.Image = Global.ZCMC_Packing.My.Resources.Resources.logout
-        Me.btnLogout.Location = New System.Drawing.Point(169, 3)
-        Me.btnLogout.Name = "btnLogout"
-        Me.btnLogout.Size = New System.Drawing.Size(40, 40)
-        Me.btnLogout.TabIndex = 5
-        Me.btnLogout.UseVisualStyleBackColor = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.ZCMC_Packing.My.Resources.Resources.user__2_
-        Me.PictureBox2.Location = New System.Drawing.Point(11, 6)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(35, 35)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 2
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(272, 97)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 2
-        Me.PictureBox1.TabStop = False
-        '
-        'lbCodeSoft
-        '
-        Me.lbCodeSoft.AutoSize = False
-        Me.lbCodeSoft.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Right
-        Me.lbCodeSoft.Image = Global.ZCMC_Packing.My.Resources.Resources.remove
-        Me.lbCodeSoft.Name = "lbCodeSoft"
-        Me.lbCodeSoft.Size = New System.Drawing.Size(100, 17)
-        Me.lbCodeSoft.Text = "CodeSoft"
-        Me.lbCodeSoft.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.lbCodeSoft.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
-        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -423,12 +423,12 @@ Partial Class frmMain
         Me.Panel2.ResumeLayout(False)
         Me.panelUser.ResumeLayout(False)
         Me.panelUser.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
