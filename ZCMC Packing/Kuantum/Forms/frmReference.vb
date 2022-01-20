@@ -18,8 +18,6 @@
     Private Sub frmReference_Load(sender As Object, e As EventArgs) Handles Me.Load
         Dim tb As DataTable = New DataTable()
         _dbProd.Open()
-        loadtb()
-
     End Sub
 
     Private Sub loadtb()

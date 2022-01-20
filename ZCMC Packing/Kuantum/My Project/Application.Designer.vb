@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.ZCMC_Packing.frmReference
+            Me.MainForm = Global.ZCMC_Packing.frmMain
         End Sub
     End Class
 End Namespace

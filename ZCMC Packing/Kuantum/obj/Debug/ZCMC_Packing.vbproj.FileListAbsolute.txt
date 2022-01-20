@@ -119,6 +119,7 @@ C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\obj\
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\CS.xml
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\Database.xml
 C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC\ZCMC Packing\Kuantum\bin\Debug\MB.xml
+C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\bin\Debug\ZCMC_Packing.exe.config
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\obj\Debug\ZCMC_Packing.vbprojResolveAssemblyReference.cache
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\obj\Debug\ZCMC_Packing.frmAbout.resources
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\obj\Debug\ZCMC_Packing.frmConfig.resources
@@ -133,7 +134,6 @@ C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\ob
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\obj\Debug\ZCMC_Packing.frmMain.resources
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\obj\Debug\ZCMC_Packing.Resources.resources
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\obj\Debug\ZCMC_Packing.vbproj.GenerateResource.Cache
-C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\bin\Debug\ZCMC_Packing.exe.config
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\bin\Debug\ZCMC_Packing.exe
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\bin\Debug\ZCMC_Packing.pdb
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\bin\Debug\ZCMC_Packing.xml
@@ -148,6 +148,7 @@ C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\bi
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\bin\Debug\CS.pdb
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\bin\Debug\CS.xml
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\bin\Debug\Database.pdb
+C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\bin\Debug\Database.xml
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\bin\Debug\EntityFramework.xml
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\bin\Debug\MB.pdb
@@ -155,4 +156,3 @@ C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\bi
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\obj\Debug\ZCMC_Packing.exe
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\obj\Debug\ZCMC_Packing.xml
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\obj\Debug\ZCMC_Packing.pdb
-C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\Kuantum\bin\Debug\Database.xml
