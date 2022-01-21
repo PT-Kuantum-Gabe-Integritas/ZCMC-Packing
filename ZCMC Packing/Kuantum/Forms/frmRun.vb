@@ -5,6 +5,7 @@ Public Class frmRun
 
 
     Private Sub frmRun_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Initial()
         txtScan.Focus()
 
         'dbSelect = DatabaseList.GetDataBase("Production", "PN01", 0, Database.DATATYPE.PRODUCT)

@@ -40,8 +40,17 @@
         Reset()
     End Sub
 
-    Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
-        Try
+    Private Sub btnEdit_click(sender As Object, e As EventArgs) Handles btnEdit.Click
+
+        If btnEdit.Text = "Edit" Then
+            txtPLCIP.Enabled = True
+            txtPLCPort.Enabled = True
+            txtIndName.Enabled = True
+            txtIndPrint.Enabled = True
+            txtGroupName.Enabled = True
+            txtGroupPrint.Enabled = True
+            btnEdit.Text = "Save"
+        ElseIf btnEdit.Text = "Save" Then
             _conData.PLC_IP = txtPLCIP.Text
             _conData.PLC_PORT = txtPLCPort.Text
             _conData.IND_PRINTER = txtIndPrint.Text
@@ -51,20 +60,10 @@
 
             _config.Save(_conData)
             Reset()
+            btnEdit.Text = "Edit"
 
+        End If
 
-        Catch ex As Exception
-
-        End Try
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        txtPLCIP.Enabled = True
-        txtPLCPort.Enabled = True
-        txtIndName.Enabled = True
-        txtIndPrint.Enabled = True
-        txtGroupName.Enabled = True
-        txtGroupPrint.Enabled = True
 
     End Sub
 

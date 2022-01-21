@@ -72,6 +72,8 @@
 
             _userManager.GetPermit(_newUser.Type)
             _ui.LoadPanel(UserInterface.TAB.RUN)
+            UserInterface._frmMain.lbUser.Text = _newUser.Type
+            UserInterface._frmMain.pbAccount.Image = My.Resources.account
 
             Me.Hide()
 

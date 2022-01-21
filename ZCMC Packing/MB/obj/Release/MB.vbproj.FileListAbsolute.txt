@@ -8,3 +8,13 @@ D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\Pokapick Maxim
 D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\Pokapick Maximo\Pokapick Maximo\MB\obj\Release\MB.xml
 D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\Pokapick Maximo\Pokapick Maximo\MB\obj\Release\MB.pdb
 D:\PROJECT\SCHNEIDER ELECTRIC\26. Pokapick Maximo\Desktop Program\Pokapick Maximo\Pokapick Maximo\MB\obj\Release\MB.vbprojResolveAssemblyReference.cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\MB\bin\Release\MB.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\MB\bin\Release\MB.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\MB\bin\Release\MB.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\MB\bin\Release\EasyModbus.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\MB\obj\Release\MB.vbprojResolveAssemblyReference.cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\MB\obj\Release\MB.Resources.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\MB\obj\Release\MB.vbproj.GenerateResource.Cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\MB\obj\Release\MB.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\MB\obj\Release\MB.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\MB\obj\Release\MB.pdb

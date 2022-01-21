@@ -1,0 +1,5 @@
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\User\obj\Release\User.frmLogin.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\User\obj\Release\User.Resources.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\User\obj\Release\User.frmUserManagement.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\User\obj\Release\User.vbproj.GenerateResource.Cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\User\obj\Release\User.vbprojResolveAssemblyReference.cache

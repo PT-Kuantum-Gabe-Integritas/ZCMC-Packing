@@ -1,0 +1,9 @@
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\CS\bin\Release\CS.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\CS\bin\Release\CS.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\CS\bin\Release\CS.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\CS\obj\Release\CS.vbprojResolveAssemblyReference.cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\CS\obj\Release\CS.Resources.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\CS\obj\Release\CS.vbproj.GenerateResource.Cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\CS\obj\Release\CS.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\CS\obj\Release\CS.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\CS\obj\Release\CS.pdb

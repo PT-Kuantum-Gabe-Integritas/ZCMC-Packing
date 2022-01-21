@@ -39,6 +39,8 @@
     Sub HideAll()
         'panelUser.Visible = False
         'btnLogout.Visible = False
+        lbUser.Text = ""
+        pbAccount.Image = Nothing
         btnLogout.Visible = False
         btnDash.Visible = False
         btnLog.Visible = False
@@ -52,6 +54,8 @@
     Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
 
         _ui.LoadPanel(UserInterface.TAB.LOGIN)
+        lbUser.Text = ""
+        pbAccount.Image = Nothing
         btnLogout.Visible = False
     End Sub
 
