@@ -154,14 +154,16 @@ Public Class Production
     End Function
 
     Public Sub Stops() Implements IProduction.Stops
-        _exit = True
+
         Try
+            _modbus.Dispose()
+            '_label.Close()
             th.Abort()
+            _exit = True
+
         Catch ex As Exception
 
         End Try
-
-
 
     End Sub
 
@@ -179,7 +181,7 @@ Public Class Production
                     ind.Qty += 1
                     ind.PrintFlag = True
                     Update(COL.IND, ind.Qty, wo.PO, wo.RefTicket)
-                    UserInterface._frmHome.UpdateUI(frmHome.CONTROL.IND_QTY, ind.Qty.ToString())
+                    UserInterface._frmHome.UpdateUI(formHome.CONTROL.IND_QTY, ind.Qty.ToString())
                 End If
                 If Not ind.Print And ind.PrintFlag Then
                     ind.PrintFlag = False
@@ -199,7 +201,7 @@ Public Class Production
             End If
 
             'GROUP RUNNING
-            group.Total = 10
+            'group.Total = 10
             If group.Run Then
                 If ind.Qty Mod group.Total <> 0 And ind.Qty >= wo.Qty Then
                     Dim result As DialogResult = MessageBox.Show("Order Finish", "Order was Finish ", MessageBoxButtons.YesNo)
@@ -222,7 +224,7 @@ Public Class Production
                     'label.print(fn_group,1,printer_group)
                     group.Qty += 1
                     Update(COL.GROUP, group.Qty, wo.PO, wo.RefTicket)
-                    UserInterface._frmHome.UpdateUI(frmHome.CONTROL.GROUP_QTY, group.Qty.ToString())
+                    UserInterface._frmHome.UpdateUI(formHome.CONTROL.GROUP_QTY, group.Qty.ToString())
                     group.PrintFlag = True
                 End If
 
@@ -284,14 +286,18 @@ Public Class Production
 
 
 
-        UserInterface._frmHome.UpdateUI(frmHome.CONTROL.REFF, wo.RefTicket)
-        UserInterface._frmHome.UpdateUI(frmHome.CONTROL.PO, wo.PO)
-        UserInterface._frmHome.UpdateUI(frmHome.CONTROL.TOTAL_QTY, wo.Qty)
+        UserInterface._frmHome.UpdateUI(formHome.CONTROL.REFF, wo.RefTicket)
+        UserInterface._frmHome.UpdateUI(formHome.CONTROL.PO, wo.PO)
+        UserInterface._frmHome.UpdateUI(formHome.CONTROL.TOTAL_QTY, wo.Qty)
 
         'LOAD LABEL IMAGE
+        Try
+            ind.Img = _label.LoadLabel(fn_ind, "Bitmap", wo.Bitmap, False)
+            group.Img = _label.LoadLabel(fn_group, "Bitmap", wo.Bitmap, False)
+        Catch ex As Exception
 
-        ind.Img = _label.LoadLabel(fn_ind, "Bitmap", wo.Bitmap, False)
-        group.Img = _label.LoadLabel(fn_group, "Bitmap", wo.Bitmap, False)
+        End Try
+
         Try
             productPict = Image.FromFile(Path.Combine(fn_pack, wo.RefTicket & ".jpg"))
         Catch ex As Exception
@@ -301,12 +307,12 @@ Public Class Production
         'LOAD Label IMAGE
 
 
-        UserInterface._frmHome.UpdateUI(frmHome.CONTROL.IND_QTY, ind.Qty)
-        UserInterface._frmHome.UpdateUI(frmHome.CONTROL.GROUP_QTY, group.Qty)
-        UserInterface._frmHome.UpdateUI(frmHome.CONTROL.IND_IMG, ind.Img)
-        UserInterface._frmHome.UpdateUI(frmHome.CONTROL.GROUP_IMG, group.Img)
+        UserInterface._frmHome.UpdateUI(formHome.CONTROL.IND_QTY, ind.Qty)
+        UserInterface._frmHome.UpdateUI(formHome.CONTROL.GROUP_QTY, group.Qty)
+        UserInterface._frmHome.UpdateUI(formHome.CONTROL.IND_IMG, ind.Img)
+        UserInterface._frmHome.UpdateUI(formHome.CONTROL.GROUP_IMG, group.Img)
         UserInterface._frmHome.pbPI.SizeMode = PictureBoxSizeMode.StretchImage
-        UserInterface._frmHome.UpdateUI(frmHome.CONTROL.PRODUCT_IMG, productPict)
+        UserInterface._frmHome.UpdateUI(formHome.CONTROL.PRODUCT_IMG, productPict)
 
 
 
@@ -321,8 +327,14 @@ Public Class Production
             ind.Complete = True
         End If
 
-        Dim dt As DataTable = New DataTable()
 
+        'Load Group Total and Bitmap
+        LoadProductInfo()
+
+    End Sub
+
+    Private Sub LoadProductInfo()
+        Dim dt As DataTable = New DataTable()
         dt = _Reference.ReadData("*", "ProductData", wo.RefTicket)
         Dim cnt = dt.Rows.Count
         If cnt > 0 Then
@@ -386,13 +398,15 @@ Public Class Production
     Public Function Open() As Boolean Implements IProduction.Open
         Dim prodStat As Boolean
 
+        _config = Configuration.getInstance()
+        _Reference = Reference.getInstance()
+        '_label = Codesoft.getInstance()
+        _modbus = Modbus.getInstance()
+
         If Not dbProduction.isConnected Then
 
             dbProduction = database.GetDataBase("Production.db", "P01", "-SQLite", "Order")
-            _config = Configuration.getInstance()
-            _Reference = Reference.getInstance()
-            _label = Codesoft.getInstance()
-            _modbus = Modbus.getInstance()
+
             prodStat = True
 
             fn_ind = _config._currConfig.INDIVIDUAL_NAME
@@ -400,9 +414,6 @@ Public Class Production
             fn_group = _config._currConfig.GROUP_NAME
             printer_group = _config._currConfig.GROUP_PRINTER
         End If
-
-
-
 
         Return prodStat
     End Function
@@ -414,15 +425,15 @@ Public Class Production
         group.Reset()
         wo.Reset()
 
-        UserInterface._frmHome.UpdateUI(frmHome.CONTROL.IND_QTY, ind.Qty)
-        UserInterface._frmHome.UpdateUI(frmHome.CONTROL.IND_IMG, ind.Img)
-        UserInterface._frmHome.UpdateUI(frmHome.CONTROL.GROUP_QTY, group.Qty)
-        UserInterface._frmHome.UpdateUI(frmHome.CONTROL.GROUP_IMG, group.Img)
-        UserInterface._frmHome.UpdateUI(frmHome.CONTROL.REFF, wo.RefTicket)
-        UserInterface._frmHome.UpdateUI(frmHome.CONTROL.PO, wo.PO)
-        UserInterface._frmHome.UpdateUI(frmHome.CONTROL.TOTAL_QTY, wo.Qty.ToString())
-        UserInterface._frmHome.UpdateUI(frmHome.CONTROL.PO, wo.PO)
-        UserInterface._frmHome.UpdateUI(frmHome.CONTROL.REFF, wo.RefTicket)
+        UserInterface._frmHome.UpdateUI(formHome.CONTROL.IND_QTY, ind.Qty)
+        UserInterface._frmHome.UpdateUI(formHome.CONTROL.IND_IMG, ind.Img)
+        UserInterface._frmHome.UpdateUI(formHome.CONTROL.GROUP_QTY, group.Qty)
+        UserInterface._frmHome.UpdateUI(formHome.CONTROL.GROUP_IMG, group.Img)
+        UserInterface._frmHome.UpdateUI(formHome.CONTROL.REFF, wo.RefTicket)
+        UserInterface._frmHome.UpdateUI(formHome.CONTROL.PO, wo.PO)
+        UserInterface._frmHome.UpdateUI(formHome.CONTROL.TOTAL_QTY, wo.Qty.ToString())
+        UserInterface._frmHome.UpdateUI(formHome.CONTROL.PO, wo.PO)
+        UserInterface._frmHome.UpdateUI(formHome.CONTROL.REFF, wo.RefTicket)
         UserInterface._frmRun.Initial()
         '_ui.LoadPanel(UserInterface.TAB.RUN)
 

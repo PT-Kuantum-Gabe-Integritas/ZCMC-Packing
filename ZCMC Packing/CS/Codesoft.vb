@@ -30,9 +30,14 @@ Public Class Codesoft
 
 
     Public Shared Function getInstance() As Codesoft
-        If _instance Is Nothing Then
-            _instance = New Codesoft()
-        End If
+        Try
+            If _instance Is Nothing Then
+                _instance = New Codesoft()
+            End If
+        Catch ex As Exception
+
+        End Try
+
         Return _instance
     End Function
 

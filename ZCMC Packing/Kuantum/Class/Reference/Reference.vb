@@ -54,12 +54,16 @@ Public Class Reference
     Public Function Read(ref As String, artno As String) As DataTable Implements IReference.Read
         Dim dt As DataTable = New DataTable()
         Dim str_where As String = ""
-        If artno = "" Then
-            str_where = String.Format("Reference = '{0}'", ref)
-        ElseIf ref = "" Then
-            str_where = String.Format("Art_Number = '{0}'", artno)
-        Else
+
+        If artno <> String.Empty And ref <> String.Empty Then
             str_where = String.Format("Art_Number = '{0}' and Reference = '{1}' ", artno, ref)
+        ElseIf artno <> String.Empty And ref = String.Empty Then
+            str_where = String.Format("Art_Number = '{0}'", artno, ref)
+        ElseIf artno = String.Empty And ref <> String.Empty Then
+            str_where = String.Format("Reference = '{0}", artno, ref)
+        Else
+            str_where = String.Empty
+
         End If
         dt = _dbProduct.DBSelect("*", "ProductData", str_where)
         Return dt

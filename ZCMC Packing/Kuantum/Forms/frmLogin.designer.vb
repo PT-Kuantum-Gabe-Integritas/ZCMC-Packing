@@ -24,11 +24,11 @@ Partial Class frmLogin
     Private Sub InitializeComponent()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lb_info1 = New System.Windows.Forms.Label()
         Me.btn_login = New System.Windows.Forms.Button()
         Me.cb_user = New System.Windows.Forms.ComboBox()
         Me.tb_input = New System.Windows.Forms.TextBox()
         Me.lbInfo2 = New System.Windows.Forms.Label()
-        Me.lb_info1 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -64,13 +64,24 @@ Partial Class frmLogin
         Me.Panel1.Size = New System.Drawing.Size(435, 234)
         Me.Panel1.TabIndex = 0
         '
+        'lb_info1
+        '
+        Me.lb_info1.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lb_info1.ForeColor = System.Drawing.Color.Green
+        Me.lb_info1.Location = New System.Drawing.Point(3, 27)
+        Me.lb_info1.Name = "lb_info1"
+        Me.lb_info1.Size = New System.Drawing.Size(429, 32)
+        Me.lb_info1.TabIndex = 6
+        Me.lb_info1.Text = "Please Fill ID or Username"
+        Me.lb_info1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'btn_login
         '
         Me.btn_login.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_login.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_login.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.btn_login.ForeColor = System.Drawing.Color.Green
         Me.btn_login.Location = New System.Drawing.Point(3, 158)
         Me.btn_login.Name = "btn_login"
         Me.btn_login.Size = New System.Drawing.Size(429, 35)
@@ -110,24 +121,13 @@ Partial Class frmLogin
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbInfo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lbInfo2.Font = New System.Drawing.Font("Nirmala UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbInfo2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.lbInfo2.ForeColor = System.Drawing.Color.Green
         Me.lbInfo2.Location = New System.Drawing.Point(3, 99)
         Me.lbInfo2.Name = "lbInfo2"
         Me.lbInfo2.Size = New System.Drawing.Size(429, 28)
         Me.lbInfo2.TabIndex = 9
         Me.lbInfo2.Text = "User"
         Me.lbInfo2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'lb_info1
-        '
-        Me.lb_info1.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lb_info1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.lb_info1.Location = New System.Drawing.Point(3, 27)
-        Me.lb_info1.Name = "lb_info1"
-        Me.lb_info1.Size = New System.Drawing.Size(429, 32)
-        Me.lb_info1.TabIndex = 6
-        Me.lb_info1.Text = "Please Fill ID or Username"
-        Me.lb_info1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'frmLogin
         '

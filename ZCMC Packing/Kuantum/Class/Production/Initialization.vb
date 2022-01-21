@@ -87,11 +87,11 @@ Public Class Initialization
         UpdateStatus(String.Format("{0}...", str_status), progress)
         Thread.Sleep(delay)
         If Not _config.Open Then
-            UserInterface._frmMain.lbConfig.Image = My.Resources.remove
+            UserInterface._frmMain.lbConConf.Image = My.Resources.Config_Disc
             UpdateStatus(String.Format("{0} - Failed", str_status), progress)
             Thread.Sleep(delay)
         Else
-            UserInterface._frmMain.lbConfig.Image = My.Resources.correct
+            UserInterface._frmMain.lbConConf.Image = My.Resources.Config_Con
             _config.Read()
             UpdateStatus(String.Format("{0} - Success", str_status), progress)
             progress += 5
@@ -105,11 +105,11 @@ Public Class Initialization
         UpdateStatus(String.Format("{0}...", str_status), progress)
         Thread.Sleep(delay)
         If Not _Reference.Open Then
-            UserInterface._frmMain.lbReff.Image = My.Resources.remove
+            UserInterface._frmMain.lbConRef.Image = My.Resources.Database_Disc
             UpdateStatus(String.Format("{0} - Failed", str_status), progress)
             Thread.Sleep(delay)
         Else
-            UserInterface._frmMain.lbReff.Image = My.Resources.correct
+            UserInterface._frmMain.lbConRef.Image = My.Resources.Database_Con
             UpdateStatus(String.Format("{0} - Success", str_status), progress)
             progress += 5
             Thread.Sleep(delay)
@@ -121,11 +121,11 @@ Public Class Initialization
         UpdateStatus(String.Format("{0}...", str_status), progress)
         Thread.Sleep(delay)
         If Not _modbus.Start("127.0.0.1") Then
-            UserInterface._frmMain.lbModbus.Image = My.Resources.remove
+            UserInterface._frmMain.lbConMod.Image = My.Resources.EthernetDisc
             UpdateStatus(String.Format("{0} - Failed", str_status), progress)
             Thread.Sleep(delay)
         Else
-            UserInterface._frmMain.lbModbus.Image = My.Resources.correct
+            UserInterface._frmMain.lbConMod.Image = My.Resources.ethernet_on
             UpdateStatus(String.Format("{0} - Success", str_status), progress)
             progress += 5
             Thread.Sleep(delay)
@@ -139,11 +139,11 @@ Public Class Initialization
         Try
             _production = Production.getInstance()
             If Not _production.Open() Then
-                UserInterface._frmMain.lbLog.Image = My.Resources.remove
+                UserInterface._frmMain.lbConLog.Image = My.Resources.Loggg_Disc
                 UpdateStatus(String.Format("{0} - Failed", str_status), progress)
                 Thread.Sleep(delay)
             Else
-                UserInterface._frmMain.lbLog.Image = My.Resources.correct
+                UserInterface._frmMain.lbConLog.Image = My.Resources.Loggg_Con
                 UpdateStatus(String.Format("{0} - Success", str_status), progress)
                 progress += 5
                 Thread.Sleep(delay)
@@ -165,11 +165,11 @@ Public Class Initialization
             _label.BasePath = Application.StartupPath
             _label.Open("Individual", TYPE.IND)
             _label.Open("Group", TYPE.GROUP)
-            UserInterface._frmMain.lbCodeSoft.Image = My.Resources.correct
+            UserInterface._frmMain.lbConCod.Image = My.Resources.Codesoft_con
             UpdateStatus(String.Format("{0} - Success", str_status), progress)
             progress += 5
         Catch ex As Exception
-            UserInterface._frmMain.lbCodeSoft.Image = My.Resources.remove
+            UserInterface._frmMain.lbConCod.Image = My.Resources.Codesoft_DIsc
             UpdateStatus(String.Format("{0} - Failed", str_status), progress)
         Thread.Sleep(delay)
         'GoTo Finish

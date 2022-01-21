@@ -16,13 +16,15 @@
 
     'List of Form
     Public Shared _frmRun As frmRun = New frmRun()
-    Public Shared _frmHome As frmHome = New frmHome()
+    'Public Shared _frmHome As frmHome = New frmHome()
+    Public Shared _frmHome As formHome = New formHome()
     Public Shared _frmReff As frmReference = New frmReference()
     Public Shared _frmConfig As frmConfig = New frmConfig()
     Public Shared _frmLog As frmLog = New frmLog()
-    Public Shared _frmMain As frmMain = New frmMain()
+    'Public Shared _frmMain As frmMain = New frmMain()
     Public Shared _frmAbout As frmAbout = New frmAbout()
     Public Shared _frmLogin As frmLogin = New frmLogin()
+    Public Shared _frmMain As formMain = New formMain()
 
 
     Public Enum TAB

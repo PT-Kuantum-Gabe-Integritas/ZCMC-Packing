@@ -24,13 +24,13 @@ Partial Class frmLog
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmLog))
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.txtReff = New System.Windows.Forms.TextBox()
         Me.btnReset = New System.Windows.Forms.Button()
         Me.btnSearch = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.cbPO = New System.Windows.Forms.ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.dgvOrder = New System.Windows.Forms.DataGridView()
-        Me.txtReff = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.dtFrom = New System.Windows.Forms.DateTimePicker()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -56,6 +56,13 @@ Partial Class frmLog
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1081, 64)
         Me.Panel2.TabIndex = 1
+        '
+        'txtReff
+        '
+        Me.txtReff.Location = New System.Drawing.Point(412, 40)
+        Me.txtReff.Name = "txtReff"
+        Me.txtReff.Size = New System.Drawing.Size(195, 20)
+        Me.txtReff.TabIndex = 20
         '
         'btnReset
         '
@@ -89,7 +96,7 @@ Partial Class frmLog
         '
         'Label4
         '
-        Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.Label4.BackColor = System.Drawing.Color.Green
         Me.Label4.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(308, 40)
@@ -113,7 +120,7 @@ Partial Class frmLog
         '
         'Label3
         '
-        Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.Label3.BackColor = System.Drawing.Color.Green
         Me.Label3.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(3, 40)
@@ -134,16 +141,9 @@ Partial Class frmLog
         Me.dgvOrder.Size = New System.Drawing.Size(1081, 536)
         Me.dgvOrder.TabIndex = 3
         '
-        'txtReff
-        '
-        Me.txtReff.Location = New System.Drawing.Point(412, 40)
-        Me.txtReff.Name = "txtReff"
-        Me.txtReff.Size = New System.Drawing.Size(195, 20)
-        Me.txtReff.TabIndex = 20
-        '
         'Label1
         '
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.Label1.BackColor = System.Drawing.Color.Green
         Me.Label1.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(3, 41)

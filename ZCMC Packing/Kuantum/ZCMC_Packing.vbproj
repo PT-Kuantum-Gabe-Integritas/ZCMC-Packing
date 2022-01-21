@@ -50,6 +50,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>schneider_electric_schneider_electric_life_is_on_logo_11562904847wklzsduftq_I4M_icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="CS">
       <HintPath>..\CS\bin\Debug\CS.dll</HintPath>
@@ -124,6 +127,18 @@
     <Compile Include="Class\UI Change\UserInterface.vb" />
     <Compile Include="Class\User\UserData.vb" />
     <Compile Include="Class\User\UserManagement.vb" />
+    <Compile Include="formMain.Designer.vb">
+      <DependentUpon>formMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\formHome.Designer.vb">
+      <DependentUpon>formHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\formHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frmAbout.Designer.vb">
       <DependentUpon>frmAbout.vb</DependentUpon>
     </Compile>
@@ -211,6 +226,12 @@
     <Compile Include="Class\Production\Production.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="formMain.resx">
+      <DependentUpon>formMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\formHome.resx">
+      <DependentUpon>formHome.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmAbout.resx">
       <DependentUpon>frmAbout.vb</DependentUpon>
     </EmbeddedResource>
@@ -245,6 +266,7 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -374,6 +396,111 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Schneider_Electric_Logo-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Codesoft 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Config 0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Config 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Database 0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Database 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ethernet_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ethernet 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Log 0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Log 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Codesoft 0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\browsers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Config.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Config1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Config2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ethernet 01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EthernetCon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EthernetDisc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Log Con.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Log Disc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Config Con.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Database Con.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Database Disc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ethernet Con.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Config Disc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Codesoft DIsc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Codesoft con.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Log Con1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loggg Disc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loggg Con.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="schneider_electric_schneider_electric_life_is_on_logo_11562904847wklzsduftq_I4M_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

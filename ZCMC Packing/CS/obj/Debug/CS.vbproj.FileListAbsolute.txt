@@ -44,3 +44,12 @@ C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\CS\obj\Deb
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\CS\obj\Debug\CS.dll
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\CS\obj\Debug\CS.xml
 C:\Users\Judi\Documents\GitHub\ZCMC-Packing\ZCMC-Packing\ZCMC Packing\CS\obj\Debug\CS.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\CS\bin\Debug\CS.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\CS\bin\Debug\CS.pdb
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\CS\bin\Debug\CS.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\CS\obj\Debug\CS.vbprojResolveAssemblyReference.cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\CS\obj\Debug\CS.Resources.resources
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\CS\obj\Debug\CS.vbproj.GenerateResource.Cache
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\CS\obj\Debug\CS.dll
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\CS\obj\Debug\CS.xml
+C:\Users\Barelang63\Documents\Yogy\Kuantum\Github\ZCMC-Packing\ZCMC Packing\CS\obj\Debug\CS.pdb

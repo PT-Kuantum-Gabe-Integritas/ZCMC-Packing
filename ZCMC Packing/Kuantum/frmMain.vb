@@ -43,7 +43,7 @@ Public Class frmMain
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = False
 
-        UserInterface._frmMain = Me
+        'UserInterface._frmMain = Me
         Me.Hide()
         'Start Production 
         _production.Starts()

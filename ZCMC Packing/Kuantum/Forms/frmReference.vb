@@ -16,9 +16,21 @@
     End Sub
 
     Private Sub frmReference_Load(sender As Object, e As EventArgs) Handles Me.Load
-        Dim tb As DataTable = New DataTable()
         _dbProd.Open()
         'loadtb()
+        Dim tb As DataTable = _dbProd.loadTable()
+        For Each row As DataRow In tb.Rows
+            If cbArt.Items.Contains(row.Item(6)) Then
+
+            Else
+                cbArt.Items.Add(row.Item(6))
+            End If
+            If cbReff.Items.Contains(row.Item(0)) Then
+
+            Else
+                cbReff.Items.Add(row.Item(0))
+            End If
+        Next
 
     End Sub
 
@@ -66,6 +78,8 @@
 
     Private Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
         loadtb()
+        cbReff.SelectedIndex = -1
+        cbArt.SelectedIndex = -1
         txtArt.Text = String.Empty
         txtBitmap.Text = String.Empty
         txtGroup.Text = String.Empty

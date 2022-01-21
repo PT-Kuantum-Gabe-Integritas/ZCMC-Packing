@@ -74,7 +74,7 @@ Partial Class frmRun
         '
         Me.lbl_Instruction.Dock = System.Windows.Forms.DockStyle.Top
         Me.lbl_Instruction.Font = New System.Drawing.Font("Nirmala UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_Instruction.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.lbl_Instruction.ForeColor = System.Drawing.Color.Green
         Me.lbl_Instruction.Location = New System.Drawing.Point(350, 0)
         Me.lbl_Instruction.Name = "lbl_Instruction"
         Me.lbl_Instruction.Size = New System.Drawing.Size(625, 211)
@@ -112,7 +112,7 @@ Partial Class frmRun
         'Label7
         '
         Me.Label7.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.Label7.BackColor = System.Drawing.Color.Green
         Me.Label7.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
         Me.Label7.Location = New System.Drawing.Point(0, 150)
@@ -137,7 +137,7 @@ Partial Class frmRun
         'Label5
         '
         Me.Label5.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.Label5.BackColor = System.Drawing.Color.Green
         Me.Label5.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(0, 75)
@@ -163,7 +163,7 @@ Partial Class frmRun
         'Label2
         '
         Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.Label2.BackColor = System.Drawing.Color.Green
         Me.Label2.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(0, 0)
@@ -189,7 +189,7 @@ Partial Class frmRun
         'Label8
         '
         Me.Label8.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.Label8.BackColor = System.Drawing.Color.Green
         Me.Label8.Font = New System.Drawing.Font("Nirmala UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
         Me.Label8.Location = New System.Drawing.Point(350, 459)

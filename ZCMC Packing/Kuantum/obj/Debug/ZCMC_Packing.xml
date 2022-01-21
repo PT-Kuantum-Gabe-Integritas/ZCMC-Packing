@@ -22,6 +22,21 @@ ZCMC_Packing
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:ZCMC_Packing.My.Resources.Resources._exit">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ZCMC_Packing.My.Resources.Resources._Select">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.account">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ZCMC_Packing.My.Resources.Resources.admin">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -32,12 +47,72 @@ ZCMC_Packing
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.browsers">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ZCMC_Packing.My.Resources.Resources.Click">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:ZCMC_Packing.My.Resources.Resources.Click1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.Codesoft_0">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.Codesoft_1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.Codesoft_con">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.Codesoft_DIsc">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.Config">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.Config_0">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.Config_1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.Config_Con">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.Config_Disc">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.Config1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.Config2">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -57,6 +132,26 @@ ZCMC_Packing
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.Database_0">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.Database_1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.Database_Con">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.Database_Disc">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ZCMC_Packing.My.Resources.Resources.Disconnected">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -67,12 +162,42 @@ ZCMC_Packing
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.Ethernet_0">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.Ethernet_1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.Ethernet_Con">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ZCMC_Packing.My.Resources.Resources.ethernet_on">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.EthernetCon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.EthernetDisc">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ZCMC_Packing.My.Resources.Resources.file">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.file1">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -152,6 +277,21 @@ ZCMC_Packing
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.Log_0">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.Log_1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.Log_Disc">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ZCMC_Packing.My.Resources.Resources.log_document">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -163,6 +303,16 @@ ZCMC_Packing
 </summary>
 </member>
 <member name="P:ZCMC_Packing.My.Resources.Resources.log_in__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.Loggg_Con">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.Loggg_Disc">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -183,6 +333,11 @@ ZCMC_Packing
 </summary>
 </member>
 <member name="P:ZCMC_Packing.My.Resources.Resources.remove">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ZCMC_Packing.My.Resources.Resources.Schneider_Electric_Logo_removebg_preview">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

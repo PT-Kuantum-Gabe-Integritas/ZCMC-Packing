@@ -57,8 +57,8 @@ Public Class UserManagement
     End Function
     Public Function GetPermit(type As String) Implements IUserManagement.GetPermit
 
-        UserInterface._frmMain.btnLogout.Visible = True
-        UserInterface._frmMain.lbUsername.Text = String.Format("Hi, {0}", type)
+        'UserInterface._frmMain.btnLogout.Visible = True
+        'UserInterface._frmMain.lbUsername.Text = String.Format("Hi, {0}", type)
 
 
         Dim dt As DataTable = New DataTable()
@@ -71,6 +71,7 @@ Public Class UserManagement
             UserInterface._frmMain.btnRun.Visible = Integer.Parse(dt.Rows(0).Item("Run").ToString())
             UserInterface._frmMain.btnReff.Visible = Integer.Parse(dt.Rows(0).Item("Reference").ToString())
             UserInterface._frmMain.btnUser.Visible = Integer.Parse(dt.Rows(0).Item("UserManage").ToString())
+            UserInterface._frmMain.btnLogout.Visible = True
         Catch ex As Exception
             MsgBox("Failed Get User Permission..")
         End Try
