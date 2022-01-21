@@ -116,15 +116,15 @@ Public Class UserManagement
         Dim _success As Boolean
         Dim str_where As String = ""
         Dim str_val As String = ""
-        If user = "Engineer" Then
+        If user = "ENGINEER_" Then
             str_where = String.Format("(user,pass,authorization,Dashboard,Run,Config,Manual,Reference,LOG,UserManage)")
-            str_val = String.Format("('{0}','{1}','true','1','1','1','1','1','1','0')", user, pass)
-        ElseIf user = "Admin" Then
+            str_val = String.Format("('{0}','{1}','true','true','true','true','true','true','true','false')", user, pass)
+        ElseIf user = "ADMIN_" Then
             str_where = String.Format("(user,pass,authorization,Dashboard,Run,Config,Manual,Reference,LOG,UserManage)")
-            str_val = String.Format("('{0}','{1}','true','1','1','1','1','1','1','1')", user, pass)
-        ElseIf user = "Operator" Then
+            str_val = String.Format("('{0}','{1}','true','true','true','true','true','true','true','true')", user, pass)
+        ElseIf user = "OPERATOR_" Then
             str_where = String.Format("(user,pass,authorization,Dashboard,Run,Config,Manual,Reference,LOG,UserManage)")
-            str_val = String.Format("('{0}','{1}','false','1','1','0','1','0','0','0')", user, pass)
+            str_val = String.Format("('{0}','{1}','false','true','true','false','true','false','false','false')", user, pass)
         End If
 
         _dbUser.DBInsert("tb_user", str_where, str_val)
@@ -137,16 +137,24 @@ Public Class UserManagement
     End Sub
 
     Public Sub UpdateUser(user As String, pass As String, permit As String) Implements IUserManagement.UpdateUser
-        Dim str_where As String = String.Format("ID = '{0}'", user)
-        Dim str_val As String = String.Format("pass = '{0}', {1}", pass, permit)
-        _dbUser.DBUpdate("tb_user", str_val, str_where)
+        If pass = String.Empty Then
+            Dim str_where As String = String.Format("ID = '{0}'", user)
+            Dim str_val As String = String.Format("{0}", permit)
+            _dbUser.DBUpdate("tb_user", str_val, str_where)
+        Else
+            Dim str_where As String = String.Format("ID = '{0}'", user)
+            Dim str_val As String = String.Format("pass = '{0}'", pass)
+            _dbUser.DBUpdate("tb_user", str_val, str_where)
+        End If
+
+
     End Sub
 
     Public Sub ClearUser() Implements IUserManagement.ClearUser
         _currUser = Nothing
     End Sub
 
-    Public Function loadTable() Implements IUserManagement.loadTable
+    Public Function loadTable(param As Boolean) Implements IUserManagement.loadTable
         Dim TableDB As New DataTable
         Try
             TableDB = _dbUser.DBSelect("*", "tb_user", String.Empty)
@@ -154,5 +162,18 @@ Public Class UserManagement
             MsgBox(ex.Message)
         End Try
         Return TableDB
+    End Function
+    Public Function Read(ref As String, artno As String) As DataTable Implements IUserManagement.Read
+        Dim dt As DataTable = New DataTable()
+        Dim str_where As String = ""
+        If artno = "" Then
+            str_where = String.Format("id = '{0}'", ref)
+        ElseIf ref = "" Then
+            str_where = String.Format("user = '{0}'", artno)
+        Else
+            str_where = String.Format("id = '{0}' and user = '{1}' ", artno, ref)
+        End If
+        dt = _dbUser.DBSelect("*", "tb_user", str_where)
+        Return dt
     End Function
 End Class

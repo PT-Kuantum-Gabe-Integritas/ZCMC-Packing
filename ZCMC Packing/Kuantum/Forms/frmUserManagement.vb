@@ -7,17 +7,14 @@ Public Class frmUserManagement
         lb_info.Text = "Select cell you want to Delete"
         For Each row As DataGridViewRow In DataGridViewTable.SelectedRows
             If row.Selected = True Then
-                _userManager.DeleteUser(row.DataBoundItem(0))
+                _userManager.DeleteUser(DataGridViewTable.CurrentRow.Cells(0).Value.ToString)
             End If
         Next
+        updateData(DataGridViewTable)
         loadtb()
     End Sub
 
-    Private Sub btn_refresh_Click(sender As Object, e As EventArgs) Handles btn_refresh.Click
-        loadtb()
-    End Sub
-
-    Private Sub btn_close_Click(sender As Object, e As EventArgs) Handles btn_close.Click
+    Private Sub btn_close_Click(sender As Object, e As EventArgs)
         Me.Close()
     End Sub
 
@@ -29,15 +26,21 @@ Public Class frmUserManagement
     End Sub
 
     Private Sub loadtb()
-        Dim tb As DataTable = _userManager.loadTable()
+        Dim tb As DataTable = _userManager.loadTable(0)
+
         DataGridViewTable.DataSource = Nothing
-        DataGridViewTable.DataSource = tb
+        loadData(DataGridViewTable, tb)
         DataGridViewTable.ClearSelection()
         For Each row As DataRow In tb.Rows
             If cb_user.Items.Contains(row.Item(1)) Then
 
             Else
                 cb_user.Items.Add(row.Item(1))
+                cbRole.Items.Add(row.Item(1))
+            End If
+            If cbID.Items.Contains(row.Item(0)) Then
+            Else
+                cbID.Items.Add(row.Item(0))
             End If
         Next
     End Sub
@@ -56,28 +59,14 @@ Public Class frmUserManagement
         cb_user.Enabled = False
         For Each row As DataGridViewRow In DataGridViewTable.SelectedRows
             If row.Selected = True Then
-                tb_id.Text = row.DataBoundItem(0)
-                cb_Dashboard.Checked = Integer.Parse(row.DataBoundItem(4).ToString)
-                cb_Run.Checked = Integer.Parse(row.DataBoundItem(5).ToString)
-                cb_Config.Checked = Integer.Parse(row.DataBoundItem(6).ToString)
-                cb_Manual.Checked = Integer.Parse(row.DataBoundItem(7).ToString)
-                cb_Reference.Checked = Integer.Parse(row.DataBoundItem(8).ToString)
-                cb_LOG.Checked = Integer.Parse(row.DataBoundItem(9).ToString)
-                cb_UserManage.Checked = Integer.Parse(row.DataBoundItem(10).ToString)
-            End If
-        Next
-    End Sub
-
-    Private Sub tb_id_TextChanged(sender As Object, e As EventArgs) Handles tb_id.TextChanged
-        For Each row As DataGridViewRow In DataGridViewTable.SelectedRows
-            If row.Selected = True Then
-                cb_user.SelectedItem = row.DataBoundItem(1).ToString
+                tb_id.Text = (DataGridViewTable.CurrentRow.Cells(0).Value.ToString)
+                cb_user.Text = (DataGridViewTable.CurrentRow.Cells(1).Value.ToString)
             End If
         Next
     End Sub
 
     Private Sub btn_save_Click(sender As Object, e As EventArgs) Handles btn_save.Click
-        If cb_user.Text Is "" Or cb_user.SelectedIndex = 0 And tb_id.Text = "" Then
+        If cb_user.Text Is "" Or cb_user.SelectedIndex = -1 And tb_id.Text = "" Then
             lb_info.Text = "Select User"
         ElseIf cb_user.Enabled = True Then
             If tb_input.Text = tb_confirm.Text Then
@@ -85,41 +74,70 @@ Public Class frmUserManagement
             Else
                 lb_info.Text = "Password is not the same"
             End If
+        ElseIf tb_input.Text = tb_confirm.Text And tb_input.Text <> "" Then
+            _userManager.UpdateUser(tb_id.Text, tb_input.Text, String.Empty)
         Else
-            For Each row As DataGridViewRow In DataGridViewTable.SelectedRows
-                Dim cb_dsb As Integer = Convert.ToInt16(cb_Dashboard.Checked)
-                Dim cb_rn As Integer = Convert.ToInt16(cb_Run.Checked)
-                Dim cb_cf As Integer = Convert.ToInt16(cb_Config.Checked)
-                Dim cb_mn As Integer = Convert.ToInt16(cb_Manual.Checked)
-                Dim cb_rf As Integer = Convert.ToInt16(cb_Reference.Checked)
-                Dim cb_lg As Integer = Convert.ToInt16(cb_LOG.Checked)
-                Dim cb_um As Integer = Convert.ToInt16(cb_UserManage.Checked)
-                If tb_input.Text = tb_confirm.Text Then
-                    Dim str_permit As String = String.Format("Dashboard = '{0}', Run = '{1}', Config = '{2}', Manual = '{3}', Reference = '{4}', LOG = '{5}', UserManage = '{6}'", cb_dsb, cb_rn, cb_cf, cb_mn, cb_rf, cb_lg, cb_um)
-                    _userManager.UpdateUser(tb_id.Text, tb_input.Text, str_permit)
-                Else
-                    lb_info.Text = "Password is not the same"
-                End If
-            Next
+
+            updateData(DataGridViewTable)
         End If
 
         loadtb()
     End Sub
 
-    Private Sub btn_reset_Click(sender As Object, e As EventArgs) Handles btn_reset.Click
+    Private Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
+        loadtb()
         tb_id.Clear()
         tb_confirm.Clear()
         tb_input.Clear()
         DataGridViewTable.ClearSelection()
         cb_user.Enabled = True
         cb_user.SelectedIndex = -1
-        cb_Config.Checked = False
-        cb_Dashboard.Checked = False
-        cb_Run.Checked = False
-        cb_LOG.Checked = False
-        cb_UserManage.Checked = False
-        cb_Manual.Checked = False
-        cb_Reference.Checked = False
     End Sub
 
+    Private Sub btnSearch_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
+        Dim tb As DataTable = _userManager.Read(cbID.Text, cbRole.Text)
+        loadData(DataGridViewTable, tb)
+        DataGridViewTable.ClearSelection()
+    End Sub
+    Private Sub loadData(dgv As DataGridView, dt As DataTable)
+        With dgv
+            .Rows.Clear()
+            For i As Integer = 0 To dt.Rows.Count - 1
+                Try
+                    .Rows.Add(dt.Rows(i).Item("id"), dt.Rows(i).Item("user"), dt.Rows(i).Item("pass"), Convert.ToBoolean(dt.Rows(i).Item("authorization")), Convert.ToBoolean(dt.Rows(i).Item("Dashboard")), Convert.ToBoolean(dt.Rows(i).Item("Run")), Convert.ToBoolean(dt.Rows(i).Item("Config")),
+                Convert.ToBoolean(dt.Rows(i).Item("Manual")), Convert.ToBoolean(dt.Rows(i).Item("Reference")), Convert.ToBoolean(dt.Rows(i).Item("Log")),
+                 Convert.ToBoolean(dt.Rows(i).Item("UserManage")))
+                Catch ex As Exception
+
+                End Try
+
+            Next
+        End With
+    End Sub
+
+    Private Sub updateData(dgv As DataGridView)
+        Dim cb_pass As String = ""
+        With dgv
+            For i As Integer = 0 To dgv.RowCount - 2
+                Dim cb_id As String = (DataGridViewTable.Rows(i).Cells(0).Value.ToString)
+                Try
+                    cb_pass = (DataGridViewTable.Rows(i).Cells(2).Value.ToString)
+                Catch ex As Exception
+
+                End Try
+                Dim cb_auth As String = (DataGridViewTable.Rows(i).Cells(3).Value.ToString)
+                Dim cb_dsb As String = (DataGridViewTable.Rows(i).Cells(4).Value.ToString)
+                Dim cb_rn As String = (DataGridViewTable.Rows(i).Cells(5).Value.ToString)
+                Dim cb_cf As String = (DataGridViewTable.Rows(i).Cells(6).Value.ToString)
+                Dim cb_mn As String = (DataGridViewTable.Rows(i).Cells(7).Value.ToString)
+                Dim cb_rf As String = (DataGridViewTable.Rows(i).Cells(8).Value.ToString)
+                Dim cb_lg As String = (DataGridViewTable.Rows(i).Cells(9).Value.ToString)
+                Dim cb_um As String = (DataGridViewTable.Rows(i).Cells(10).Value.ToString)
+
+                Dim str_permit As String = String.Format("Dashboard = '{0}', Run = '{1}', Config = '{2}', Manual = '{3}', Reference = '{4}', LOG = '{5}', UserManage = '{6}', authorization = '{7}', ID = '{8}', pass = '{9}'", cb_dsb, cb_rn, cb_cf, cb_mn, cb_rf, cb_lg, cb_um, cb_auth, i + 1, cb_pass)
+                _userManager.UpdateUser(cb_id, tb_input.Text, str_permit)
+
+            Next
+        End With
+    End Sub
 End Class

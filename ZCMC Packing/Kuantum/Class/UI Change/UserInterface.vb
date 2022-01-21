@@ -116,12 +116,12 @@
                 _frmMain.lbMenu.Text = "Production Log"
 
             Case "User"
-                '_frmLog.TopLevel = False
-                '_frmLog.TopMost = True
-                '_frmLog.Dock = DockStyle.Fill
-                '_frmMain.mainPanel.Controls.Clear()
-                '_frmMain.mainPanel.Controls.Add(_frmLog)
-                '_frmLog.Show()
+                _frmUserManagement.TopLevel = False
+                _frmUserManagement.TopMost = True
+                _frmUserManagement.Dock = DockStyle.Fill
+                _frmMain.mainPanel.Controls.Clear()
+                _frmMain.mainPanel.Controls.Add(_frmUserManagement)
+                _frmUserManagement.Show()
                 _frmMain.lbMenu.Text = "User Management"
 
             Case "About"
@@ -213,6 +213,14 @@
                 _frmMain.mainPanel.Controls.Add(_frmLogin)
                 _frmLogin.Show()
                 _frmMain.lbMenu.Text = "Login"
+            Case TAB.USER
+                _frmUserManagement.TopLevel = False
+                _frmUserManagement.TopMost = True
+                _frmUserManagement.Dock = DockStyle.Fill
+                _frmMain.mainPanel.Controls.Clear()
+                _frmMain.mainPanel.Controls.Add(_frmUserManagement)
+                _frmUserManagement.Show()
+                _frmMain.lbMenu.Text = "User Management"
 
         End Select
     End Sub

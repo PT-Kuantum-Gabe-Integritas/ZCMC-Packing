@@ -76,7 +76,6 @@ Public Class frmMain
     End Sub
 
     Private Sub btnUser_Click(sender As Object, e As EventArgs) Handles btnUser.Click
-        Dim _frmUserManagement As frmUserManagement = New frmUserManagement()
-        _frmUserManagement.Show()
+        _ui.LoadPanel(UserInterface.TAB.USER)
     End Sub
 End Class

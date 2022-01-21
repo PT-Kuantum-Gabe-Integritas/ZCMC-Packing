@@ -14,7 +14,7 @@
 
     Public Sub Initialize()
         cb_user.Items.Clear()
-        Dim tb As DataTable = _userManager.loadTable()
+        Dim tb As DataTable = _userManager.loadTable(1)
         For Each row As DataRow In tb.Rows
             If cb_user.Items.Contains(row.Item(1)) Then
 
