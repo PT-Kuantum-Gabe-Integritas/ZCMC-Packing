@@ -50,8 +50,9 @@
     End Sub
 
     Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
-        btnLogout.Visible = True
+
         _ui.LoadPanel(UserInterface.TAB.LOGIN)
+        btnLogout.Visible = False
     End Sub
 
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click

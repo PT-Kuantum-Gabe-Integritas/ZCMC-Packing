@@ -282,6 +282,7 @@ Public Class Production
         wo.Qty = Integer.Parse(qty)
         ind.Qty = Integer.Parse(qty_ind)
         group.Qty = Integer.Parse(qty_group)
+        LoadProductInfo()
 
 
 
@@ -329,7 +330,7 @@ Public Class Production
 
 
         'Load Group Total and Bitmap
-        LoadProductInfo()
+
 
     End Sub
 
